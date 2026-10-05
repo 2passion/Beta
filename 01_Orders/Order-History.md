@@ -250,6 +250,13 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
     --- PASS FOR USER GATE --- Blocker 0 / Important 0 / Minor 3
 -   Order-055 --- MVP Overall Review State Sync + GitHub Pre-Freeze Snapshot
     --- Owner: Codex --- HOLD --- Local Git Repository 및 Remote 부재
+-   Order-056 --- Beta GitHub Initial Connection + Pre-Freeze Snapshot Recovery
+    --- Owner: Codex --- PASS --- Snapshot commit
+    `73b15556dcd3f88569b596e10bc975f7101aa4bd` --- branch `main` ---
+    origin `https://github.com/2passion/Beta.git` --- initial push PASS ---
+    local HEAD = origin/main = remote main --- `2026-10-06T03:47:03+09:00`
+    --- GitHub는 Backup / Version History이며 Local SSOT는
+    `C:\Obsidian\Beta` --- MVP Overall PASS NOT YET / MVP Freeze NOT YET
 
 ## 5. 정식 Order 목록
 
@@ -310,6 +317,7 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
 | Order-053 | MVP Test 3 Official Closure Sync | Codex | Claude Code | PASS |
 | Order-054 | MVP 7 Gates Overall Evidence Review | - | Claude Code | PASS FOR USER GATE |
 | Order-055 | MVP Overall Review State Sync + GitHub Pre-Freeze Snapshot | Codex | Claude Code | HOLD |
+| Order-056 | Beta GitHub Initial Connection + Pre-Freeze Snapshot Recovery | Codex | Claude Code | PASS |
 
 ## 6. Known Limitations
 

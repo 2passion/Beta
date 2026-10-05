@@ -169,6 +169,7 @@ FROZEN
 - Order-053 MVP Test 3 Official Closure Sync — SYNCED
 - Order-054 MVP 7 Gates Overall Evidence Review — PASS FOR USER GATE / Blocker 0 / Important 0 / Minor 3
 - Order-055 Pre-Freeze Snapshot — HOLD / Local Git Repository 및 Remote 부재
+- Order-056 GitHub Initial Connection + Pre-Freeze Snapshot Recovery — PASS
 - ChatGPT Project Beta와 Obsidian의 역할 분리
 - A와 B의 관계 정의
 - Local Core 우선 방향 결정
@@ -188,6 +189,21 @@ FROZEN
 - KL-3 External dependency Evidence completion — `completed_dependencies` 선언을 실제 Run/Evidence 완료와 독립 대조하지 않음
 - 상태: OPEN / 해결됨으로 표시하지 않음 / Active Rule 또는 Prevention으로 승격하지 않음
 - 수용 판단 Gate: Final User Gate
+
+
+## 3.2 GitHub Pre-Freeze Snapshot
+
+- 상태: PASS
+- Snapshot Commit: `73b15556dcd3f88569b596e10bc975f7101aa4bd`
+- Branch: `main`
+- Remote: `origin` → `https://github.com/2passion/Beta.git`
+- Push: PASS
+- Snapshot 검증: local HEAD = origin/main = remote main
+- 확인 시각: `2026-10-06T03:47:03+09:00`
+- GitHub 역할: Backup / Version History
+- Local SSOT: `C:\Obsidian\Beta`
+- MVP Overall PASS: NOT YET
+- MVP Freeze: NOT YET
 
 
 ## 4. Now
