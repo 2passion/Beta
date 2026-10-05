@@ -1,0 +1,12 @@
+{
+  "run_task_call_count": 0,
+  "search": {
+    "eligibility_checked": true,
+    "exact_fingerprint_match": true,
+    "fix_preapplied": false,
+    "outcome": "NOT_ELIGIBLE",
+    "requested_fingerprint": "05BB7BEC2E7027AFA94B453B0A0A6537C2202D06D9D3D4F3791C5F4483A67AB5",
+    "search_scope": "verified Prevention candidates",
+    "selected_prevention_id": null
+  }
+}

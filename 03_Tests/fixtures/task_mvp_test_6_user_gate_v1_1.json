@@ -1,0 +1,45 @@
+{
+  "task_id": "MVP-TEST-6-USER-GATE",
+  "plan_version": "1.1",
+  "order_id": "Order-037",
+  "change_reason_ref": "Order-037",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/mvp_test_6"],
+  "shared_resources": [],
+  "depends_on": ["MVP-TEST-5-PREVENTION", "ORDER-035-EXECUTION-ROUTING"],
+  "steps": [{"step_id": "MVP6-USER-GATE-001", "action": "execute User Gate scenarios A-F"}],
+  "executor": {
+    "path": "03_Tests/fixtures/user_gate_scenario_executor.py",
+    "sha256": "2ADE126462758FFE222BE48546D57E69646CC5C2F498377EE4EE655149B4CBD5"
+  },
+  "required_validators": [{
+    "validator_id": "VAL-MVP-TEST-6-USER-GATE",
+    "path": "03_Tests/fixtures/user_gate_validator.py",
+    "sha256": "CE30DA0BC7B2C6D4C302A7CE14B136D6DA75A86483CA091761835F6CD1688852",
+    "criteria": {
+      "mvp_test_id": "MVP-TEST-6",
+      "mvp_test_name": "User Gate",
+      "test_plan_id": "MVP-TEST-6-USER-GATE",
+      "test_plan_version": "1.1",
+      "routing_order_id": "Order-037"
+    }
+  }],
+  "completion_criteria": [
+    "AUTO executes exactly once only when all eight conditions hold",
+    "APPROVAL_REQUIRED has zero pre-approval side effects and no duplicate approval",
+    "HOLD has a reason code and zero later side effects",
+    "approval is bound to requested scope and expansion requires new approval",
+    "re-entry has zero actual filesystem and Evidence delta",
+    "routing mismatch blocks the writer, run_task, writes, and downstream calls",
+    "recovery eligibility reuses and validates the Test 5 Prevention contract",
+    "Mutations G-L fail or block under independent Validator recomputation",
+    "official Validation passes and Gate proceeds"
+  ],
+  "permissions": {
+    "subprocess": "approved fixture paths only",
+    "network": false,
+    "database": false,
+    "external_publish": false,
+    "rule_promotion": false
+  }
+}

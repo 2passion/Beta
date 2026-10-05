@@ -1,0 +1,42 @@
+{
+  "task_id": "TASK-PHASE1-SYNTHETIC-001",
+  "plan_version": "1.3",
+  "order_id": "Order-014",
+  "change_reason_ref": "Order-014",
+  "write_owner": "Codex",
+  "write_scope": [
+    "04_Evidence/phase1"
+  ],
+  "shared_resources": [],
+  "depends_on": [],
+  "steps": [
+    {
+      "step_id": "STEP-001",
+      "action": "write deterministic synthetic result"
+    }
+  ],
+  "executor": {
+    "path": "03_Tests/fixtures/executor_success.py",
+    "sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A"
+  },
+  "required_validators": [
+    {
+      "validator_id": "VAL-PHASE1-001",
+      "path": "03_Tests/fixtures/validator_success.py",
+      "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+      "criteria": {
+        "expected_value": "phase1-ok"
+      }
+    }
+  ],
+  "completion_criteria": [
+    "Executor exits with code 0",
+    "all required Validators PASS",
+    "Evidence and SHA-256 index are recorded"
+  ],
+  "permissions": {
+    "subprocess": "approved fixture paths only",
+    "network": false,
+    "reference_write": false
+  }
+}

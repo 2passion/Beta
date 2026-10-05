@@ -1,0 +1,34 @@
+{
+  "change_reason_ref": "Order-031",
+  "created_at": "2026-10-04T01:31:41.825140Z",
+  "evidence_id": "EVD-536d83c0-ba47-4435-aa3e-5ad5dc38492b",
+  "execution": {
+    "exit_code": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": ""
+  },
+  "executor_sha256": "9AF8988DBA02E1803D1F57481776E88E6D58826AF0DB5AF2884EFBCF021FBB6F",
+  "gate": "PROCEED",
+  "order_id": "Order-031",
+  "plan_version": "1.0",
+  "run_id": "RUN-ae7349f2-8e19-40d9-b07e-27abfd409f50",
+  "task_id": "MVP-TEST-5-PREVENTION",
+  "task_plan_sha256": "AA4A2344C635631B273626742EC6B562530A41FCAE67151F7487B558EFD16462",
+  "validation_result": "PASS",
+  "validations": [
+    {
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "{\"failures\": [], \"mvp_test_id\": \"MVP-TEST-5\", \"mvp_test_name\": \"Prevention\", \"scenario_evidence\": [{\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_5\\\\scenarios\\\\SCN-8619f818-d88b-4f80-8fd6-5c8ad0736f2b\\\\a_create_candidate\\\\prevention_record.json\", \"sha256\": \"63CEE6FEA8680CA9E25F88CBF17E5BA5A8AFD7262E6C04CD285041DAE86388B6\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_5\\\\scenarios\\\\SCN-8619f818-d88b-4f80-8fd6-5c8ad0736f2b\\\\a_create_candidate\\\\source_chain_evidence.json\", \"sha256\": \"194017AD74EA143D4323FFA5DB25D4308C98E9340D02ED807F63A4707E4DC479\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_5\\\\scenarios\\\\SCN-8619f818-d88b-4f80-8fd6-5c8ad0736f2b\\\\b_exact_match_preapply\\\\EVD-6d9556db-ff97-4735-920b-95527c407170.json\", \"sha256\": \"3C4521008DA2BDCD9615ED8E8943B6E4B2CA5AD2BF984AA63B52D9E954B12B46\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_5\\\\scenarios\\\\SCN-8619f818-d88b-4f80-8fd6-5c8ad0736f2b\\\\b_exact_match_preapply\\\\events.jsonl\", \"sha256\": \"F70757CCC3F270EEFD99AC6DB59937539068C6E73D3BAD3D9C4BE977EB6B11A8\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_5\\\\scenarios\\\\SCN-8619f818-d88b-4f80-8fd6-5c8ad0736f2b\\\\b_exact_match_preapply\\\\evidence_index.jsonl\", \"sha256\": \"CC62E5B516C48B44CC1A535F6AF0BD0D6997AE34D98981E2749AE8E057764519\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_5\\\\scenarios\\\\SCN-8619f818-d88b-4f80-8fd6-5c8ad0736f2b\\\\b_exact_match_preapply\\\\prevention_apply_evidence.json\", \"sha256\": \"8BE15FC31C36D3766832D1638B73D4987067AA2AAAA90B5033842BF8FC093C74\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_5\\\\scenarios\\\\SCN-8619f818-d88b-4f80-8fd6-5c8ad0736f2b\\\\b_exact_match_preapply\\\\runs\\\\RUN-5e2bbaf8-d414-4054-96b4-1dfd7fb548d4\\\\executor_result.json\", \"sha256\": \"E42ECD1B581ADF1A252EF21D731EB12A68E66DC00EF618A2D0F2568C8788F0E9\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_5\\\\scenarios\\\\SCN-8619f818-d88b-4f80-8fd6-5c8ad0736f2b\\\\b_exact_match_preapply\\\\target_plan.json\", \"sha256\": \"85736DF0D5545EDEFD6C04F412F8A27D05D2F23C9E58B5F167BDD419EAA001E5\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_5\\\\scenarios\\\\SCN-8619f818-d88b-4f80-8fd6-5c8ad0736f2b\\\\c_different_fingerprint\\\\events.jsonl\", \"sha256\": \"7E72B016421A0DE03AFF77E6BEF3B4D6A0FA8317199DE2F31EE175C3AE2B7635\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_5\\\\scenarios\\\\SCN-8619f818-d88b-4f80-8fd6-5c8ad0736f2b\\\\c_different_fingerprint\\\\search_evidence.json\", \"sha256\": \"F07B4F54C7819F8EFBCA0C3D59FFCE9323720AF56082E6A4A000076E392EF773\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_5\\\\scenarios\\\\SCN-8619f818-d88b-4f80-8fd6-5c8ad0736f2b\\\\d_unverified_fix\\\\events.jsonl\", \"sha256\": \"52EC4AF63FD5D005C5AAF7B55858C1595B2ED8AFF4C6FDE2ADE8ADB044F70D72\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_5\\\\scenarios\\\\SCN-8619f818-d88b-4f80-8fd6-5c8ad0736f2b\\\\d_unverified_fix\\\\search_evidence.json\", \"sha256\": \"7151FAB1A744698778B0F1618BFD26EDCCEBC741C84EB1763383CC102AEC0030\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_5\\\\scenarios\\\\SCN-8619f818-d88b-4f80-8fd6-5c8ad0736f2b\\\\d_unverified_fix\\\\unverified_record.json\", \"sha256\": \"4FF7F18822AE79BD1B7F775B25B74809BD4C17F19BC8C95A8CAAFFC92EEAF50F\"}], \"test_plan_id\": \"MVP-TEST-5-PREVENTION\", \"test_plan_version\": \"1.0\", \"validation_status\": \"PASS\"}\n",
+      "validator_id": "VAL-MVP-TEST-5-PREVENTION"
+    }
+  ],
+  "validator_sha256": [
+    {
+      "sha256": "CF12B20223747C57234ACBE7DAD64D83DCEAF0F98C42E42F88E8E148112E2F6A",
+      "validator_id": "VAL-MVP-TEST-5-PREVENTION"
+    }
+  ]
+}

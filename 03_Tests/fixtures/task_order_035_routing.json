@@ -1,0 +1,23 @@
+{
+  "task_id": "ORDER-035-EXECUTION-ROUTING",
+  "plan_version": "1.0",
+  "order_id": "Order-035",
+  "change_reason_ref": "Order-035-Routing-Contract",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/order_035_routing"],
+  "shared_resources": [],
+  "depends_on": ["MVP-TEST-5-PREVENTION"],
+  "steps": [{"step_id": "ROUTING-001", "action": "validate routing MATCH and mismatch HOLD fixture"}],
+  "executor": {
+    "path": "03_Tests/fixtures/routing_scenario_executor.py",
+    "sha256": "250FB49CE471A9F263B09CF1F4298305CA94452FD5DF576B3AC6AE16CBDEC7CF"
+  },
+  "required_validators": [{
+    "validator_id": "VAL-ORDER-035-ROUTING",
+    "path": "03_Tests/fixtures/routing_validator.py",
+    "sha256": "50B148AEE9BFFAF115941800DFC03F9753B5536B431BDB101392D6F9618B49FD",
+    "criteria": {"expected_executor": "Codex", "action": "WRITE", "order_id": "Order-035", "project": "Beta"}
+  }],
+  "completion_criteria": ["routing match allows write", "routing mismatch holds with zero side effects"],
+  "permissions": {"subprocess": "approved fixture paths only", "network": false}
+}

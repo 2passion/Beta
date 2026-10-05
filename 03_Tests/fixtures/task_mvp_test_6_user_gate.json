@@ -1,0 +1,47 @@
+{
+  "task_id": "MVP-TEST-6-USER-GATE",
+  "plan_version": "1.2",
+  "order_id": "Order-039",
+  "change_reason_ref": "Order-039",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/mvp_test_6"],
+  "shared_resources": [],
+  "depends_on": ["MVP-TEST-5-PREVENTION", "ORDER-035-EXECUTION-ROUTING"],
+  "steps": [{"step_id": "MVP6-USER-GATE-001", "action": "execute User Gate scenarios A-F"}],
+  "executor": {
+    "path": "03_Tests/fixtures/user_gate_scenario_executor.py",
+    "sha256": "CE4039A2EB6CFF2A3B5932E697CD90FD11FAEA3F3C4608853C52118C1FD570EB"
+  },
+  "required_validators": [{
+    "validator_id": "VAL-MVP-TEST-6-USER-GATE",
+    "path": "03_Tests/fixtures/user_gate_validator.py",
+    "sha256": "5D18FBF55EECCA95BC768157793A02B2732DFB915D5339B8B2C71F36E5538879",
+    "criteria": {
+      "mvp_test_id": "MVP-TEST-6",
+      "mvp_test_name": "User Gate",
+      "test_plan_id": "MVP-TEST-6-USER-GATE",
+      "test_plan_version": "1.2",
+      "routing_order_id": "Order-039"
+    }
+  }],
+  "completion_criteria": [
+    "AUTO executes exactly once only when all eight conditions hold",
+    "APPROVAL_REQUIRED has zero pre-approval side effects and no duplicate approval",
+    "HOLD has a reason code and zero later side effects",
+    "approval is bound to requested scope and expansion requires new approval",
+    "re-entry has zero actual filesystem and Evidence delta",
+    "routing mismatch blocks the writer, run_task, writes, and downstream calls",
+    "recovery eligibility reuses and validates the Test 5 Prevention contract",
+    "Mutations G-L fail or block under independent Validator recomputation",
+    "non-AUTO decisions never enter routing or create runtime side effects",
+    "Decision-to-Execution Delta scenarios D1-D6 and Mutations M1-M4 pass",
+    "official Validation passes and Gate proceeds"
+  ],
+  "permissions": {
+    "subprocess": "approved fixture paths only",
+    "network": false,
+    "database": false,
+    "external_publish": false,
+    "rule_promotion": false
+  }
+}

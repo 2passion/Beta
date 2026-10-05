@@ -1,0 +1,54 @@
+{
+  "checkpoint_id": "CP-85760720-0c61-431c-9e45-181d043249d8",
+  "completed_step_ids": [
+    "STEP-1",
+    "STEP-2",
+    "STEP-3"
+  ],
+  "created_at": "2026-10-04T14:42:09.093646Z",
+  "evidence_refs": [
+    {
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\F\\evidence\\EVD-STEP-1.json",
+      "evidence_sha256": "0AED9A0A2A33D347A99F34A77F7BCFAE09345A19CB73BF6E1335EF55872234A3",
+      "side_effect_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\F\\side_effects\\STEP-1.json",
+      "side_effect_sha256": "C44EFC9D37A915E9E90966F40BC8C613016CE4375CC0FE956549580E8C60FE88",
+      "step_id": "STEP-1"
+    },
+    {
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\F\\evidence\\EVD-STEP-2.json",
+      "evidence_sha256": "EC664E7A93474A1AE13875BA666905978EF7838A3D2E551FBE450ACC5E0620CB",
+      "side_effect_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\F\\side_effects\\STEP-2.json",
+      "side_effect_sha256": "D9068C89EBF66B3C1256B55A94947F58F78A1AEDF6FFC56AC241934B94C57B62",
+      "step_id": "STEP-2"
+    },
+    {
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\F\\evidence\\EVD-STEP-3.json",
+      "evidence_sha256": "8FA84403B80277C7BD90CB31D5E51BBBC865DD512A46E16A3ACB294C24EA4401",
+      "side_effect_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\F\\side_effects\\STEP-3.json",
+      "side_effect_sha256": "99AB655FAAC785B865193EB0052F177993F7E42719239229AE508DABC866655E",
+      "step_id": "STEP-3"
+    }
+  ],
+  "expected_next_step": "STEP-4",
+  "last_verified_step": "STEP-3",
+  "plan_version": "1.0",
+  "record_type": "CHECKPOINT",
+  "run_id": "RESUME-ecfc7d65-1564-49e6-8d39-0d58c4be6899",
+  "sequence": 3,
+  "side_effect_snapshot": {
+    "STEP-1": {
+      "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\F\\side_effects\\STEP-1.json",
+      "sha256": "C44EFC9D37A915E9E90966F40BC8C613016CE4375CC0FE956549580E8C60FE88"
+    },
+    "STEP-2": {
+      "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\F\\side_effects\\STEP-2.json",
+      "sha256": "D9068C89EBF66B3C1256B55A94947F58F78A1AEDF6FFC56AC241934B94C57B62"
+    },
+    "STEP-3": {
+      "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\F\\side_effects\\STEP-3.json",
+      "sha256": "99AB655FAAC785B865193EB0052F177993F7E42719239229AE508DABC866655E"
+    }
+  },
+  "task_id": "MVP-TEST-7-RESUME",
+  "validation_status": "PASS"
+}

@@ -1,0 +1,30 @@
+{
+  "checkpoint_id": "CP-80b1a8d8-dd6b-4376-bf27-1a1cbfe92498",
+  "completed_step_ids": [
+    "STEP-1"
+  ],
+  "created_at": "2026-10-04T14:42:08.189529Z",
+  "evidence_refs": [
+    {
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\A\\evidence\\EVD-STEP-1.json",
+      "evidence_sha256": "D7A4CC3096967D4AA7FD02C4F51D72624C4A7C004E772C4D32E1B4C2FA7ED8B4",
+      "side_effect_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\A\\side_effects\\STEP-1.json",
+      "side_effect_sha256": "FDA01986522C0EEFE9332CF47E6DD78A0AF542A07CC77613C8EF66B60AB3A0DD",
+      "step_id": "STEP-1"
+    }
+  ],
+  "expected_next_step": "STEP-2",
+  "last_verified_step": "STEP-1",
+  "plan_version": "1.0",
+  "record_type": "CHECKPOINT",
+  "run_id": "RUN-INTERRUPTED-b73aa4f9-ab7f-4843-a9cb-e1ddab4fa8cf",
+  "sequence": 1,
+  "side_effect_snapshot": {
+    "STEP-1": {
+      "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\A\\side_effects\\STEP-1.json",
+      "sha256": "FDA01986522C0EEFE9332CF47E6DD78A0AF542A07CC77613C8EF66B60AB3A0DD"
+    }
+  },
+  "task_id": "MVP-TEST-7-RESUME",
+  "validation_status": "PASS"
+}

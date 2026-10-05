@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "attempts": 2,
+      "decision": "ALLOW_WITHIN_FIXTURE_LIMIT",
+      "fixture_limit": 2,
+      "kind": "VALIDATOR_ERROR",
+      "user_gate_required_reason": null,
+      "user_gate_workflow_started": false
+    },
+    {
+      "attempts": 3,
+      "decision": "BLOCK_LIMIT",
+      "fixture_limit": 2,
+      "kind": "VALIDATOR_ERROR",
+      "user_gate_required_reason": "VALIDATOR_ERROR fixture limit exceeded",
+      "user_gate_workflow_started": false
+    },
+    {
+      "attempts": 2,
+      "decision": "ALLOW_WITHIN_FIXTURE_LIMIT",
+      "fixture_limit": 2,
+      "kind": "EXECUTION_ERROR",
+      "user_gate_required_reason": null,
+      "user_gate_workflow_started": false
+    },
+    {
+      "attempts": 3,
+      "decision": "BLOCK_LIMIT",
+      "fixture_limit": 2,
+      "kind": "EXECUTION_ERROR",
+      "user_gate_required_reason": "EXECUTION_ERROR fixture limit exceeded",
+      "user_gate_workflow_started": false
+    },
+    {
+      "attempts": 3,
+      "decision": "ALLOW_WITHIN_FIXTURE_LIMIT",
+      "fixture_limit": 3,
+      "kind": "PRODUCT_NEW_RUN",
+      "user_gate_required_reason": null,
+      "user_gate_workflow_started": false
+    },
+    {
+      "attempts": 4,
+      "decision": "BLOCK_LIMIT",
+      "fixture_limit": 3,
+      "kind": "PRODUCT_NEW_RUN",
+      "user_gate_required_reason": "PRODUCT_NEW_RUN fixture limit exceeded",
+      "user_gate_workflow_started": false
+    }
+  ],
+  "created_at": "2026-10-03T14:47:05.108275Z",
+  "fixture_limits": {
+    "execution_error_max_attempts": 2,
+    "plan_version_product_run_max_attempts": 3,
+    "validator_error_max_attempts": 2
+  }
+}

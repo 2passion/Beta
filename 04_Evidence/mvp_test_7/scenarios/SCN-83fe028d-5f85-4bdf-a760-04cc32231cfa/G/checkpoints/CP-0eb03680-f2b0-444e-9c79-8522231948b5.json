@@ -1,0 +1,46 @@
+{
+  "checkpoint_id": "CP-0eb03680-f2b0-444e-9c79-8522231948b5",
+  "completed_step_ids": [
+    "STEP-1",
+    "STEP-2"
+  ],
+  "created_at": "2026-10-04T16:26:12.730688Z",
+  "evidence_refs": [
+    {
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\G\\evidence\\EVD-STEP-1.json",
+      "evidence_sha256": "3E625178FC4D85AC99F05154D29EE61AAD6142D25B977446E2FA2E75AEE9320D",
+      "run_id": "RUN-INTERRUPTED-ea299938-d186-40a4-8879-cbde12141c34",
+      "side_effect_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\G\\side_effects\\STEP-1.json",
+      "side_effect_sha256": "E2BD61F229FFD186492FAFA1DF7927F7E4A72FCCAD17AD5B51E7E10DB63F1175",
+      "step_id": "STEP-1",
+      "task_id": "MVP-TEST-7-RESUME"
+    },
+    {
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\G\\evidence\\EVD-STEP-2.json",
+      "evidence_sha256": "82BF59D230B6D451CA06199A974DF88F4E7C8E6B7FA23B58212CEB40DFDF1F5C",
+      "run_id": "RUN-INTERRUPTED-ea299938-d186-40a4-8879-cbde12141c34",
+      "side_effect_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\G\\side_effects\\STEP-2.json",
+      "side_effect_sha256": "0474F3F0A089A574922B97BD5376EC5FFC2C6EC269622DAD0773CA3A46B1DD12",
+      "step_id": "STEP-2",
+      "task_id": "MVP-TEST-7-RESUME"
+    }
+  ],
+  "expected_next_step": "STEP-3",
+  "last_verified_step": "STEP-2",
+  "plan_version": "1.1",
+  "record_type": "CHECKPOINT",
+  "run_id": "RUN-INTERRUPTED-ea299938-d186-40a4-8879-cbde12141c34",
+  "sequence": 2,
+  "side_effect_snapshot": {
+    "STEP-1": {
+      "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\G\\side_effects\\STEP-1.json",
+      "sha256": "E2BD61F229FFD186492FAFA1DF7927F7E4A72FCCAD17AD5B51E7E10DB63F1175"
+    },
+    "STEP-2": {
+      "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\G\\side_effects\\STEP-2.json",
+      "sha256": "0474F3F0A089A574922B97BD5376EC5FFC2C6EC269622DAD0773CA3A46B1DD12"
+    }
+  },
+  "task_id": "MVP-TEST-7-RESUME",
+  "validation_status": "PASS"
+}

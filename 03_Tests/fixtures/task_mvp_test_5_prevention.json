@@ -1,0 +1,51 @@
+{
+  "task_id": "MVP-TEST-5-PREVENTION",
+  "plan_version": "1.1",
+  "order_id": "Order-033",
+  "change_reason_ref": "Order-033",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/mvp_test_5"],
+  "shared_resources": [],
+  "depends_on": ["MVP-TEST-4-BOTTLENECK"],
+  "steps": [
+    {
+      "step_id": "MVP5-PREVENTION-001",
+      "action": "execute Prevention scenarios A-D with actual fix, eligibility, and search enforcement"
+    }
+  ],
+  "executor": {
+    "path": "03_Tests/fixtures/prevention_scenario_executor.py",
+    "sha256": "0E5A376E184970286D21C14AE64CE26441CC166A0504FE58FC0FBA20DF7BC3E8"
+  },
+  "required_validators": [
+    {
+      "validator_id": "VAL-MVP-TEST-5-PREVENTION",
+      "path": "03_Tests/fixtures/prevention_validator.py",
+      "sha256": "3C452F60019AF2E40EFD3C09D2EA9DAB09F4EBAD6D233994FD53C049AE4D8ABB",
+      "criteria": {
+        "mvp_test_id": "MVP-TEST-5",
+        "mvp_test_name": "Prevention",
+        "test_plan_id": "MVP-TEST-5-PREVENTION",
+        "test_plan_version": "1.1",
+        "source_mvp_test_id": "MVP-TEST-4",
+        "source_plan_version": "1.2",
+        "source_change_reason_ref": "Order-029"
+      }
+    }
+  ],
+  "completion_criteria": [
+    "verified Test 4 FAIL-to-PASS evidence and Root Cause references create an eligible Prevention candidate",
+    "source and target actual fix signatures match before execution",
+    "exact fingerprint MATCH plus ELIGIBLE preapplies the verified fix before execution",
+    "different fingerprints and unverified fixes are not reused",
+    "Prevention remains a candidate and is not promoted to an Active Rule",
+    "official Validation passes and Gate proceeds"
+  ],
+  "permissions": {
+    "subprocess": "approved fixture paths only",
+    "network": false,
+    "database": false,
+    "rule_workflow": false,
+    "user_gate_workflow": false
+  }
+}

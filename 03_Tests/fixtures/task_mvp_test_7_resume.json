@@ -1,0 +1,47 @@
+{
+  "task_id": "MVP-TEST-7-RESUME",
+  "plan_version": "1.1",
+  "order_id": "Order-044",
+  "change_reason_ref": "Order-044",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/mvp_test_7"],
+  "shared_resources": [],
+  "depends_on": ["MVP-TEST-6-USER-GATE", "MVP-TEST-5-PREVENTION", "MVP-TEST-4-BOTTLENECK"],
+  "steps": [{"step_id": "MVP7-RESUME-001", "action": "execute Resume scenarios A-G and validate Checkpoint enforcement"}],
+  "executor": {
+    "path": "03_Tests/fixtures/resume_scenario_executor.py",
+    "sha256": "F62148E3EC136559CDDE110159289319E1DC615DF3D50D6CBFCFA3816D2A0A92"
+  },
+  "required_validators": [{
+    "validator_id": "VAL-MVP-TEST-7-RESUME",
+    "path": "03_Tests/fixtures/resume_validator.py",
+    "sha256": "7357FB7989717ABEE09CFE2C357068685AB2C429AFB67ADA0EE13CC27D8EB315",
+    "criteria": {
+      "mvp_test_id": "MVP-TEST-7",
+      "mvp_test_name": "Resume",
+      "test_plan_id": "MVP-TEST-7-RESUME",
+      "test_plan_version": "1.1",
+      "routing_order_id": "Order-044"
+    }
+  }],
+  "completion_criteria": [
+    "last verified Checkpoint is validated against Validation, Evidence, and actual side effects",
+    "completed steps are not rerun and execution resumes at the exact next incomplete step",
+    "Checkpoint is never inferred from a user output Chunk",
+    "missing results, missing Checkpoint, version mismatch, and non-PASS last step HOLD before execution",
+    "interrupted and resumed run identities are distinct and independently verified from Events",
+    "Checkpoint, Evidence, Validation, and CHECKPOINT_RECORDED identities and hashes are linked",
+    "repeat Resume is independently filesystem and Evidence-tree idempotent",
+    "Scenario A-G files are completely bound by a relative-path SHA-256 manifest",
+    "Routing and User Gate boundaries block execution when unmet",
+    "Mutations M1-M11 fail under independent Validator recomputation",
+    "official Validation passes and Gate proceeds"
+  ],
+  "permissions": {
+    "subprocess": "approved fixture paths only",
+    "network": false,
+    "database": false,
+    "external_publish": false,
+    "git": false
+  }
+}

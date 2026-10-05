@@ -1,0 +1,43 @@
+{
+  "task_id": "MVP-TEST-3-SAFE-PARALLEL",
+  "plan_version": "1.0",
+  "order_id": "Order-047",
+  "change_reason_ref": "Order-047",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/mvp_test_3"],
+  "shared_resources": [],
+  "depends_on": ["MVP-TEST-2-OWNERSHIP", "MVP-TEST-4-BOTTLENECK", "MVP-TEST-5-PREVENTION", "MVP-TEST-6-USER-GATE", "MVP-TEST-7-RESUME"],
+  "steps": [{"step_id": "MVP3-SAFE-PARALLEL-001", "action": "execute Safe Parallel scenarios A-H"}],
+  "executor": {
+    "path": "03_Tests/fixtures/parallel_scenario_executor.py",
+    "sha256": "88D8E8B18508BDD3AC6F789515393D84802E9FD4C88DA2C23BEC3D9E0FAA3454"
+  },
+  "required_validators": [{
+    "validator_id": "VAL-MVP-TEST-3-SAFE-PARALLEL",
+    "path": "03_Tests/fixtures/parallel_validator.py",
+    "sha256": "E58F06F51ED6F4859C7F9C150B0A7AE9188C6548A85195FAA3D833C6B1D61C72",
+    "criteria": {
+      "mvp_test_id": "MVP-TEST-3",
+      "mvp_test_name": "Safe Parallel",
+      "test_plan_id": "MVP-TEST-3-SAFE-PARALLEL",
+      "test_plan_version": "1.0",
+      "routing_order_id": "Order-047"
+    }
+  }],
+  "completion_criteria": [
+    "only independently proven tasks receive PARALLEL_ALLOWED",
+    "Scenario A proves actual concurrent execution with a synchronization barrier",
+    "dependency, canonical path, owner, domain, shared resource, permission, routing, and unknown conflicts are independently detected",
+    "SEQUENTIAL_REQUIRED uses deterministic non-overlapping order and dependency cycles HOLD",
+    "Scenario H preserves per-task PASS and FAIL without rerunning the PASS task",
+    "Mutations M1-M8 fail under independent Validator recomputation",
+    "official Validation passes and Gate proceeds"
+  ],
+  "permissions": {
+    "subprocess": "approved fixture paths only",
+    "network": false,
+    "database": false,
+    "external_publish": false,
+    "git": false
+  }
+}

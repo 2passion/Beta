@@ -1,0 +1,50 @@
+{
+  "task_id": "MVP-TEST-5-PREVENTION",
+  "plan_version": "1.0",
+  "order_id": "Order-031",
+  "change_reason_ref": "Order-031",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/mvp_test_5"],
+  "shared_resources": [],
+  "depends_on": ["MVP-TEST-4-BOTTLENECK"],
+  "steps": [
+    {
+      "step_id": "MVP5-PREVENTION-001",
+      "action": "execute Prevention scenarios A-D using verified Test 4 source evidence"
+    }
+  ],
+  "executor": {
+    "path": "03_Tests/fixtures/prevention_scenario_executor.py",
+    "sha256": "9AF8988DBA02E1803D1F57481776E88E6D58826AF0DB5AF2884EFBCF021FBB6F"
+  },
+  "required_validators": [
+    {
+      "validator_id": "VAL-MVP-TEST-5-PREVENTION",
+      "path": "03_Tests/fixtures/prevention_validator.py",
+      "sha256": "CF12B20223747C57234ACBE7DAD64D83DCEAF0F98C42E42F88E8E148112E2F6A",
+      "criteria": {
+        "mvp_test_id": "MVP-TEST-5",
+        "mvp_test_name": "Prevention",
+        "test_plan_id": "MVP-TEST-5-PREVENTION",
+        "test_plan_version": "1.0",
+        "source_mvp_test_id": "MVP-TEST-4",
+        "source_plan_version": "1.2",
+        "source_change_reason_ref": "Order-029"
+      }
+    }
+  ],
+  "completion_criteria": [
+    "verified Test 4 FAIL-to-PASS evidence creates a Prevention candidate",
+    "exact fingerprint match preapplies the verified fix before execution",
+    "different fingerprints and unverified fixes are not reused",
+    "Prevention remains a candidate and is not promoted to an Active Rule",
+    "official Validation passes and Gate proceeds"
+  ],
+  "permissions": {
+    "subprocess": "approved fixture paths only",
+    "network": false,
+    "database": false,
+    "rule_workflow": false,
+    "user_gate_workflow": false
+  }
+}

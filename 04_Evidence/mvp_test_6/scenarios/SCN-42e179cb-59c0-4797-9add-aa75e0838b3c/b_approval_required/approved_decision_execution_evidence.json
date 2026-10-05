@@ -1,0 +1,20 @@
+{
+  "after_snapshot": {
+    "EVD-f1c050b9-9fba-48ea-bc7c-8225146681e1.json": "AD242993DB2A5AC14584422FAD148A624159E92D13AD9DE6BB8A09CCA12D58E5",
+    "events.jsonl": "CB3BFECB71078EBAC86095F5246207CF9E9B8FC2D7E6B8547826F6BDE27D4CDF",
+    "evidence_index.jsonl": "D80A0E348C6DD6F5D25B2DB71DBB0B71FF83C69EC328A7EBA74CAD57E432656F",
+    "plan.json": "6CE9AE49062164B5465B98A90DF85723A729A85F1ACD4368875B28A0685C95C8",
+    "runs/RUN-81fff422-6bf3-45a7-9065-035df7cec21f/executor_result.json": "E42ECD1B581ADF1A252EF21D731EB12A68E66DC00EF618A2D0F2568C8788F0E9"
+  },
+  "before_snapshot": {},
+  "decision": "AUTO",
+  "downstream_call_count": 1,
+  "execution_dir": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_6\\scenarios\\SCN-42e179cb-59c0-4797-9add-aa75e0838b3c\\b_approval_required\\approved_execution",
+  "managed_write_delta": 5,
+  "routing_entry_call_count": 1,
+  "run_directory_delta": 1,
+  "run_started_delta": 1,
+  "run_task_call_count": 1,
+  "runtime_evidence_delta": 1,
+  "writer_call_count": 1
+}

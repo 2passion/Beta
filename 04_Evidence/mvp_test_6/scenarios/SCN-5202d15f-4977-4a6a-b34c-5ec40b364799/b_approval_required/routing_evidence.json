@@ -1,0 +1,25 @@
+{
+  "action": "WRITE",
+  "actual_executor": "Codex",
+  "after_snapshot": {
+    "EVD-7b032f2c-11e6-4440-bdd0-e5f15d48989a.json": "F9AA020903C53E1B248B5F149ECC080BB3875838E5D1154AE960B53F94B8DD84",
+    "events.jsonl": "A680A6666EFD8A95554E9F9C1EEB8BFA4F679507736FEDB035F5FB2A45BEDAB7",
+    "evidence_index.jsonl": "CD415518D05E49B2F71392311A5D887DBB1393CB6D7BDB3AA86FA47E745B15C5",
+    "plan.json": "FC5108E7518360BBF4165166373B122BF6D5841F7C0818A6D974EF4849F68B30",
+    "runs/RUN-07d01ea5-bdbf-4d78-9126-2a999508d73b/executor_result.json": "E42ECD1B581ADF1A252EF21D731EB12A68E66DC00EF618A2D0F2568C8788F0E9"
+  },
+  "before_snapshot": {
+    "events.jsonl": "7E23A5E8C35251A626813EF7CEF0A21D8EA8C1A02858C3072057A320EC286218"
+  },
+  "beta_write_delta": 5,
+  "downstream_call_count": 1,
+  "expected_to": "Codex",
+  "identity_source": "ORDER_EXECUTION_CONTEXT",
+  "mismatch_reason": null,
+  "order_id": "Order-037",
+  "project": "Beta",
+  "routing_result": "MATCH",
+  "run_task_call_count": 1,
+  "write_allowed": true,
+  "writer_call_count": 1
+}

@@ -1,0 +1,9 @@
+{
+  "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\G\\contract.json",
+  "decision": {
+    "decision": "HOLD",
+    "reason_code": "INDEPENDENCE_UNKNOWN"
+  },
+  "execution_count": 0,
+  "runtime": []
+}

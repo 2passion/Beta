@@ -1,0 +1,27 @@
+{
+  "enforcement": {
+    "run_directory_delta": 0,
+    "run_started_delta": 0,
+    "run_task_call_count": 0,
+    "runtime_evidence_delta": 0
+  },
+  "search": {
+    "eligibility_checked": true,
+    "eligibility_reasons": [
+      "candidate status contract invalid",
+      "root cause evidence references incomplete",
+      "root cause is not confirmed",
+      "source Evidence IDs invalid"
+    ],
+    "eligible": false,
+    "exact_fingerprint_match": true,
+    "fix_contract_valid": true,
+    "fix_preapplied": false,
+    "outcome": "NOT_ELIGIBLE",
+    "requested_fingerprint": "05BB7BEC2E7027AFA94B453B0A0A6537C2202D06D9D3D4F3791C5F4483A67AB5",
+    "search_scope": "verified Prevention candidates",
+    "selected_prevention_id": null,
+    "source_actual_fix_signature": "6FD42BEE93411AA5CDD91098A45FB4610416B845A0A1C0B8646A994CD221EF30",
+    "target_actual_fix_signature": "6FD42BEE93411AA5CDD91098A45FB4610416B845A0A1C0B8646A994CD221EF30"
+  }
+}

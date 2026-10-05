@@ -1,0 +1,44 @@
+{
+  "change_reason_ref": "Order-033-Prevention-Preapply",
+  "completion_criteria": [
+    "verified Prevention is applied before execution and target passes"
+  ],
+  "depends_on": [],
+  "executor": {
+    "path": "03_Tests/fixtures/executor_success.py",
+    "sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A"
+  },
+  "order_id": "Order-033",
+  "permissions": {
+    "network": false,
+    "subprocess": "approved fixture paths only"
+  },
+  "plan_version": "1.1",
+  "prevention_application": {
+    "failure_fingerprint": "05BB7BEC2E7027AFA94B453B0A0A6537C2202D06D9D3D4F3791C5F4483A67AB5",
+    "fix_signature": "6FD42BEE93411AA5CDD91098A45FB4610416B845A0A1C0B8646A994CD221EF30",
+    "prevention_id": "PREV-61a24107-0798-4f1e-9642-e9ea009534b3"
+  },
+  "required_validators": [
+    {
+      "criteria": {
+        "expected_value": "phase1-ok"
+      },
+      "path": "03_Tests/fixtures/validator_success.py",
+      "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+      "validator_id": "VAL-BOTTLENECK-CHECK"
+    }
+  ],
+  "shared_resources": [],
+  "steps": [
+    {
+      "action": "execute with verified fix preapplied",
+      "step_id": "PREVENTION-B-001"
+    }
+  ],
+  "task_id": "TASK-MVP5-SIMILAR-B",
+  "write_owner": "Codex",
+  "write_scope": [
+    "04_Evidence/mvp_test_5/scenarios"
+  ]
+}

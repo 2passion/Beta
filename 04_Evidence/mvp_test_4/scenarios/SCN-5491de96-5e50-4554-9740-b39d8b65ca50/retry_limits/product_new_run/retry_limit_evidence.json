@@ -1,0 +1,164 @@
+{
+  "created_at": "2026-10-03T18:26:27.921760Z",
+  "decisions": [
+    {
+      "decision": "ALLOW_NEW_RUN",
+      "decision_run_id": "LIMIT-DECISION-72d3d14a-89af-4d25-bdb9-62766b53c4a3",
+      "fixture_limit": 3,
+      "kind": "PRODUCT_NEW_RUN",
+      "observed_event_count": 0,
+      "observed_run_directory_count": 0,
+      "observed_run_started_count": 0,
+      "observed_runtime_evidence_count": 0,
+      "prior_run_ids": [],
+      "requested_attempt_number": 1,
+      "user_gate_required_reason": null,
+      "user_gate_workflow_started": false
+    },
+    {
+      "decision": "ALLOW_NEW_RUN",
+      "decision_run_id": "LIMIT-DECISION-1f2618da-6bcb-4cb8-b6e4-ce2d6a02b286",
+      "fixture_limit": 3,
+      "kind": "PRODUCT_NEW_RUN",
+      "observed_event_count": 1,
+      "observed_run_directory_count": 1,
+      "observed_run_started_count": 1,
+      "observed_runtime_evidence_count": 1,
+      "prior_run_ids": [
+        "RUN-ce6b19ae-7b60-4e74-9dc3-dda42e9c0838"
+      ],
+      "requested_attempt_number": 2,
+      "user_gate_required_reason": null,
+      "user_gate_workflow_started": false
+    },
+    {
+      "decision": "ALLOW_NEW_RUN",
+      "decision_run_id": "LIMIT-DECISION-9238ed89-719f-4070-9848-a7ee45cac0f9",
+      "fixture_limit": 3,
+      "kind": "PRODUCT_NEW_RUN",
+      "observed_event_count": 2,
+      "observed_run_directory_count": 2,
+      "observed_run_started_count": 2,
+      "observed_runtime_evidence_count": 2,
+      "prior_run_ids": [
+        "RUN-ce6b19ae-7b60-4e74-9dc3-dda42e9c0838",
+        "RUN-2e5f5521-3fcb-41ee-bc24-626e74b21d63"
+      ],
+      "requested_attempt_number": 3,
+      "user_gate_required_reason": null,
+      "user_gate_workflow_started": false
+    },
+    {
+      "decision": "BLOCK_LIMIT",
+      "decision_run_id": "LIMIT-DECISION-b3274881-e212-408d-9354-c3d70b68e6a5",
+      "fixture_limit": 3,
+      "kind": "PRODUCT_NEW_RUN",
+      "observed_event_count": 3,
+      "observed_run_directory_count": 3,
+      "observed_run_started_count": 3,
+      "observed_runtime_evidence_count": 3,
+      "prior_run_ids": [
+        "RUN-ce6b19ae-7b60-4e74-9dc3-dda42e9c0838",
+        "RUN-2e5f5521-3fcb-41ee-bc24-626e74b21d63",
+        "RUN-ea4f0cfe-e687-413e-b643-8c9071424bc7"
+      ],
+      "requested_attempt_number": 4,
+      "user_gate_required_reason": "PRODUCT_NEW_RUN fixture limit exceeded",
+      "user_gate_workflow_started": false
+    }
+  ],
+  "fixture_limit": 3,
+  "kind": "PRODUCT_NEW_RUN",
+  "runtime_results": [
+    {
+      "evidence": {
+        "change_reason_ref": "Order-027-Retry-Limit-Product",
+        "created_at": "2026-10-03T18:26:27.353338Z",
+        "evidence_id": "EVD-39f32e1b-78e4-4a52-91bd-4bf923729a7b",
+        "executor_sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A",
+        "filename": "EVD-39f32e1b-78e4-4a52-91bd-4bf923729a7b.json",
+        "gate": "PROCEED",
+        "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_4\\scenarios\\SCN-5491de96-5e50-4554-9740-b39d8b65ca50\\retry_limits\\product_new_run\\EVD-39f32e1b-78e4-4a52-91bd-4bf923729a7b.json",
+        "plan_version": "1.0",
+        "run_id": "RUN-ce6b19ae-7b60-4e74-9dc3-dda42e9c0838",
+        "sha256": "FCA409A60B336D746981540C53AAD0080DA2302FE78A644F546AA2D54AEF7258",
+        "task_id": "TASK-MVP4-LIMIT-PRODUCT",
+        "task_plan_sha256": "9C72C8C0889BE31621AF94FE909DF9970770C48C23D67EE180EA2368B40CCED1",
+        "validation_result": "PASS",
+        "validator_sha256": [
+          {
+            "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+            "validator_id": "VAL-BOTTLENECK-CHECK"
+          }
+        ]
+      },
+      "execution": "PASS",
+      "gate": "PROCEED",
+      "plan_version": "1.0",
+      "run_id": "RUN-ce6b19ae-7b60-4e74-9dc3-dda42e9c0838",
+      "status": "PASS",
+      "task_id": "TASK-MVP4-LIMIT-PRODUCT",
+      "validation": "PASS"
+    },
+    {
+      "evidence": {
+        "change_reason_ref": "Order-027-Retry-Limit-Product",
+        "created_at": "2026-10-03T18:26:27.652968Z",
+        "evidence_id": "EVD-3b6ea142-7cbc-4fcb-8027-33fd60ff65f2",
+        "executor_sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A",
+        "filename": "EVD-3b6ea142-7cbc-4fcb-8027-33fd60ff65f2.json",
+        "gate": "PROCEED",
+        "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_4\\scenarios\\SCN-5491de96-5e50-4554-9740-b39d8b65ca50\\retry_limits\\product_new_run\\EVD-3b6ea142-7cbc-4fcb-8027-33fd60ff65f2.json",
+        "plan_version": "1.0",
+        "run_id": "RUN-2e5f5521-3fcb-41ee-bc24-626e74b21d63",
+        "sha256": "12B99AD1D738F671DEC41C377A4D238347FD913871B9AF52F4F630DBB6D2108D",
+        "task_id": "TASK-MVP4-LIMIT-PRODUCT",
+        "task_plan_sha256": "9C72C8C0889BE31621AF94FE909DF9970770C48C23D67EE180EA2368B40CCED1",
+        "validation_result": "PASS",
+        "validator_sha256": [
+          {
+            "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+            "validator_id": "VAL-BOTTLENECK-CHECK"
+          }
+        ]
+      },
+      "execution": "PASS",
+      "gate": "PROCEED",
+      "plan_version": "1.0",
+      "run_id": "RUN-2e5f5521-3fcb-41ee-bc24-626e74b21d63",
+      "status": "PASS",
+      "task_id": "TASK-MVP4-LIMIT-PRODUCT",
+      "validation": "PASS"
+    },
+    {
+      "evidence": {
+        "change_reason_ref": "Order-027-Retry-Limit-Product",
+        "created_at": "2026-10-03T18:26:27.897794Z",
+        "evidence_id": "EVD-beb29218-a4dd-4370-a5fc-3a0d820dff0e",
+        "executor_sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A",
+        "filename": "EVD-beb29218-a4dd-4370-a5fc-3a0d820dff0e.json",
+        "gate": "PROCEED",
+        "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_4\\scenarios\\SCN-5491de96-5e50-4554-9740-b39d8b65ca50\\retry_limits\\product_new_run\\EVD-beb29218-a4dd-4370-a5fc-3a0d820dff0e.json",
+        "plan_version": "1.0",
+        "run_id": "RUN-ea4f0cfe-e687-413e-b643-8c9071424bc7",
+        "sha256": "1FCC8D9CBEC25238A36BA3369439F47598DDBF31916EC0217B0274DAD550338E",
+        "task_id": "TASK-MVP4-LIMIT-PRODUCT",
+        "task_plan_sha256": "9C72C8C0889BE31621AF94FE909DF9970770C48C23D67EE180EA2368B40CCED1",
+        "validation_result": "PASS",
+        "validator_sha256": [
+          {
+            "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+            "validator_id": "VAL-BOTTLENECK-CHECK"
+          }
+        ]
+      },
+      "execution": "PASS",
+      "gate": "PROCEED",
+      "plan_version": "1.0",
+      "run_id": "RUN-ea4f0cfe-e687-413e-b643-8c9071424bc7",
+      "status": "PASS",
+      "task_id": "TASK-MVP4-LIMIT-PRODUCT",
+      "validation": "PASS"
+    }
+  ]
+}

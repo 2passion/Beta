@@ -1,0 +1,151 @@
+{
+  "asset_list_path": "C:\\Obsidian\\Beta\\03_Tests\\fixtures\\reuse_assets.json",
+  "asset_list_sha256_after": "E9A0C7DD03C20AF299F8C2AF1D0CD92C089FFB71E8D5D22DD9E3E5440C609ECB",
+  "asset_list_sha256_before": "E9A0C7DD03C20AF299F8C2AF1D0CD92C089FFB71E8D5D22DD9E3E5440C609ECB",
+  "created_at": "2026-10-03T13:07:12.785973Z",
+  "mvp_test_id": "MVP-TEST-1",
+  "mvp_test_name": "Reuse",
+  "reference_path": "C:\\Obsidian\\Beta\\Reference\\harness-visual-review.html",
+  "reference_sha256_after": "17490AA44F8FEAE35B55F1CF811D18AA1A6EB0716ABAB398B1A016B3600E14C0",
+  "reference_sha256_before": "17490AA44F8FEAE35B55F1CF811D18AA1A6EB0716ABAB398B1A016B3600E14C0",
+  "scenario_evidence_dirs": {
+    "A": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_1\\scenarios\\SCN-e8c2c7df-daa9-4435-8338-c63ed52a2b60\\a_approved_reuse",
+    "B": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_1\\scenarios\\SCN-e8c2c7df-daa9-4435-8338-c63ed52a2b60\\b_no_match_create",
+    "C": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_1\\scenarios\\SCN-e8c2c7df-daa9-4435-8338-c63ed52a2b60\\c_reference_only_create"
+  },
+  "scenario_root": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_1\\scenarios\\SCN-e8c2c7df-daa9-4435-8338-c63ed52a2b60",
+  "scenario_runs": {
+    "A": {
+      "created_executor_path": null,
+      "decision": {
+        "decision": "REUSE",
+        "matched_asset_ids": [
+          "ASSET-EXECUTOR-SUCCESS"
+        ],
+        "reason": "approved exact-match Asset selected",
+        "requested_capability": "deterministic-success",
+        "selected_asset_id": "ASSET-EXECUTOR-SUCCESS",
+        "selected_path": "03_Tests/fixtures/executor_success.py",
+        "selected_sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A"
+      },
+      "result": {
+        "evidence": {
+          "change_reason_ref": "Order-021 / Reuse Scenario A",
+          "created_at": "2026-10-03T13:07:12.242863Z",
+          "evidence_id": "EVD-3da5e9fd-d0e8-4fcb-9f57-ebb434f606db",
+          "executor_sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A",
+          "filename": "EVD-3da5e9fd-d0e8-4fcb-9f57-ebb434f606db.json",
+          "gate": "PROCEED",
+          "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_1\\scenarios\\SCN-e8c2c7df-daa9-4435-8338-c63ed52a2b60\\a_approved_reuse\\EVD-3da5e9fd-d0e8-4fcb-9f57-ebb434f606db.json",
+          "plan_version": "1.0",
+          "run_id": "RUN-964b99c4-0a3b-48e8-b9f4-969733773ea3",
+          "sha256": "491D3C235393617E91283AF3D5963481FDAD8B858B06DEEC4798D1BB5B680D03",
+          "task_id": "TASK-MVP1-A",
+          "task_plan_sha256": "7141297C067C05B4EC5622C4DEAE74C50AB5B665D7C119CC2394161D669F56EB",
+          "validation_result": "PASS",
+          "validator_sha256": [
+            {
+              "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+              "validator_id": "VAL-MVP1-A"
+            }
+          ]
+        },
+        "execution": "PASS",
+        "gate": "PROCEED",
+        "plan_version": "1.0",
+        "run_id": "RUN-964b99c4-0a3b-48e8-b9f4-969733773ea3",
+        "status": "PASS",
+        "task_id": "TASK-MVP1-A",
+        "validation": "PASS"
+      }
+    },
+    "B": {
+      "created_executor_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_1\\scenarios\\SCN-e8c2c7df-daa9-4435-8338-c63ed52a2b60\\b_no_match_create\\synthetic_project\\03_Tests\\fixtures\\executor_created.py",
+      "decision": {
+        "decision": "CREATE",
+        "matched_asset_ids": [],
+        "reason": "no approved Asset matches requested capability",
+        "requested_capability": "missing-capability",
+        "selected_asset_id": null,
+        "selected_path": null,
+        "selected_sha256": null
+      },
+      "result": {
+        "evidence": {
+          "change_reason_ref": "Order-021 / Reuse Scenario B",
+          "created_at": "2026-10-03T13:07:12.498978Z",
+          "evidence_id": "EVD-0657e175-f8b2-4fa4-9c3c-149368864827",
+          "executor_sha256": "7F9F18F143FCE25651C6EC805A33065F70D7DBDF1E0B0D01B6421F3F83C4BC75",
+          "filename": "EVD-0657e175-f8b2-4fa4-9c3c-149368864827.json",
+          "gate": "PROCEED",
+          "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_1\\scenarios\\SCN-e8c2c7df-daa9-4435-8338-c63ed52a2b60\\b_no_match_create\\EVD-0657e175-f8b2-4fa4-9c3c-149368864827.json",
+          "plan_version": "1.0",
+          "run_id": "RUN-9a08f3e9-0d10-4a1e-aab6-7cedb29eb6f8",
+          "sha256": "4FB33D06F7913D79278532B8697C4C952E0547B66C8AE551FC9FE089C4EE47C6",
+          "task_id": "TASK-MVP1-B",
+          "task_plan_sha256": "AC261AAAF8580EA65B62018C9570D7EA3DB8E9C49429A3260E12B9A3933384FE",
+          "validation_result": "PASS",
+          "validator_sha256": [
+            {
+              "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+              "validator_id": "VAL-MVP1-B"
+            }
+          ]
+        },
+        "execution": "PASS",
+        "gate": "PROCEED",
+        "plan_version": "1.0",
+        "run_id": "RUN-9a08f3e9-0d10-4a1e-aab6-7cedb29eb6f8",
+        "status": "PASS",
+        "task_id": "TASK-MVP1-B",
+        "validation": "PASS"
+      }
+    },
+    "C": {
+      "created_executor_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_1\\scenarios\\SCN-e8c2c7df-daa9-4435-8338-c63ed52a2b60\\c_reference_only_create\\synthetic_project\\03_Tests\\fixtures\\executor_created.py",
+      "decision": {
+        "decision": "CREATE",
+        "matched_asset_ids": [
+          "REFERENCE-HARNESS-VISUAL"
+        ],
+        "reason": "matching entries are Reference-only; Reference cannot be executed",
+        "requested_capability": "visual-review",
+        "selected_asset_id": null,
+        "selected_path": null,
+        "selected_sha256": null
+      },
+      "result": {
+        "evidence": {
+          "change_reason_ref": "Order-021 / Reuse Scenario C",
+          "created_at": "2026-10-03T13:07:12.771528Z",
+          "evidence_id": "EVD-b1675dca-d9b4-4f52-a52c-83ac41a1c6f3",
+          "executor_sha256": "7F9F18F143FCE25651C6EC805A33065F70D7DBDF1E0B0D01B6421F3F83C4BC75",
+          "filename": "EVD-b1675dca-d9b4-4f52-a52c-83ac41a1c6f3.json",
+          "gate": "PROCEED",
+          "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_1\\scenarios\\SCN-e8c2c7df-daa9-4435-8338-c63ed52a2b60\\c_reference_only_create\\EVD-b1675dca-d9b4-4f52-a52c-83ac41a1c6f3.json",
+          "plan_version": "1.0",
+          "run_id": "RUN-a78c9653-b75d-4946-952c-e15348cddde5",
+          "sha256": "A73417590CF463785DCF60DF82D3FE78D43A310A4FE028C9BD1055579F33222A",
+          "task_id": "TASK-MVP1-C",
+          "task_plan_sha256": "7A1887F4700F74C8BDEE3956E4BC15DCBD695A7AAA5984B6D56998CF57F3C6C9",
+          "validation_result": "PASS",
+          "validator_sha256": [
+            {
+              "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+              "validator_id": "VAL-MVP1-C"
+            }
+          ]
+        },
+        "execution": "PASS",
+        "gate": "PROCEED",
+        "plan_version": "1.0",
+        "run_id": "RUN-a78c9653-b75d-4946-952c-e15348cddde5",
+        "status": "PASS",
+        "task_id": "TASK-MVP1-C",
+        "validation": "PASS"
+      }
+    }
+  },
+  "test_plan_id": "MVP-TEST-1-REUSE",
+  "test_plan_version": "1.1"
+}

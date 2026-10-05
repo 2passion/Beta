@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-10-03T18:26:27.121278Z",
+  "decisions": [
+    {
+      "decision": "ALLOW_NEW_RUN",
+      "decision_run_id": "LIMIT-DECISION-168deba7-4755-44d2-a9a4-9ca19f26b6fe",
+      "fixture_limit": 2,
+      "kind": "EXECUTION_ERROR",
+      "observed_event_count": 0,
+      "observed_run_directory_count": 0,
+      "observed_run_started_count": 0,
+      "observed_runtime_evidence_count": 0,
+      "prior_run_ids": [],
+      "requested_attempt_number": 1,
+      "user_gate_required_reason": null,
+      "user_gate_workflow_started": false
+    },
+    {
+      "decision": "ALLOW_NEW_RUN",
+      "decision_run_id": "LIMIT-DECISION-0470cb5b-30b0-4ac6-bb9f-bff58c232b9d",
+      "fixture_limit": 2,
+      "kind": "EXECUTION_ERROR",
+      "observed_event_count": 1,
+      "observed_run_directory_count": 1,
+      "observed_run_started_count": 1,
+      "observed_runtime_evidence_count": 0,
+      "prior_run_ids": [
+        "RUN-badf65f2-dea2-42cb-b755-e9a4cd82b16d"
+      ],
+      "requested_attempt_number": 2,
+      "user_gate_required_reason": null,
+      "user_gate_workflow_started": false
+    },
+    {
+      "decision": "BLOCK_LIMIT",
+      "decision_run_id": "LIMIT-DECISION-b4821cb5-935d-4824-9a07-83ba7f236c48",
+      "fixture_limit": 2,
+      "kind": "EXECUTION_ERROR",
+      "observed_event_count": 2,
+      "observed_run_directory_count": 2,
+      "observed_run_started_count": 2,
+      "observed_runtime_evidence_count": 0,
+      "prior_run_ids": [
+        "RUN-badf65f2-dea2-42cb-b755-e9a4cd82b16d",
+        "RUN-efc19f67-781e-4b8f-8afe-190fc061572f"
+      ],
+      "requested_attempt_number": 3,
+      "user_gate_required_reason": "EXECUTION_ERROR fixture limit exceeded",
+      "user_gate_workflow_started": false
+    }
+  ],
+  "fixture_limit": 2,
+  "kind": "EXECUTION_ERROR",
+  "runtime_results": [
+    {
+      "evidence": null,
+      "execution": "ERROR",
+      "gate": "BLOCK",
+      "plan_version": "1.0",
+      "run_id": "RUN-badf65f2-dea2-42cb-b755-e9a4cd82b16d",
+      "status": "ERROR",
+      "task_id": "TASK-MVP4-LIMIT-EXECUTION",
+      "validation": "NOT_RUN"
+    },
+    {
+      "evidence": null,
+      "execution": "ERROR",
+      "gate": "BLOCK",
+      "plan_version": "1.0",
+      "run_id": "RUN-efc19f67-781e-4b8f-8afe-190fc061572f",
+      "status": "ERROR",
+      "task_id": "TASK-MVP4-LIMIT-EXECUTION",
+      "validation": "NOT_RUN"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\contract.json",
+  "decision": {
+    "conflicts": [
+      "SHARED_MUTABLE_RESOURCE"
+    ],
+    "decision": "SEQUENTIAL_REQUIRED",
+    "reason_code": "SHARED_MUTABLE_RESOURCE"
+  },
+  "execution_count": 2,
+  "runtime": [
+    {
+      "barrier_token": null,
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\evidence\\EVD-TASK-E1.json",
+      "evidence_sha256": "2EA57F081F279A37D41DCB5689896B8CADFDB8EA102E3D3BFBA2BCD62247A2F0",
+      "finished_ns": 41798054160300,
+      "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\outputs\\TASK-E1.json",
+      "output_sha256": "C19805D7D6B1C4ABC3B7A3C06D1EEC3741569D33AFBB95867422853DB750E804",
+      "run_id": "RUN-03e0c38d-f50e-49ac-b0d1-a71416ab542f",
+      "started_ns": 41798033843900,
+      "task_id": "TASK-E1",
+      "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\validations\\TASK-E1.json",
+      "validation_sha256": "266B0D7B021B7C72BBD23B4538F1086FD3094432501AF49B1F59303D64B5514E",
+      "validation_status": "PASS",
+      "worker_id": "SEQUENTIAL-MAIN"
+    },
+    {
+      "barrier_token": null,
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\evidence\\EVD-TASK-E2.json",
+      "evidence_sha256": "720B0629D57E6F98117817453DBF6D404FDC3BA3B81D723CE0F1189F805A1980",
+      "finished_ns": 41798074443400,
+      "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\outputs\\TASK-E2.json",
+      "output_sha256": "A9E3778620B3ECB1A5D73068404A8543E2C2429969DF7D226174C02B997589CE",
+      "run_id": "RUN-915cf6f9-179b-4b74-a464-37609d6244f6",
+      "started_ns": 41798055639000,
+      "task_id": "TASK-E2",
+      "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\validations\\TASK-E2.json",
+      "validation_sha256": "A2A38620D6EC9C959EB348C40A32CBA152563DD73BDF6B1610E55B00E50F9624",
+      "validation_status": "PASS",
+      "worker_id": "SEQUENTIAL-MAIN"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-b5909a3b-dd44-43da-a3c8-26ccb0d99246\\D\\contract.json",
+  "decision": {
+    "decision": "HOLD",
+    "reason_code": "OWNERSHIP_CONFLICT"
+  },
+  "execution_count": 0,
+  "owner_cases": [
+    {
+      "decision": {
+        "decision": "HOLD",
+        "reason_code": "OWNERSHIP_CONFLICT"
+      },
+      "owner": "Codex,Claude"
+    },
+    {
+      "decision": {
+        "decision": "HOLD",
+        "reason_code": "OWNERSHIP_CONFLICT"
+      },
+      "owner": "Codex Claude"
+    },
+    {
+      "decision": {
+        "decision": "HOLD",
+        "reason_code": "OWNERSHIP_CONFLICT"
+      },
+      "owner": "Codex/Claude"
+    },
+    {
+      "decision": {
+        "decision": "HOLD",
+        "reason_code": "OWNERSHIP_CONFLICT"
+      },
+      "owner": " Codex"
+    },
+    {
+      "decision": {
+        "decision": "HOLD",
+        "reason_code": "OWNERSHIP_CONFLICT"
+      },
+      "owner": "Co+dex"
+    },
+    {
+      "decision": {
+        "decision": "HOLD",
+        "reason_code": "OWNERSHIP_CONFLICT"
+      },
+      "owner": "-Codex"
+    },
+    {
+      "decision": {
+        "decision": "HOLD",
+        "reason_code": "OWNERSHIP_CONFLICT"
+      },
+      "owner": ""
+    }
+  ],
+  "owner_control": {
+    "conflicts": [],
+    "decision": "PARALLEL_ALLOWED",
+    "reason_code": "INDEPENDENCE_PROVEN"
+  },
+  "runtime": []
+}

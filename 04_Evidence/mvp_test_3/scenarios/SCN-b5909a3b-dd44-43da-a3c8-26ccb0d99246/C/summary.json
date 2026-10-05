@@ -1,0 +1,593 @@
+{
+  "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-b5909a3b-dd44-43da-a3c8-26ccb0d99246\\C\\contract.json",
+  "decision": {
+    "conflicts": [
+      "WRITE_SET_CONFLICT"
+    ],
+    "decision": "SEQUENTIAL_REQUIRED",
+    "reason_code": "WRITE_SET_CONFLICT"
+  },
+  "execution_count": 2,
+  "path_cases": [
+    {
+      "contract": {
+        "approved_scope": [
+          "fixture:CP-trailing-1",
+          "fixture:CP-trailing-2"
+        ],
+        "tasks": [
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-trailing-a",
+            "requested_scope": [
+              "fixture:CP-trailing-1"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-trailing-1",
+            "validation_independent": true,
+            "write_owner": "Codex-A",
+            "write_set": [
+              "C:\\Beta\\parallel\\same.json. "
+            ]
+          },
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-trailing-b",
+            "requested_scope": [
+              "fixture:CP-trailing-2"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-trailing-2",
+            "validation_independent": true,
+            "write_owner": "Codex-B",
+            "write_set": [
+              "c:\\beta\\parallel\\same.json"
+            ]
+          }
+        ]
+      },
+      "decision": {
+        "conflicts": [
+          "WRITE_SET_CONFLICT"
+        ],
+        "decision": "SEQUENTIAL_REQUIRED",
+        "reason_code": "WRITE_SET_CONFLICT"
+      },
+      "name": "trailing"
+    },
+    {
+      "contract": {
+        "approved_scope": [
+          "fixture:CP-extended-1",
+          "fixture:CP-extended-2"
+        ],
+        "tasks": [
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-extended-a",
+            "requested_scope": [
+              "fixture:CP-extended-1"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-extended-1",
+            "validation_independent": true,
+            "write_owner": "Codex-A",
+            "write_set": [
+              "\\\\?\\C:\\Beta\\parallel\\same2.json"
+            ]
+          },
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-extended-b",
+            "requested_scope": [
+              "fixture:CP-extended-2"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-extended-2",
+            "validation_independent": true,
+            "write_owner": "Codex-B",
+            "write_set": [
+              "C:\\Beta\\parallel\\same2.json"
+            ]
+          }
+        ]
+      },
+      "decision": {
+        "conflicts": [
+          "WRITE_SET_CONFLICT"
+        ],
+        "decision": "SEQUENTIAL_REQUIRED",
+        "reason_code": "WRITE_SET_CONFLICT"
+      },
+      "name": "extended"
+    },
+    {
+      "contract": {
+        "approved_scope": [
+          "fixture:CP-relative-1",
+          "fixture:CP-relative-2"
+        ],
+        "tasks": [
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-relative-a",
+            "requested_scope": [
+              "fixture:CP-relative-1"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-relative-1",
+            "validation_independent": true,
+            "write_owner": "Codex-A",
+            "write_set": [
+              "relative\\target.json"
+            ]
+          },
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-relative-b",
+            "requested_scope": [
+              "fixture:CP-relative-2"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-relative-2",
+            "validation_independent": true,
+            "write_owner": "Codex-B",
+            "write_set": [
+              "C:\\Beta\\parallel\\target.json"
+            ]
+          }
+        ]
+      },
+      "decision": {
+        "conflicts": [
+          "WRITE_PATH_UNKNOWN"
+        ],
+        "decision": "SEQUENTIAL_REQUIRED",
+        "reason_code": "WRITE_PATH_UNKNOWN"
+      },
+      "name": "relative"
+    },
+    {
+      "contract": {
+        "approved_scope": [
+          "fixture:CP-unc-1",
+          "fixture:CP-unc-2"
+        ],
+        "tasks": [
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-unc-a",
+            "requested_scope": [
+              "fixture:CP-unc-1"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-unc-1",
+            "validation_independent": true,
+            "write_owner": "Codex-A",
+            "write_set": [
+              "\\\\server\\share\\target.json"
+            ]
+          },
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-unc-b",
+            "requested_scope": [
+              "fixture:CP-unc-2"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-unc-2",
+            "validation_independent": true,
+            "write_owner": "Codex-B",
+            "write_set": [
+              "C:\\Beta\\parallel\\target.json"
+            ]
+          }
+        ]
+      },
+      "decision": {
+        "conflicts": [
+          "WRITE_PATH_UNKNOWN"
+        ],
+        "decision": "SEQUENTIAL_REQUIRED",
+        "reason_code": "WRITE_PATH_UNKNOWN"
+      },
+      "name": "unc"
+    },
+    {
+      "contract": {
+        "approved_scope": [
+          "fixture:CP-ads-1",
+          "fixture:CP-ads-2"
+        ],
+        "tasks": [
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-ads-a",
+            "requested_scope": [
+              "fixture:CP-ads-1"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-ads-1",
+            "validation_independent": true,
+            "write_owner": "Codex-A",
+            "write_set": [
+              "C:\\Beta\\parallel\\target.json:stream"
+            ]
+          },
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-ads-b",
+            "requested_scope": [
+              "fixture:CP-ads-2"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-ads-2",
+            "validation_independent": true,
+            "write_owner": "Codex-B",
+            "write_set": [
+              "C:\\Beta\\parallel\\target.json"
+            ]
+          }
+        ]
+      },
+      "decision": {
+        "conflicts": [
+          "WRITE_PATH_UNKNOWN"
+        ],
+        "decision": "SEQUENTIAL_REQUIRED",
+        "reason_code": "WRITE_PATH_UNKNOWN"
+      },
+      "name": "ads"
+    },
+    {
+      "contract": {
+        "approved_scope": [
+          "fixture:CP-short83-1",
+          "fixture:CP-short83-2"
+        ],
+        "tasks": [
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-short83-a",
+            "requested_scope": [
+              "fixture:CP-short83-1"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-short83-1",
+            "validation_independent": true,
+            "write_owner": "Codex-A",
+            "write_set": [
+              "C:\\BETA~1\\target.json"
+            ]
+          },
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-short83-b",
+            "requested_scope": [
+              "fixture:CP-short83-2"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-short83-2",
+            "validation_independent": true,
+            "write_owner": "Codex-B",
+            "write_set": [
+              "C:\\Beta\\parallel\\target.json"
+            ]
+          }
+        ]
+      },
+      "decision": {
+        "conflicts": [
+          "WRITE_PATH_UNKNOWN"
+        ],
+        "decision": "SEQUENTIAL_REQUIRED",
+        "reason_code": "WRITE_PATH_UNKNOWN"
+      },
+      "name": "short83"
+    },
+    {
+      "contract": {
+        "approved_scope": [
+          "fixture:CP-wildcard-1",
+          "fixture:CP-wildcard-2"
+        ],
+        "tasks": [
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-wildcard-a",
+            "requested_scope": [
+              "fixture:CP-wildcard-1"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-wildcard-1",
+            "validation_independent": true,
+            "write_owner": "Codex-A",
+            "write_set": [
+              "C:\\Beta\\parallel\\*.json"
+            ]
+          },
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-wildcard-b",
+            "requested_scope": [
+              "fixture:CP-wildcard-2"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-wildcard-2",
+            "validation_independent": true,
+            "write_owner": "Codex-B",
+            "write_set": [
+              "C:\\Beta\\parallel\\target.json"
+            ]
+          }
+        ]
+      },
+      "decision": {
+        "conflicts": [
+          "WRITE_PATH_UNKNOWN"
+        ],
+        "decision": "SEQUENTIAL_REQUIRED",
+        "reason_code": "WRITE_PATH_UNKNOWN"
+      },
+      "name": "wildcard"
+    },
+    {
+      "contract": {
+        "approved_scope": [
+          "fixture:CP-reserved-nul-1",
+          "fixture:CP-reserved-nul-2"
+        ],
+        "tasks": [
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-reserved-nul-a",
+            "requested_scope": [
+              "fixture:CP-reserved-nul-1"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-reserved-nul-1",
+            "validation_independent": true,
+            "write_owner": "Codex-A",
+            "write_set": [
+              "C:\\Beta\\parallel\\NUL.json"
+            ]
+          },
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-reserved-nul-b",
+            "requested_scope": [
+              "fixture:CP-reserved-nul-2"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-reserved-nul-2",
+            "validation_independent": true,
+            "write_owner": "Codex-B",
+            "write_set": [
+              "C:\\Beta\\parallel\\target.json"
+            ]
+          }
+        ]
+      },
+      "decision": {
+        "conflicts": [
+          "WRITE_PATH_UNKNOWN"
+        ],
+        "decision": "SEQUENTIAL_REQUIRED",
+        "reason_code": "WRITE_PATH_UNKNOWN"
+      },
+      "name": "reserved-nul"
+    },
+    {
+      "contract": {
+        "approved_scope": [
+          "fixture:CP-reserved-com1-1",
+          "fixture:CP-reserved-com1-2"
+        ],
+        "tasks": [
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-reserved-com1-a",
+            "requested_scope": [
+              "fixture:CP-reserved-com1-1"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-reserved-com1-1",
+            "validation_independent": true,
+            "write_owner": "Codex-A",
+            "write_set": [
+              "C:\\Beta\\parallel\\COM1.txt"
+            ]
+          },
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-reserved-com1-b",
+            "requested_scope": [
+              "fixture:CP-reserved-com1-2"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-reserved-com1-2",
+            "validation_independent": true,
+            "write_owner": "Codex-B",
+            "write_set": [
+              "C:\\Beta\\parallel\\target.json"
+            ]
+          }
+        ]
+      },
+      "decision": {
+        "conflicts": [
+          "WRITE_PATH_UNKNOWN"
+        ],
+        "decision": "SEQUENTIAL_REQUIRED",
+        "reason_code": "WRITE_PATH_UNKNOWN"
+      },
+      "name": "reserved-com1"
+    },
+    {
+      "contract": {
+        "approved_scope": [
+          "fixture:CP-unicode-1",
+          "fixture:CP-unicode-2"
+        ],
+        "tasks": [
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-unicode-a",
+            "requested_scope": [
+              "fixture:CP-unicode-1"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-unicode-1",
+            "validation_independent": true,
+            "write_owner": "Codex-A",
+            "write_set": [
+              "Ｃ:\\Beta\\parallel\\target.json"
+            ]
+          },
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-unicode-b",
+            "requested_scope": [
+              "fixture:CP-unicode-2"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-unicode-2",
+            "validation_independent": true,
+            "write_owner": "Codex-B",
+            "write_set": [
+              "C:\\Beta\\parallel\\other.json"
+            ]
+          }
+        ]
+      },
+      "decision": {
+        "conflicts": [
+          "WRITE_PATH_UNKNOWN"
+        ],
+        "decision": "SEQUENTIAL_REQUIRED",
+        "reason_code": "WRITE_PATH_UNKNOWN"
+      },
+      "name": "unicode"
+    },
+    {
+      "contract": {
+        "approved_scope": [
+          "fixture:CP-sibling-control-1",
+          "fixture:CP-sibling-control-2"
+        ],
+        "tasks": [
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-sibling-control-a",
+            "requested_scope": [
+              "fixture:CP-sibling-control-1"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-sibling-control-1",
+            "validation_independent": true,
+            "write_owner": "Codex-A",
+            "write_set": [
+              "C:\\Beta\\parallel\\left.json"
+            ]
+          },
+          {
+            "actual_actor": "Codex",
+            "depends_on": [],
+            "functional_domain": "path-sibling-control-b",
+            "requested_scope": [
+              "fixture:CP-sibling-control-2"
+            ],
+            "routing_to": "Codex",
+            "shared_mutable_resources": [],
+            "task_id": "TASK-CP-sibling-control-2",
+            "validation_independent": true,
+            "write_owner": "Codex-B",
+            "write_set": [
+              "C:\\Beta\\parallel\\right.json"
+            ]
+          }
+        ]
+      },
+      "decision": {
+        "conflicts": [],
+        "decision": "PARALLEL_ALLOWED",
+        "reason_code": "INDEPENDENCE_PROVEN"
+      },
+      "name": "sibling-control"
+    }
+  ],
+  "runtime": [
+    {
+      "barrier_token": null,
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-b5909a3b-dd44-43da-a3c8-26ccb0d99246\\C\\evidence\\EVD-TASK-C1.json",
+      "evidence_sha256": "C7AA212CFCE3589A23175412A0DF165DAD41C8DA4A83C95A4B4D733550C09048",
+      "finished_ns": 47016932865500,
+      "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-b5909a3b-dd44-43da-a3c8-26ccb0d99246\\C\\outputs\\TASK-C1.json",
+      "output_sha256": "CA90A4D5238BE877150CDE5EFBE2C5755FEFC2E8BD64567E2078C72BB3F8D504",
+      "run_id": "RUN-3629078c-33b1-457f-bc4d-218ec50b9f7c",
+      "started_ns": 47016913949200,
+      "task_id": "TASK-C1",
+      "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-b5909a3b-dd44-43da-a3c8-26ccb0d99246\\C\\validations\\TASK-C1.json",
+      "validation_sha256": "78607755F1962687D2B21F3DE5EF5ABAE0130CB7AC86791DE33062BD5D06320E",
+      "validation_status": "PASS",
+      "worker_id": "SEQUENTIAL-MAIN"
+    },
+    {
+      "barrier_token": null,
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-b5909a3b-dd44-43da-a3c8-26ccb0d99246\\C\\evidence\\EVD-TASK-C2.json",
+      "evidence_sha256": "DF6826D995414FCCF6E88B6BDF95142B044FCE5B73CDB48EF3EBB193EC4D9C12",
+      "finished_ns": 47016955500300,
+      "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-b5909a3b-dd44-43da-a3c8-26ccb0d99246\\C\\outputs\\TASK-C2.json",
+      "output_sha256": "F075C8278F412D2991C0B91236E3050DF6A108FEEF69DDD1DAA122289A11CC46",
+      "run_id": "RUN-eca1ffd2-af14-4eda-a6d2-70213b7d8427",
+      "started_ns": 47016935302000,
+      "task_id": "TASK-C2",
+      "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-b5909a3b-dd44-43da-a3c8-26ccb0d99246\\C\\validations\\TASK-C2.json",
+      "validation_sha256": "F9020F388178EEC3D7EB5D0087B6029A64736027F857E245241AC31DDEEBBBBD",
+      "validation_status": "PASS",
+      "worker_id": "SEQUENTIAL-MAIN"
+    }
+  ]
+}

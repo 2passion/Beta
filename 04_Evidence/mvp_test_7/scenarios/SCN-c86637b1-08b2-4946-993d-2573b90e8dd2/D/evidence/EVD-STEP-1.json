@@ -1,0 +1,12 @@
+{
+  "evidence_id": "EVD-STEP-1",
+  "plan_version": "0.9",
+  "run_id": "RUN-INTERRUPTED-3190eaac-c9a8-46fd-bc92-8e670f554574",
+  "side_effect_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\D\\side_effects\\STEP-1.json",
+  "side_effect_sha256": "84C4D13D207030E17D68D30169E2673383017CA70EFC8ABAF41CD2463CDF21A2",
+  "step_id": "STEP-1",
+  "task_id": "MVP-TEST-7-RESUME",
+  "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\D\\validations\\STEP-1.json",
+  "validation_sha256": "C492D0D63821A0A72BDF7385F4F36CD73D94DEE43E455C4FB6CAEF582AF64B2A",
+  "validation_status": "PASS"
+}

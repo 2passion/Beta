@@ -1,0 +1,39 @@
+{
+  "change_reason_ref": "Order-039-Scenario-A",
+  "completion_criteria": [
+    "approved scenario executes once and passes"
+  ],
+  "depends_on": [],
+  "executor": {
+    "path": "03_Tests/fixtures/executor_success.py",
+    "sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A"
+  },
+  "order_id": "Order-039",
+  "permissions": {
+    "network": false,
+    "subprocess": "approved fixture paths only"
+  },
+  "plan_version": "1.2",
+  "required_validators": [
+    {
+      "criteria": {
+        "expected_value": "phase1-ok"
+      },
+      "path": "03_Tests/fixtures/validator_success.py",
+      "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+      "validator_id": "VAL-USER-GATE-TARGET"
+    }
+  ],
+  "shared_resources": [],
+  "steps": [
+    {
+      "action": "execute approved deterministic fixture",
+      "step_id": "USER-GATE-A-001"
+    }
+  ],
+  "task_id": "TASK-MVP6-A",
+  "write_owner": "Codex",
+  "write_scope": [
+    "04_Evidence/mvp_test_6/scenarios"
+  ]
+}

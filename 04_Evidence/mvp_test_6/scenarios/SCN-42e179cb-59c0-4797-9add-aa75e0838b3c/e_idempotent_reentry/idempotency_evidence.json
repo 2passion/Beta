@@ -1,0 +1,16 @@
+{
+  "after_first": {
+    "EVD-idempotent.json": "8992024FD0A82ADE6E3784EBC2A8BA95F0D8C7EBD8E9A16FA9000254E7804D21",
+    "state.json": "ED9771D745F1EF0A716BE71C70A0233A6C7610DA40AFABD768F9398DA37444E6"
+  },
+  "after_reentry": {
+    "EVD-idempotent.json": "8992024FD0A82ADE6E3784EBC2A8BA95F0D8C7EBD8E9A16FA9000254E7804D21",
+    "state.json": "ED9771D745F1EF0A716BE71C70A0233A6C7610DA40AFABD768F9398DA37444E6"
+  },
+  "before": {},
+  "first_status": "WRITE",
+  "managed_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_6\\scenarios\\SCN-42e179cb-59c0-4797-9add-aa75e0838b3c\\e_idempotent_reentry\\managed",
+  "reentry_evidence_delta": 0,
+  "reentry_status": "NO_CHANGE",
+  "reentry_write_delta": 0
+}

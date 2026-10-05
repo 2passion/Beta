@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-10-02T17:07:57.054639Z",
+  "evidence_id": "EVD-b0a0b7aa-8d99-4b6d-8fb3-864456628f18",
+  "execution": {
+    "exit_code": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": ""
+  },
+  "gate": "PROCEED",
+  "order_id": "Order-010",
+  "plan_version": "1.0",
+  "run_id": "RUN-74aa4a56-773a-4b13-8b61-927a1f2dfbfb",
+  "task_id": "TASK-PHASE1-SYNTHETIC-001",
+  "validation_result": "PASS",
+  "validations": [
+    {
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "{\"checked\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\phase1\\\\runs\\\\RUN-74aa4a56-773a-4b13-8b61-927a1f2dfbfb\\\\executor_result.json\", \"passed\": true}\n",
+      "validator_id": "VAL-PHASE1-001"
+    }
+  ]
+}

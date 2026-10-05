@@ -1,0 +1,39 @@
+{
+  "change_reason_ref": "Order-025-Scenario-C-Baseline",
+  "completion_criteria": [
+    "deterministic scenario result is independently validated"
+  ],
+  "depends_on": [],
+  "executor": {
+    "path": "03_Tests/fixtures/executor_success.py",
+    "sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A"
+  },
+  "order_id": "Order-025",
+  "permissions": {
+    "network": false,
+    "subprocess": "approved fixture paths only"
+  },
+  "plan_version": "1.0",
+  "required_validators": [
+    {
+      "criteria": {
+        "mode": "error"
+      },
+      "path": "03_Tests/fixtures/validator_fail.py",
+      "sha256": "F5135DA82918B33CA289BC49F6053ABD8E5905E0A8879221C78BDDC89BB00DA1",
+      "validator_id": "VAL-BOTTLENECK-CHECK"
+    }
+  ],
+  "shared_resources": [],
+  "steps": [
+    {
+      "action": "execute deterministic scenario",
+      "step_id": "BOTTLENECK-C-001"
+    }
+  ],
+  "task_id": "TASK-MVP4-C",
+  "write_owner": "Codex",
+  "write_scope": [
+    "04_Evidence/mvp_test_4/scenarios"
+  ]
+}

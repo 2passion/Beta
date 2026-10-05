@@ -1,0 +1,34 @@
+{
+  "change_reason_ref": "Order-047",
+  "created_at": "2026-10-05T01:49:48.738545Z",
+  "evidence_id": "EVD-eb453bf6-6ef8-4cef-87c2-563a8aee1087",
+  "execution": {
+    "exit_code": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": ""
+  },
+  "executor_sha256": "88D8E8B18508BDD3AC6F789515393D84802E9FD4C88DA2C23BEC3D9E0FAA3454",
+  "gate": "PROCEED",
+  "order_id": "Order-047",
+  "plan_version": "1.0",
+  "run_id": "RUN-5344be8c-f2cf-40c5-ba3a-ce291f1d7c1c",
+  "task_id": "MVP-TEST-3-SAFE-PARALLEL",
+  "task_plan_sha256": "87B103957337D0FCEA6582A04D36A3FD38723C3A22166987F5E0DDE2EAAF17FB",
+  "validation_result": "PASS",
+  "validations": [
+    {
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "{\"concurrency\": \"barrier_verified\", \"mutations\": \"M1-M8 enforced\", \"scenario_evidence_count\": 10, \"scenario_id\": \"SCN-61ca59e0-9781-41df-b3db-540025cd876f\", \"scenarios\": \"A-H\", \"status\": \"PASS\"}\n",
+      "validator_id": "VAL-MVP-TEST-3-SAFE-PARALLEL"
+    }
+  ],
+  "validator_sha256": [
+    {
+      "sha256": "E58F06F51ED6F4859C7F9C150B0A7AE9188C6548A85195FAA3D833C6B1D61C72",
+      "validator_id": "VAL-MVP-TEST-3-SAFE-PARALLEL"
+    }
+  ]
+}

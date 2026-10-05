@@ -1,0 +1,42 @@
+{
+  "task_id": "MVP-TEST-6-USER-GATE",
+  "plan_version": "1.0",
+  "order_id": "Order-035",
+  "change_reason_ref": "Order-035",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/mvp_test_6"],
+  "shared_resources": [],
+  "depends_on": ["MVP-TEST-5-PREVENTION", "ORDER-035-EXECUTION-ROUTING"],
+  "steps": [{"step_id": "MVP6-USER-GATE-001", "action": "execute User Gate scenarios A-F"}],
+  "executor": {
+    "path": "03_Tests/fixtures/user_gate_scenario_executor.py",
+    "sha256": "1F8F7FBF2CC1EB3157EE6C00E35C1DB55E11CFC7971C665365CF12AF214C7811"
+  },
+  "required_validators": [{
+    "validator_id": "VAL-MVP-TEST-6-USER-GATE",
+    "path": "03_Tests/fixtures/user_gate_validator.py",
+    "sha256": "DFC51BBD719CF2879C9AF6E0197CF728F50F2282C16C4E5DB1CB7C0D1EE359CC",
+    "criteria": {
+      "mvp_test_id": "MVP-TEST-6",
+      "mvp_test_name": "User Gate",
+      "test_plan_id": "MVP-TEST-6-USER-GATE",
+      "test_plan_version": "1.0",
+      "routing_order_id": "Order-035"
+    }
+  }],
+  "completion_criteria": [
+    "AUTO executes exactly once only when all eight conditions hold",
+    "APPROVAL_REQUIRED has zero pre-approval side effects and no duplicate approval",
+    "HOLD has a reason code and zero later side effects",
+    "scope expansion requires approval and re-entry is idempotent",
+    "routing mismatch holds with zero side effects",
+    "official Validation passes and Gate proceeds"
+  ],
+  "permissions": {
+    "subprocess": "approved fixture paths only",
+    "network": false,
+    "database": false,
+    "external_publish": false,
+    "rule_promotion": false
+  }
+}

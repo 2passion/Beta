@@ -1,0 +1,5 @@
+{
+  "execution_error_max_attempts": 2,
+  "plan_version_product_run_max_attempts": 3,
+  "validator_error_max_attempts": 2
+}

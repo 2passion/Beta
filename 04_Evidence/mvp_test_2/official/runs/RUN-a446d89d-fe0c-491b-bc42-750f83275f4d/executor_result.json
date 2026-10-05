@@ -1,0 +1,131 @@
+{
+  "created_at": "2026-10-03T09:05:16.274890Z",
+  "mvp_test_id": "MVP-TEST-2",
+  "mvp_test_name": "Ownership",
+  "scenario_evidence_dirs": {
+    "A": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_2\\scenarios\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\a_single_owner",
+    "B": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_2\\scenarios\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\b_multiple_owner",
+    "C": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_2\\scenarios\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\c_owner_change"
+  },
+  "scenario_root": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_2\\scenarios\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30",
+  "scenario_runs": {
+    "A": {
+      "evidence": {
+        "change_reason_ref": "Order-017 / Ownership Scenario A",
+        "created_at": "2026-10-03T09:05:15.746935Z",
+        "evidence_id": "EVD-83bac5ed-0669-495e-9bda-da6bb49ef858",
+        "executor_sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A",
+        "filename": "EVD-83bac5ed-0669-495e-9bda-da6bb49ef858.json",
+        "gate": "PROCEED",
+        "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_2\\scenarios\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\a_single_owner\\EVD-83bac5ed-0669-495e-9bda-da6bb49ef858.json",
+        "plan_version": "1.0",
+        "run_id": "RUN-588062cf-8f89-430d-bdcb-0f07f7c3e750",
+        "sha256": "93803B79A8E09942E7C81E63CEC1330BB8BFC81CAFA30949449719F778C09DBD",
+        "task_id": "TASK-MVP2-A",
+        "task_plan_sha256": "79187226E4425AC306467FD9AE4AE6D42DBE370EEC6D88373F459CBC12EC1A8B",
+        "validation_result": "PASS",
+        "validator_sha256": [
+          {
+            "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+            "validator_id": "VAL-MVP2-A"
+          }
+        ]
+      },
+      "execution": "PASS",
+      "gate": "PROCEED",
+      "plan_version": "1.0",
+      "run_id": "RUN-588062cf-8f89-430d-bdcb-0f07f7c3e750",
+      "status": "PASS",
+      "task_id": "TASK-MVP2-A",
+      "validation": "PASS"
+    },
+    "B": {
+      "evidence": null,
+      "execution": "NOT_RUN",
+      "gate": "BLOCK",
+      "plan_version": "1.0",
+      "reasons": [
+        "write_owner must be one identifier matching ^[A-Za-z0-9][A-Za-z0-9_-]*$"
+      ],
+      "run_id": "RUN-dbe81dd4-e000-4ed3-a025-cc720e2a2f6c",
+      "status": "BLOCKED",
+      "task_id": "TASK-MVP2-B",
+      "validation": "NOT_RUN"
+    },
+    "C_BASE": {
+      "evidence": {
+        "change_reason_ref": "Order-017 / Ownership Scenario C baseline",
+        "created_at": "2026-10-03T09:05:16.003689Z",
+        "evidence_id": "EVD-229d5703-2d31-4e94-b40d-738627ebc83a",
+        "executor_sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A",
+        "filename": "EVD-229d5703-2d31-4e94-b40d-738627ebc83a.json",
+        "gate": "PROCEED",
+        "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_2\\scenarios\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\c_owner_change\\EVD-229d5703-2d31-4e94-b40d-738627ebc83a.json",
+        "plan_version": "1.0",
+        "run_id": "RUN-b1f72fe3-2d3e-48a3-80e9-6e3422d7ea0c",
+        "sha256": "A614DBD95C91A2F79127DD6B89534594BAAEE1ECF139139F1BDC79BA00A12C88",
+        "task_id": "TASK-MVP2-C",
+        "task_plan_sha256": "0FCEB662390B023BB476ADB588C6AE89C51517A233F4B33E4746BD14F9302022",
+        "validation_result": "PASS",
+        "validator_sha256": [
+          {
+            "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+            "validator_id": "VAL-MVP2-C"
+          }
+        ]
+      },
+      "execution": "PASS",
+      "gate": "PROCEED",
+      "plan_version": "1.0",
+      "run_id": "RUN-b1f72fe3-2d3e-48a3-80e9-6e3422d7ea0c",
+      "status": "PASS",
+      "task_id": "TASK-MVP2-C",
+      "validation": "PASS"
+    },
+    "C_NEW_VERSION": {
+      "evidence": {
+        "change_reason_ref": "Order-017 / Ownership Scenario C approved new-version owner change",
+        "created_at": "2026-10-03T09:05:16.262777Z",
+        "evidence_id": "EVD-80cd0379-af99-4edb-a9a7-3990a70ca9d5",
+        "executor_sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A",
+        "filename": "EVD-80cd0379-af99-4edb-a9a7-3990a70ca9d5.json",
+        "gate": "PROCEED",
+        "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_2\\scenarios\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\c_owner_change\\EVD-80cd0379-af99-4edb-a9a7-3990a70ca9d5.json",
+        "plan_version": "2.0",
+        "run_id": "RUN-a475cac7-f85f-4779-983a-a4ba349c6e1a",
+        "sha256": "E3AA6584C4EA896660A39E49F175870488D64D71463F922EB9FD8B0CF516F4B0",
+        "task_id": "TASK-MVP2-C",
+        "task_plan_sha256": "33812EAEB0C3D2A7E42356BFE94656E2646366A371A44BC87E24D1669FDDCF80",
+        "validation_result": "PASS",
+        "validator_sha256": [
+          {
+            "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+            "validator_id": "VAL-MVP2-C"
+          }
+        ]
+      },
+      "execution": "PASS",
+      "gate": "PROCEED",
+      "plan_version": "2.0",
+      "run_id": "RUN-a475cac7-f85f-4779-983a-a4ba349c6e1a",
+      "status": "PASS",
+      "task_id": "TASK-MVP2-C",
+      "validation": "PASS"
+    },
+    "C_SAME_VERSION": {
+      "evidence": null,
+      "execution": "NOT_RUN",
+      "gate": "BLOCK",
+      "plan_version": "1.0",
+      "reasons": [
+        "task_plan_sha256 differs for an existing task_id/plan_version"
+      ],
+      "run_id": "RUN-acb9d90e-02ab-4789-9dca-f85980442806",
+      "status": "BLOCKED",
+      "task_id": "TASK-MVP2-C",
+      "validation": "NOT_RUN"
+    }
+  },
+  "test_plan_id": "MVP-TEST-2-OWNERSHIP",
+  "test_plan_version": "1.1"
+}

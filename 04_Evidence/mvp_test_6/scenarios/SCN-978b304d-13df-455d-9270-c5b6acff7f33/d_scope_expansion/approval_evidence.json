@@ -1,0 +1,14 @@
+{
+  "decision": {
+    "decision": "APPROVAL_REQUIRED",
+    "question_count": 1,
+    "reason_code": "SCOPE_OR_MEANING_CHANGE",
+    "side_effect_allowed": false
+  },
+  "side_effects": {
+    "run_directories": 0,
+    "run_started": 0,
+    "runtime_evidence": 0,
+    "writes": 0
+  }
+}

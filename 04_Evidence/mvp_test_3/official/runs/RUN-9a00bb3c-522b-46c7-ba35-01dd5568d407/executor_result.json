@@ -1,0 +1,947 @@
+{
+  "change_reason_ref": "Order-049",
+  "mvp_test_id": "MVP-TEST-3",
+  "mvp_test_name": "Safe Parallel",
+  "ownership_reuse": {
+    "mode": "CONTRACT_RULE_REUSE",
+    "reason": "Test 2 scenario runner is task-specific; reuse the validated single-owner identifier and multi-writer rejection rule without adding an Architecture abstraction.",
+    "source": "MVP Test 2 One Task One Owner"
+  },
+  "plan_version": "1.1",
+  "scenario_dirs": {
+    "A": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\A",
+    "B": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\B",
+    "C": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\C",
+    "D": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\D",
+    "E": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E",
+    "F": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\F",
+    "G": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\G",
+    "H": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H"
+  },
+  "scenario_evidence_count": 10,
+  "scenario_id": "SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38",
+  "scenario_manifest": [
+    {
+      "relative_path": "A/contract.json",
+      "scenario_id": "A",
+      "sha256": "54BC08913D9855BA8BED46CE1C4862692D282A79630F1FBF6E1999843CBEA952"
+    },
+    {
+      "relative_path": "A/decision.json",
+      "scenario_id": "A",
+      "sha256": "F22C91F48368124024C6A6F6995E09FFEEDC48EBF52A991C8A1A6ACE49B36B0D"
+    },
+    {
+      "relative_path": "A/evidence/EVD-TASK-A1.json",
+      "scenario_id": "A",
+      "sha256": "0B1F225DA93CEF696EF07E67B4A81513757587083D34E1DD3437A74E0EBACA56"
+    },
+    {
+      "relative_path": "A/evidence/EVD-TASK-A2.json",
+      "scenario_id": "A",
+      "sha256": "30C6AA7A69F9DDBA91E46C7E7E562C914E9C31FFC4B72945AF874BD2A8BA62AB"
+    },
+    {
+      "relative_path": "A/observations/TASK-A1.jsonl",
+      "scenario_id": "A",
+      "sha256": "9A60CB50FE9B68DCD5A9EE697BF8E8552653B8D42AE193225524E7CC83504E87"
+    },
+    {
+      "relative_path": "A/observations/TASK-A2.jsonl",
+      "scenario_id": "A",
+      "sha256": "C805DD449F6D7075A636E7F7CDEF20FF9714D00950D01B5534BF7BA56D7E49E1"
+    },
+    {
+      "relative_path": "A/outputs/TASK-A1.json",
+      "scenario_id": "A",
+      "sha256": "B74E673FAB81C00163388B4DD53D96924EC03DFF882F6C04A13323D49532049E"
+    },
+    {
+      "relative_path": "A/outputs/TASK-A2.json",
+      "scenario_id": "A",
+      "sha256": "E3EAB37DBAB270CE66E27F8CDF5032B40A61CEC9CD46E6EBD77C9483B1EABF68"
+    },
+    {
+      "relative_path": "A/runtime/TASK-A1.json",
+      "scenario_id": "A",
+      "sha256": "DF1FCB9012E95244A8B5E3D1F947F83DEB1C39532EC9C47644C9F4D90C544CB3"
+    },
+    {
+      "relative_path": "A/runtime/TASK-A2.json",
+      "scenario_id": "A",
+      "sha256": "2F5699CFE39E3AC0946355CF9E1B9173F7453B72CFF5CC36DB9AAC9E45777E6F"
+    },
+    {
+      "relative_path": "A/summary.json",
+      "scenario_id": "A",
+      "sha256": "56CC831094A73B59C784D023CBFB1B97CAFC38B8274DA185CACBC176A1BF4823"
+    },
+    {
+      "relative_path": "A/validations/TASK-A1.json",
+      "scenario_id": "A",
+      "sha256": "5EC66974651BAD1B91EF85BF03B4628B444C20B8C29A65B68DCA6E36D984BF1B"
+    },
+    {
+      "relative_path": "A/validations/TASK-A2.json",
+      "scenario_id": "A",
+      "sha256": "61AF4773A57E192C4A936A2E3B7F3A2A39CEEB56C4871A9C376519C9FFC85B27"
+    },
+    {
+      "relative_path": "B/contract.json",
+      "scenario_id": "B",
+      "sha256": "AFE7ABF5B0CDBFFB6A142EC48EED6929B34E41C20CED7A1F9C46A9682A704AB5"
+    },
+    {
+      "relative_path": "B/cycle_contract.json",
+      "scenario_id": "B",
+      "sha256": "9B09D3266AF28AB534A5E75520CCCAF0B1AF4573AD1B688B6FED3A9C152D52C4"
+    },
+    {
+      "relative_path": "B/cycle_decision.json",
+      "scenario_id": "B",
+      "sha256": "1CA10416618E97A7054024516F43523E5F9F3EA92264803CF42619CC2E8C62DC"
+    },
+    {
+      "relative_path": "B/decision.json",
+      "scenario_id": "B",
+      "sha256": "2DF42FC3194F386E7722A5396383A7DC13DBEDAA10459B182CBECBC96E4E4AC8"
+    },
+    {
+      "relative_path": "B/evidence/EVD-TASK-B1.json",
+      "scenario_id": "B",
+      "sha256": "B53721E9A2EE99D5B456DDD8311BC82D539F0F48ECDBA0D520123944508F91A9"
+    },
+    {
+      "relative_path": "B/evidence/EVD-TASK-B2.json",
+      "scenario_id": "B",
+      "sha256": "14E527DD9300DCF6E06E6F86F2B56B4BF3288DF990D84B3879E661602C9636E2"
+    },
+    {
+      "relative_path": "B/outputs/TASK-B1.json",
+      "scenario_id": "B",
+      "sha256": "E04807177C99B3EABADF497520F8108E8FB377EDB2B0B68FAD1621C78AF576C5"
+    },
+    {
+      "relative_path": "B/outputs/TASK-B2.json",
+      "scenario_id": "B",
+      "sha256": "174CCD7F8FC415B155ED5022BBAF9C6B62A19FA4148100570116FFC3B17C4CB0"
+    },
+    {
+      "relative_path": "B/runtime/TASK-B1.json",
+      "scenario_id": "B",
+      "sha256": "50A1D9EF18CBFB617AB35671D0049D7EC94B87A823E7A4A9C19B76740D20ABBD"
+    },
+    {
+      "relative_path": "B/runtime/TASK-B2.json",
+      "scenario_id": "B",
+      "sha256": "DA34556EAFACBD09EB6BFB365785EF4A71720C447A766BD01DEB816D216FDD8E"
+    },
+    {
+      "relative_path": "B/summary.json",
+      "scenario_id": "B",
+      "sha256": "9B906272B81C7FC4190CF43A29B41AC56922652AEFDB67CDAA94A290988BB5F4"
+    },
+    {
+      "relative_path": "B/validations/TASK-B1.json",
+      "scenario_id": "B",
+      "sha256": "C3DACE8827BF19D5FC4F623CD1E297D9FCE211B408278A0834381E25024251A0"
+    },
+    {
+      "relative_path": "B/validations/TASK-B2.json",
+      "scenario_id": "B",
+      "sha256": "DB44869B898BD4867FD7A9E7F3C77738E6BF67DCB2CEA99057E196A4320FD421"
+    },
+    {
+      "relative_path": "C/contract.json",
+      "scenario_id": "C",
+      "sha256": "0C41995A123B7DAA5E62E2CCD5F9C8D98FFFB1515317303FCC99D9F9E2087045"
+    },
+    {
+      "relative_path": "C/decision.json",
+      "scenario_id": "C",
+      "sha256": "10DB85DF9F7DAD58283CA5598285EB5C291A9A781905E8BD507E46D38A1654A7"
+    },
+    {
+      "relative_path": "C/evidence/EVD-TASK-C1.json",
+      "scenario_id": "C",
+      "sha256": "954C469046D653B48FB7BE84B07535FFC3193D7C4ED955F01FC20B273CCDB9CB"
+    },
+    {
+      "relative_path": "C/evidence/EVD-TASK-C2.json",
+      "scenario_id": "C",
+      "sha256": "B0E24E21EC0D4830C3FF66A347FA249FECED6BF4559AD66185DF80F43CA2C6E5"
+    },
+    {
+      "relative_path": "C/outputs/TASK-C1.json",
+      "scenario_id": "C",
+      "sha256": "69E29E16783B132250986CF4231672ACAFCA3C6FB211F21A0A28E2CB72041A7B"
+    },
+    {
+      "relative_path": "C/outputs/TASK-C2.json",
+      "scenario_id": "C",
+      "sha256": "29CD3517F54B1D156F753D54FB603DE769F36546394CF3982FEB88C5BE5C2840"
+    },
+    {
+      "relative_path": "C/path_cases.json",
+      "scenario_id": "C",
+      "sha256": "25F1D5059A9DD313ED458091ED551D7DAB305B64FCA2F5637DA5F952F7DD640E"
+    },
+    {
+      "relative_path": "C/runtime/TASK-C1.json",
+      "scenario_id": "C",
+      "sha256": "EFA806E81897FBB813D7714308E9828DCD9BAE4211ED068D8D418CE1CB8EC5E5"
+    },
+    {
+      "relative_path": "C/runtime/TASK-C2.json",
+      "scenario_id": "C",
+      "sha256": "41AB214C68F674241A40EBA80DB36E3F287F0C960D9E13AE8066049CD26CEEC7"
+    },
+    {
+      "relative_path": "C/summary.json",
+      "scenario_id": "C",
+      "sha256": "458D81A16C8F119F50CEA88EEC7A67B52742A20A9B42189A75C4250E522D470C"
+    },
+    {
+      "relative_path": "C/validations/TASK-C1.json",
+      "scenario_id": "C",
+      "sha256": "4C409AFB560420C07199B57DEDBAC987C7331025A503FD22789104593EC1F6B1"
+    },
+    {
+      "relative_path": "C/validations/TASK-C2.json",
+      "scenario_id": "C",
+      "sha256": "E634CAB4FB5A05209B97B45549BFD2EFE220B3D97D8DC947349839B548A5A4EC"
+    },
+    {
+      "relative_path": "D/contract.json",
+      "scenario_id": "D",
+      "sha256": "4099E4DF1BA712AD6209FEFD11E51A560C3A3F857A2E7D7A35B0979CBF2D6A91"
+    },
+    {
+      "relative_path": "D/decision.json",
+      "scenario_id": "D",
+      "sha256": "A187DA5FD3508FAF8F7E5F5D74BDCAB8416C52FEBB1F655D8355D5F029DA846A"
+    },
+    {
+      "relative_path": "D/summary.json",
+      "scenario_id": "D",
+      "sha256": "7726BD540D152700B0207CD5E56802ADBD26B17F754B6CDF05252D18B7F8B16C"
+    },
+    {
+      "relative_path": "E/contract.json",
+      "scenario_id": "E",
+      "sha256": "30430D16FE5D12A470F51C43E5647DDED7507929183F4192F967AD048B53848C"
+    },
+    {
+      "relative_path": "E/decision.json",
+      "scenario_id": "E",
+      "sha256": "107D21FBD19980BBAD81443C86444030336C142096EAA5074B9E1FDFBA35C6F5"
+    },
+    {
+      "relative_path": "E/evidence/EVD-TASK-E1.json",
+      "scenario_id": "E",
+      "sha256": "2EA57F081F279A37D41DCB5689896B8CADFDB8EA102E3D3BFBA2BCD62247A2F0"
+    },
+    {
+      "relative_path": "E/evidence/EVD-TASK-E2.json",
+      "scenario_id": "E",
+      "sha256": "720B0629D57E6F98117817453DBF6D404FDC3BA3B81D723CE0F1189F805A1980"
+    },
+    {
+      "relative_path": "E/outputs/TASK-E1.json",
+      "scenario_id": "E",
+      "sha256": "C19805D7D6B1C4ABC3B7A3C06D1EEC3741569D33AFBB95867422853DB750E804"
+    },
+    {
+      "relative_path": "E/outputs/TASK-E2.json",
+      "scenario_id": "E",
+      "sha256": "A9E3778620B3ECB1A5D73068404A8543E2C2429969DF7D226174C02B997589CE"
+    },
+    {
+      "relative_path": "E/runtime/TASK-E1.json",
+      "scenario_id": "E",
+      "sha256": "A060EE8CDD79E9F1469265FD32A68A830F6CF98491F57555CE9132A3C3E605A8"
+    },
+    {
+      "relative_path": "E/runtime/TASK-E2.json",
+      "scenario_id": "E",
+      "sha256": "62593B198CD2D2270D7528B902A0E29EB5E75806C5EEB8E8BA6726652244C6C2"
+    },
+    {
+      "relative_path": "E/summary.json",
+      "scenario_id": "E",
+      "sha256": "B0E97699F08A87A9EE643B71AACD50CC9C7B9083763DA41CA747B4DC128B23D2"
+    },
+    {
+      "relative_path": "E/validations/TASK-E1.json",
+      "scenario_id": "E",
+      "sha256": "266B0D7B021B7C72BBD23B4538F1086FD3094432501AF49B1F59303D64B5514E"
+    },
+    {
+      "relative_path": "E/validations/TASK-E2.json",
+      "scenario_id": "E",
+      "sha256": "A2A38620D6EC9C959EB348C40A32CBA152563DD73BDF6B1610E55B00E50F9624"
+    },
+    {
+      "relative_path": "F/contract.json",
+      "scenario_id": "F",
+      "sha256": "68B98B74E67ADE4642F31EC02F7EF8591B1659D8769CF7C7120C5B120415FEF1"
+    },
+    {
+      "relative_path": "F/decision.json",
+      "scenario_id": "F",
+      "sha256": "799FBB6A15731203DADFA2EFEFD637124EE4CE0C73F5486E66FAD5FB48896AF0"
+    },
+    {
+      "relative_path": "F/summary.json",
+      "scenario_id": "F",
+      "sha256": "53194C93D3CA98FEEC06B9C9FC23C083CBCDC08AB52B4CFE444CAD2821792029"
+    },
+    {
+      "relative_path": "G/contract.json",
+      "scenario_id": "G",
+      "sha256": "C613BD63F8751BC34D9E1CAE8BC9839DFC597AF876F1505D0D93073229EC0E56"
+    },
+    {
+      "relative_path": "G/decision.json",
+      "scenario_id": "G",
+      "sha256": "ED485F27F28909CD2031521CDB3E1FCA9F533D8DD651C27E92FC4C52993CCDD5"
+    },
+    {
+      "relative_path": "G/summary.json",
+      "scenario_id": "G",
+      "sha256": "78C0EBDDD573A3F33D213FFC122D3E8682B3954E8E954D9533FEDEFC6DDA8E6F"
+    },
+    {
+      "relative_path": "H/contract.json",
+      "scenario_id": "H",
+      "sha256": "44D068016438A127EF9B94F8F61E005D6B5FA764C6070861B2AC7D6B06B203B7"
+    },
+    {
+      "relative_path": "H/decision.json",
+      "scenario_id": "H",
+      "sha256": "F22C91F48368124024C6A6F6995E09FFEEDC48EBF52A991C8A1A6ACE49B36B0D"
+    },
+    {
+      "relative_path": "H/evidence/EVD-TASK-H1.json",
+      "scenario_id": "H",
+      "sha256": "F1B8FA909BCF0AB82A4F2EB610DD06031EF76751E4FBB271E58DEB60BD5C1B4C"
+    },
+    {
+      "relative_path": "H/evidence/EVD-TASK-H2.json",
+      "scenario_id": "H",
+      "sha256": "EE19345FFF82C5E2A1AD0A5A222A69A3CDCAC39EE4336CC7E9CDACBCC028C8CF"
+    },
+    {
+      "relative_path": "H/observations/TASK-H1.jsonl",
+      "scenario_id": "H",
+      "sha256": "8E46D10D73320295C01A400CF441A804EB7FA493A0672162A4D543C6DB7797AF"
+    },
+    {
+      "relative_path": "H/observations/TASK-H2.jsonl",
+      "scenario_id": "H",
+      "sha256": "F3D339B49B47E689E110A8865E2C3CF45930419CC9787BC302332F9AB7CAC18C"
+    },
+    {
+      "relative_path": "H/outputs/TASK-H1.json",
+      "scenario_id": "H",
+      "sha256": "C8B34E8C93460A269FB09FBF37A5E4019AE7865E80B06E7E71A8D435A04F9ADE"
+    },
+    {
+      "relative_path": "H/outputs/TASK-H2.json",
+      "scenario_id": "H",
+      "sha256": "6123DD1738555564D89EBBEB8A4C35C0EA793F77C73721403CFDE618460529FA"
+    },
+    {
+      "relative_path": "H/runtime/TASK-H1.json",
+      "scenario_id": "H",
+      "sha256": "96F1BB6D9611E8C99EB9FB6421FB7940F0CB1DEF15F079B3FEE9DF14C94E24C2"
+    },
+    {
+      "relative_path": "H/runtime/TASK-H2.json",
+      "scenario_id": "H",
+      "sha256": "AE467D39D884BCDE48CF47F62605EC383974BF9B88F881B520ECA3AE932F63B7"
+    },
+    {
+      "relative_path": "H/summary.json",
+      "scenario_id": "H",
+      "sha256": "04F9118B4DBE66A692EE69151AA997817230D2D1CD49AD8D1BA9DCDB1BBB2DC5"
+    },
+    {
+      "relative_path": "H/validations/TASK-H1.json",
+      "scenario_id": "H",
+      "sha256": "EB865C9BE5AA95E9D92B955C27116C00F01655CA4BB95872046E25CA37A8294C"
+    },
+    {
+      "relative_path": "H/validations/TASK-H2.json",
+      "scenario_id": "H",
+      "sha256": "65990212D11ADADAB3F138C822A7EB14AFE41711967428A65A4306EF872F99ED"
+    }
+  ],
+  "scenario_root": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38",
+  "scenarios": {
+    "A": {
+      "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\A\\contract.json",
+      "decision": {
+        "conflicts": [],
+        "decision": "PARALLEL_ALLOWED",
+        "reason_code": "INDEPENDENCE_PROVEN"
+      },
+      "execution_count": 2,
+      "runtime": {
+        "TASK-A1": {
+          "barrier_arrived_ns": 41797899080300,
+          "barrier_passed_ns": 41797903263500,
+          "barrier_token": "BARRIER-2a960398-c079-4dda-b2f3-2b9a721fe584",
+          "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\A\\evidence\\EVD-TASK-A1.json",
+          "evidence_sha256": "0B1F225DA93CEF696EF07E67B4A81513757587083D34E1DD3437A74E0EBACA56",
+          "finished_ns": 41797921420100,
+          "observation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\A\\observations\\TASK-A1.jsonl",
+          "observation_sha256": "9A60CB50FE9B68DCD5A9EE697BF8E8552653B8D42AE193225524E7CC83504E87",
+          "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\A\\outputs\\TASK-A1.json",
+          "output_sha256": "B74E673FAB81C00163388B4DD53D96924EC03DFF882F6C04A13323D49532049E",
+          "run_id": "RUN-d08225d0-6e06-4a8a-b3d0-f84bad2f251b",
+          "started_ns": 41797894882800,
+          "task_id": "TASK-A1",
+          "thread_id": 20412,
+          "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\A\\validations\\TASK-A1.json",
+          "validation_sha256": "5EC66974651BAD1B91EF85BF03B4628B444C20B8C29A65B68DCA6E36D984BF1B",
+          "validation_status": "PASS"
+        },
+        "TASK-A2": {
+          "barrier_arrived_ns": 41797899738500,
+          "barrier_passed_ns": 41797903218600,
+          "barrier_token": "BARRIER-2a960398-c079-4dda-b2f3-2b9a721fe584",
+          "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\A\\evidence\\EVD-TASK-A2.json",
+          "evidence_sha256": "30C6AA7A69F9DDBA91E46C7E7E562C914E9C31FFC4B72945AF874BD2A8BA62AB",
+          "finished_ns": 41797921672400,
+          "observation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\A\\observations\\TASK-A2.jsonl",
+          "observation_sha256": "C805DD449F6D7075A636E7F7CDEF20FF9714D00950D01B5534BF7BA56D7E49E1",
+          "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\A\\outputs\\TASK-A2.json",
+          "output_sha256": "E3EAB37DBAB270CE66E27F8CDF5032B40A61CEC9CD46E6EBD77C9483B1EABF68",
+          "run_id": "RUN-1cca5419-3848-4b24-9001-bf509ee96e00",
+          "started_ns": 41797895298500,
+          "task_id": "TASK-A2",
+          "thread_id": 19520,
+          "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\A\\validations\\TASK-A2.json",
+          "validation_sha256": "61AF4773A57E192C4A936A2E3B7F3A2A39CEEB56C4871A9C376519C9FFC85B27",
+          "validation_status": "PASS"
+        }
+      }
+    },
+    "B": {
+      "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\B\\contract.json",
+      "cycle_decision": {
+        "decision": "HOLD",
+        "reason_code": "DEPENDENCY_CYCLE"
+      },
+      "decision": {
+        "conflicts": [
+          "DEPENDENCY_CONFLICT"
+        ],
+        "decision": "SEQUENTIAL_REQUIRED",
+        "reason_code": "DEPENDENCY_CONFLICT"
+      },
+      "execution_count": 2,
+      "runtime": [
+        {
+          "barrier_token": null,
+          "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\B\\evidence\\EVD-TASK-B1.json",
+          "evidence_sha256": "B53721E9A2EE99D5B456DDD8311BC82D539F0F48ECDBA0D520123944508F91A9",
+          "finished_ns": 41797947019200,
+          "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\B\\outputs\\TASK-B1.json",
+          "output_sha256": "E04807177C99B3EABADF497520F8108E8FB377EDB2B0B68FAD1621C78AF576C5",
+          "run_id": "RUN-da8df62f-7b7d-4116-8c14-235145a53e5b",
+          "started_ns": 41797931681100,
+          "task_id": "TASK-B1",
+          "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\B\\validations\\TASK-B1.json",
+          "validation_sha256": "C3DACE8827BF19D5FC4F623CD1E297D9FCE211B408278A0834381E25024251A0",
+          "validation_status": "PASS",
+          "worker_id": "SEQUENTIAL-MAIN"
+        },
+        {
+          "barrier_token": null,
+          "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\B\\evidence\\EVD-TASK-B2.json",
+          "evidence_sha256": "14E527DD9300DCF6E06E6F86F2B56B4BF3288DF990D84B3879E661602C9636E2",
+          "finished_ns": 41797965729800,
+          "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\B\\outputs\\TASK-B2.json",
+          "output_sha256": "174CCD7F8FC415B155ED5022BBAF9C6B62A19FA4148100570116FFC3B17C4CB0",
+          "run_id": "RUN-52c7ff64-450f-4f14-88c0-80dc8bc9d0bd",
+          "started_ns": 41797948620200,
+          "task_id": "TASK-B2",
+          "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\B\\validations\\TASK-B2.json",
+          "validation_sha256": "DB44869B898BD4867FD7A9E7F3C77738E6BF67DCB2CEA99057E196A4320FD421",
+          "validation_status": "PASS",
+          "worker_id": "SEQUENTIAL-MAIN"
+        }
+      ]
+    },
+    "C": {
+      "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\C\\contract.json",
+      "decision": {
+        "conflicts": [
+          "WRITE_SET_CONFLICT"
+        ],
+        "decision": "SEQUENTIAL_REQUIRED",
+        "reason_code": "WRITE_SET_CONFLICT"
+      },
+      "execution_count": 2,
+      "path_cases": [
+        {
+          "contract": {
+            "approved_scope": [
+              "fixture:CP-trailing-1",
+              "fixture:CP-trailing-2"
+            ],
+            "tasks": [
+              {
+                "actual_actor": "Codex",
+                "depends_on": [],
+                "functional_domain": "path-trailing-a",
+                "requested_scope": [
+                  "fixture:CP-trailing-1"
+                ],
+                "routing_to": "Codex",
+                "shared_mutable_resources": [],
+                "task_id": "TASK-CP-trailing-1",
+                "validation_independent": true,
+                "write_owner": "Codex-A",
+                "write_set": [
+                  "C:\\Beta\\parallel\\same.json. "
+                ]
+              },
+              {
+                "actual_actor": "Codex",
+                "depends_on": [],
+                "functional_domain": "path-trailing-b",
+                "requested_scope": [
+                  "fixture:CP-trailing-2"
+                ],
+                "routing_to": "Codex",
+                "shared_mutable_resources": [],
+                "task_id": "TASK-CP-trailing-2",
+                "validation_independent": true,
+                "write_owner": "Codex-B",
+                "write_set": [
+                  "c:\\beta\\parallel\\same.json"
+                ]
+              }
+            ]
+          },
+          "decision": {
+            "conflicts": [
+              "WRITE_SET_CONFLICT"
+            ],
+            "decision": "SEQUENTIAL_REQUIRED",
+            "reason_code": "WRITE_SET_CONFLICT"
+          },
+          "name": "trailing"
+        },
+        {
+          "contract": {
+            "approved_scope": [
+              "fixture:CP-extended-1",
+              "fixture:CP-extended-2"
+            ],
+            "tasks": [
+              {
+                "actual_actor": "Codex",
+                "depends_on": [],
+                "functional_domain": "path-extended-a",
+                "requested_scope": [
+                  "fixture:CP-extended-1"
+                ],
+                "routing_to": "Codex",
+                "shared_mutable_resources": [],
+                "task_id": "TASK-CP-extended-1",
+                "validation_independent": true,
+                "write_owner": "Codex-A",
+                "write_set": [
+                  "\\\\?\\C:\\Beta\\parallel\\same2.json"
+                ]
+              },
+              {
+                "actual_actor": "Codex",
+                "depends_on": [],
+                "functional_domain": "path-extended-b",
+                "requested_scope": [
+                  "fixture:CP-extended-2"
+                ],
+                "routing_to": "Codex",
+                "shared_mutable_resources": [],
+                "task_id": "TASK-CP-extended-2",
+                "validation_independent": true,
+                "write_owner": "Codex-B",
+                "write_set": [
+                  "C:\\Beta\\parallel\\same2.json"
+                ]
+              }
+            ]
+          },
+          "decision": {
+            "conflicts": [
+              "WRITE_SET_CONFLICT"
+            ],
+            "decision": "SEQUENTIAL_REQUIRED",
+            "reason_code": "WRITE_SET_CONFLICT"
+          },
+          "name": "extended"
+        },
+        {
+          "contract": {
+            "approved_scope": [
+              "fixture:CP-relative-1",
+              "fixture:CP-relative-2"
+            ],
+            "tasks": [
+              {
+                "actual_actor": "Codex",
+                "depends_on": [],
+                "functional_domain": "path-relative-a",
+                "requested_scope": [
+                  "fixture:CP-relative-1"
+                ],
+                "routing_to": "Codex",
+                "shared_mutable_resources": [],
+                "task_id": "TASK-CP-relative-1",
+                "validation_independent": true,
+                "write_owner": "Codex-A",
+                "write_set": [
+                  "relative\\target.json"
+                ]
+              },
+              {
+                "actual_actor": "Codex",
+                "depends_on": [],
+                "functional_domain": "path-relative-b",
+                "requested_scope": [
+                  "fixture:CP-relative-2"
+                ],
+                "routing_to": "Codex",
+                "shared_mutable_resources": [],
+                "task_id": "TASK-CP-relative-2",
+                "validation_independent": true,
+                "write_owner": "Codex-B",
+                "write_set": [
+                  "C:\\Beta\\parallel\\target.json"
+                ]
+              }
+            ]
+          },
+          "decision": {
+            "conflicts": [
+              "WRITE_PATH_UNKNOWN"
+            ],
+            "decision": "SEQUENTIAL_REQUIRED",
+            "reason_code": "WRITE_PATH_UNKNOWN"
+          },
+          "name": "relative"
+        },
+        {
+          "contract": {
+            "approved_scope": [
+              "fixture:CP-unc-1",
+              "fixture:CP-unc-2"
+            ],
+            "tasks": [
+              {
+                "actual_actor": "Codex",
+                "depends_on": [],
+                "functional_domain": "path-unc-a",
+                "requested_scope": [
+                  "fixture:CP-unc-1"
+                ],
+                "routing_to": "Codex",
+                "shared_mutable_resources": [],
+                "task_id": "TASK-CP-unc-1",
+                "validation_independent": true,
+                "write_owner": "Codex-A",
+                "write_set": [
+                  "\\\\server\\share\\target.json"
+                ]
+              },
+              {
+                "actual_actor": "Codex",
+                "depends_on": [],
+                "functional_domain": "path-unc-b",
+                "requested_scope": [
+                  "fixture:CP-unc-2"
+                ],
+                "routing_to": "Codex",
+                "shared_mutable_resources": [],
+                "task_id": "TASK-CP-unc-2",
+                "validation_independent": true,
+                "write_owner": "Codex-B",
+                "write_set": [
+                  "C:\\Beta\\parallel\\target.json"
+                ]
+              }
+            ]
+          },
+          "decision": {
+            "conflicts": [
+              "WRITE_PATH_UNKNOWN"
+            ],
+            "decision": "SEQUENTIAL_REQUIRED",
+            "reason_code": "WRITE_PATH_UNKNOWN"
+          },
+          "name": "unc"
+        },
+        {
+          "contract": {
+            "approved_scope": [
+              "fixture:CP-ads-1",
+              "fixture:CP-ads-2"
+            ],
+            "tasks": [
+              {
+                "actual_actor": "Codex",
+                "depends_on": [],
+                "functional_domain": "path-ads-a",
+                "requested_scope": [
+                  "fixture:CP-ads-1"
+                ],
+                "routing_to": "Codex",
+                "shared_mutable_resources": [],
+                "task_id": "TASK-CP-ads-1",
+                "validation_independent": true,
+                "write_owner": "Codex-A",
+                "write_set": [
+                  "C:\\Beta\\parallel\\target.json:stream"
+                ]
+              },
+              {
+                "actual_actor": "Codex",
+                "depends_on": [],
+                "functional_domain": "path-ads-b",
+                "requested_scope": [
+                  "fixture:CP-ads-2"
+                ],
+                "routing_to": "Codex",
+                "shared_mutable_resources": [],
+                "task_id": "TASK-CP-ads-2",
+                "validation_independent": true,
+                "write_owner": "Codex-B",
+                "write_set": [
+                  "C:\\Beta\\parallel\\target.json"
+                ]
+              }
+            ]
+          },
+          "decision": {
+            "conflicts": [
+              "WRITE_PATH_UNKNOWN"
+            ],
+            "decision": "SEQUENTIAL_REQUIRED",
+            "reason_code": "WRITE_PATH_UNKNOWN"
+          },
+          "name": "ads"
+        },
+        {
+          "contract": {
+            "approved_scope": [
+              "fixture:CP-short83-1",
+              "fixture:CP-short83-2"
+            ],
+            "tasks": [
+              {
+                "actual_actor": "Codex",
+                "depends_on": [],
+                "functional_domain": "path-short83-a",
+                "requested_scope": [
+                  "fixture:CP-short83-1"
+                ],
+                "routing_to": "Codex",
+                "shared_mutable_resources": [],
+                "task_id": "TASK-CP-short83-1",
+                "validation_independent": true,
+                "write_owner": "Codex-A",
+                "write_set": [
+                  "C:\\BETA~1\\target.json"
+                ]
+              },
+              {
+                "actual_actor": "Codex",
+                "depends_on": [],
+                "functional_domain": "path-short83-b",
+                "requested_scope": [
+                  "fixture:CP-short83-2"
+                ],
+                "routing_to": "Codex",
+                "shared_mutable_resources": [],
+                "task_id": "TASK-CP-short83-2",
+                "validation_independent": true,
+                "write_owner": "Codex-B",
+                "write_set": [
+                  "C:\\Beta\\parallel\\target.json"
+                ]
+              }
+            ]
+          },
+          "decision": {
+            "conflicts": [
+              "WRITE_PATH_UNKNOWN"
+            ],
+            "decision": "SEQUENTIAL_REQUIRED",
+            "reason_code": "WRITE_PATH_UNKNOWN"
+          },
+          "name": "short83"
+        }
+      ],
+      "runtime": [
+        {
+          "barrier_token": null,
+          "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\C\\evidence\\EVD-TASK-C1.json",
+          "evidence_sha256": "954C469046D653B48FB7BE84B07535FFC3193D7C4ED955F01FC20B273CCDB9CB",
+          "finished_ns": 41797995561400,
+          "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\C\\outputs\\TASK-C1.json",
+          "output_sha256": "69E29E16783B132250986CF4231672ACAFCA3C6FB211F21A0A28E2CB72041A7B",
+          "run_id": "RUN-0d918ad5-f96a-4105-ad0c-b6cc6937f6bb",
+          "started_ns": 41797977996700,
+          "task_id": "TASK-C1",
+          "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\C\\validations\\TASK-C1.json",
+          "validation_sha256": "4C409AFB560420C07199B57DEDBAC987C7331025A503FD22789104593EC1F6B1",
+          "validation_status": "PASS",
+          "worker_id": "SEQUENTIAL-MAIN"
+        },
+        {
+          "barrier_token": null,
+          "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\C\\evidence\\EVD-TASK-C2.json",
+          "evidence_sha256": "B0E24E21EC0D4830C3FF66A347FA249FECED6BF4559AD66185DF80F43CA2C6E5",
+          "finished_ns": 41798014785500,
+          "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\C\\outputs\\TASK-C2.json",
+          "output_sha256": "29CD3517F54B1D156F753D54FB603DE769F36546394CF3982FEB88C5BE5C2840",
+          "run_id": "RUN-47426708-967d-4e7c-bc16-6e9299b932cb",
+          "started_ns": 41797997159000,
+          "task_id": "TASK-C2",
+          "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\C\\validations\\TASK-C2.json",
+          "validation_sha256": "E634CAB4FB5A05209B97B45549BFD2EFE220B3D97D8DC947349839B548A5A4EC",
+          "validation_status": "PASS",
+          "worker_id": "SEQUENTIAL-MAIN"
+        }
+      ]
+    },
+    "D": {
+      "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\D\\contract.json",
+      "decision": {
+        "decision": "HOLD",
+        "reason_code": "OWNERSHIP_CONFLICT"
+      },
+      "execution_count": 0,
+      "runtime": []
+    },
+    "E": {
+      "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\contract.json",
+      "decision": {
+        "conflicts": [
+          "SHARED_MUTABLE_RESOURCE"
+        ],
+        "decision": "SEQUENTIAL_REQUIRED",
+        "reason_code": "SHARED_MUTABLE_RESOURCE"
+      },
+      "execution_count": 2,
+      "runtime": [
+        {
+          "barrier_token": null,
+          "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\evidence\\EVD-TASK-E1.json",
+          "evidence_sha256": "2EA57F081F279A37D41DCB5689896B8CADFDB8EA102E3D3BFBA2BCD62247A2F0",
+          "finished_ns": 41798054160300,
+          "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\outputs\\TASK-E1.json",
+          "output_sha256": "C19805D7D6B1C4ABC3B7A3C06D1EEC3741569D33AFBB95867422853DB750E804",
+          "run_id": "RUN-03e0c38d-f50e-49ac-b0d1-a71416ab542f",
+          "started_ns": 41798033843900,
+          "task_id": "TASK-E1",
+          "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\validations\\TASK-E1.json",
+          "validation_sha256": "266B0D7B021B7C72BBD23B4538F1086FD3094432501AF49B1F59303D64B5514E",
+          "validation_status": "PASS",
+          "worker_id": "SEQUENTIAL-MAIN"
+        },
+        {
+          "barrier_token": null,
+          "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\evidence\\EVD-TASK-E2.json",
+          "evidence_sha256": "720B0629D57E6F98117817453DBF6D404FDC3BA3B81D723CE0F1189F805A1980",
+          "finished_ns": 41798074443400,
+          "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\outputs\\TASK-E2.json",
+          "output_sha256": "A9E3778620B3ECB1A5D73068404A8543E2C2429969DF7D226174C02B997589CE",
+          "run_id": "RUN-915cf6f9-179b-4b74-a464-37609d6244f6",
+          "started_ns": 41798055639000,
+          "task_id": "TASK-E2",
+          "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\E\\validations\\TASK-E2.json",
+          "validation_sha256": "A2A38620D6EC9C959EB348C40A32CBA152563DD73BDF6B1610E55B00E50F9624",
+          "validation_status": "PASS",
+          "worker_id": "SEQUENTIAL-MAIN"
+        }
+      ]
+    },
+    "F": {
+      "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\F\\contract.json",
+      "decision": {
+        "decision": "HOLD",
+        "reason_code": "APPROVAL_SCOPE_REQUIRED"
+      },
+      "execution_count": 0,
+      "runtime": []
+    },
+    "G": {
+      "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\G\\contract.json",
+      "decision": {
+        "decision": "HOLD",
+        "reason_code": "INDEPENDENCE_UNKNOWN"
+      },
+      "execution_count": 0,
+      "runtime": []
+    },
+    "H": {
+      "batch_result": "PARTIAL_FAILURE",
+      "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\contract.json",
+      "decision": {
+        "conflicts": [],
+        "decision": "PARALLEL_ALLOWED",
+        "reason_code": "INDEPENDENCE_PROVEN"
+      },
+      "execution_count": 2,
+      "recovery_candidates": [
+        "TASK-H2"
+      ],
+      "runtime": {
+        "TASK-H1": {
+          "barrier_arrived_ns": 41798093582900,
+          "barrier_passed_ns": 41798096766400,
+          "barrier_token": "BARRIER-b57f3514-77c7-40f6-b565-385ba69c0160",
+          "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\evidence\\EVD-TASK-H1.json",
+          "evidence_sha256": "F1B8FA909BCF0AB82A4F2EB610DD06031EF76751E4FBB271E58DEB60BD5C1B4C",
+          "finished_ns": 41798116957800,
+          "observation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\observations\\TASK-H1.jsonl",
+          "observation_sha256": "8E46D10D73320295C01A400CF441A804EB7FA493A0672162A4D543C6DB7797AF",
+          "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\outputs\\TASK-H1.json",
+          "output_sha256": "C8B34E8C93460A269FB09FBF37A5E4019AE7865E80B06E7E71A8D435A04F9ADE",
+          "run_id": "RUN-b39d45d8-467c-4fda-ba0e-0a8c9b4e0576",
+          "started_ns": 41798090216900,
+          "task_id": "TASK-H1",
+          "thread_id": 23520,
+          "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\validations\\TASK-H1.json",
+          "validation_sha256": "EB865C9BE5AA95E9D92B955C27116C00F01655CA4BB95872046E25CA37A8294C",
+          "validation_status": "PASS"
+        },
+        "TASK-H2": {
+          "barrier_arrived_ns": 41798094116500,
+          "barrier_passed_ns": 41798096697800,
+          "barrier_token": "BARRIER-b57f3514-77c7-40f6-b565-385ba69c0160",
+          "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\evidence\\EVD-TASK-H2.json",
+          "evidence_sha256": "EE19345FFF82C5E2A1AD0A5A222A69A3CDCAC39EE4336CC7E9CDACBCC028C8CF",
+          "finished_ns": 41798116874200,
+          "observation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\observations\\TASK-H2.jsonl",
+          "observation_sha256": "F3D339B49B47E689E110A8865E2C3CF45930419CC9787BC302332F9AB7CAC18C",
+          "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\outputs\\TASK-H2.json",
+          "output_sha256": "6123DD1738555564D89EBBEB8A4C35C0EA793F77C73721403CFDE618460529FA",
+          "run_id": "RUN-918c7407-828f-4ae3-b400-e38860deb538",
+          "started_ns": 41798090602500,
+          "task_id": "TASK-H2",
+          "thread_id": 16896,
+          "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\validations\\TASK-H2.json",
+          "validation_sha256": "65990212D11ADADAB3F138C822A7EB14AFE41711967428A65A4306EF872F99ED",
+          "validation_status": "FAIL"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "conflicts": [
+    "WRITE_SET_CONFLICT"
+  ],
+  "decision": "SEQUENTIAL_REQUIRED",
+  "reason_code": "WRITE_SET_CONFLICT"
+}

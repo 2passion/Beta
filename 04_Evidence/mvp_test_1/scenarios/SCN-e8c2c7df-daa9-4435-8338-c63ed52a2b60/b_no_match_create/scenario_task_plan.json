@@ -1,0 +1,41 @@
+{
+  "change_reason_ref": "Order-021 / Reuse Scenario B",
+  "completion_criteria": [
+    "selected capability executes",
+    "required validator passes"
+  ],
+  "depends_on": [],
+  "executor": {
+    "path": "03_Tests/fixtures/executor_created.py",
+    "sha256": "7F9F18F143FCE25651C6EC805A33065F70D7DBDF1E0B0D01B6421F3F83C4BC75"
+  },
+  "order_id": "Order-021",
+  "permissions": {
+    "network": false,
+    "reference_write": false,
+    "subprocess": "approved fixture paths only"
+  },
+  "plan_version": "1.0",
+  "required_validators": [
+    {
+      "criteria": {
+        "expected_value": "phase1-ok"
+      },
+      "path": "03_Tests/fixtures/validator_success.py",
+      "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+      "validator_id": "VAL-MVP1-B"
+    }
+  ],
+  "shared_resources": [],
+  "steps": [
+    {
+      "action": "execute selected or synthetic capability",
+      "step_id": "REUSE-B-STEP-001"
+    }
+  ],
+  "task_id": "TASK-MVP1-B",
+  "write_owner": "Codex",
+  "write_scope": [
+    "04_Evidence/mvp_test_1/scenarios"
+  ]
+}

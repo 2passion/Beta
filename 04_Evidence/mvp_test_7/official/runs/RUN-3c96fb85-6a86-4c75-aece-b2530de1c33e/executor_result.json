@@ -1,0 +1,559 @@
+{
+  "change_reason_ref": "Order-044",
+  "execution_counts": {
+    "A": {
+      "STEP-1": 1,
+      "STEP-2": 1,
+      "STEP-3": 1,
+      "STEP-4": 1
+    },
+    "B": {
+      "STEP-1": 1,
+      "STEP-2": 1,
+      "STEP-3": 0,
+      "STEP-4": 0
+    },
+    "C": {
+      "STEP-1": 1,
+      "STEP-2": 0,
+      "STEP-3": 0,
+      "STEP-4": 0
+    },
+    "D": {
+      "STEP-1": 1,
+      "STEP-2": 1,
+      "STEP-3": 0,
+      "STEP-4": 0
+    },
+    "E": {
+      "STEP-1": 1,
+      "STEP-2": 1,
+      "STEP-3": 0,
+      "STEP-4": 0
+    },
+    "F": {
+      "STEP-1": 1,
+      "STEP-2": 1,
+      "STEP-3": 1,
+      "STEP-4": 1
+    },
+    "G": {
+      "STEP-1": 1,
+      "STEP-2": 1,
+      "STEP-3": 0,
+      "STEP-4": 0
+    }
+  },
+  "mvp_test_id": "MVP-TEST-7",
+  "mvp_test_name": "Resume",
+  "plan_version": "1.1",
+  "scenario_dirs": {
+    "A": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\A",
+    "B": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\B",
+    "C": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\C",
+    "D": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\D",
+    "E": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\E",
+    "F": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\F",
+    "G": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\G"
+  },
+  "scenario_id": "SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa",
+  "scenario_manifest": [
+    {
+      "relative_path": "A/checkpoints/CP-0c9cb981-ba96-4470-ade5-367598a85570.json",
+      "scenario_id": "A",
+      "sha256": "30CA587895D8FC221EFBC9CC22E82FA7BB9A91285CAB1A38D1164C55C34B63D6"
+    },
+    {
+      "relative_path": "A/checkpoints/CP-b609b7b2-64fa-47e4-a939-f1a5f5ae1677.json",
+      "scenario_id": "A",
+      "sha256": "6CA4064049918DD75C9E62CB527005A31BBBB0FB4D15BCEB9ECBF009575A2C62"
+    },
+    {
+      "relative_path": "A/checkpoints/CP-d55925ac-ec3c-4f6b-857f-e32f38a4a23c.json",
+      "scenario_id": "A",
+      "sha256": "4AEA719E982E54EE4EC0AA63DF03CFEBCAACCD6A1696318288CFB57477995168"
+    },
+    {
+      "relative_path": "A/checkpoints/CP-e0c64aeb-27bd-4ebe-bf2d-2b538fb19471.json",
+      "scenario_id": "A",
+      "sha256": "C7968F0FEF9695B2DEBF756B57B8B8C3BEEF4C522C70A8E1E428D15DFBF9D967"
+    },
+    {
+      "relative_path": "A/events.jsonl",
+      "scenario_id": "A",
+      "sha256": "A51CC57EFC47C04AE22D0656F91EF277007B6CCEC1F0B905585D2CB3EA3E2374"
+    },
+    {
+      "relative_path": "A/evidence/EVD-STEP-1.json",
+      "scenario_id": "A",
+      "sha256": "72C5AFDEB5802CF405758325324B621AC12A65A191094D8A704B743E1247391E"
+    },
+    {
+      "relative_path": "A/evidence/EVD-STEP-2.json",
+      "scenario_id": "A",
+      "sha256": "0BEE0E9D6E9DB8D68D2253867751F9F532A1B78F69031EE22285B62673FA400D"
+    },
+    {
+      "relative_path": "A/evidence/EVD-STEP-3.json",
+      "scenario_id": "A",
+      "sha256": "55428E611FFD1D67C0E536BE7B055D29ABE0AAA70E57DBB693D83995994106EB"
+    },
+    {
+      "relative_path": "A/evidence/EVD-STEP-4.json",
+      "scenario_id": "A",
+      "sha256": "7C75C64B722D43F929E92604FE39A29ACC01BCAFA433B161F214CE5423F9C35B"
+    },
+    {
+      "relative_path": "A/side_effects/STEP-1.json",
+      "scenario_id": "A",
+      "sha256": "0B03F53C5B3981E04898D9208FBCA77D89265A1BEC118564BC53A247A0FA590E"
+    },
+    {
+      "relative_path": "A/side_effects/STEP-2.json",
+      "scenario_id": "A",
+      "sha256": "8FDD8BC7D56428F3EAFE793CEAF4CBCC5B111857A5E81070A27B87E72FDC0127"
+    },
+    {
+      "relative_path": "A/side_effects/STEP-3.json",
+      "scenario_id": "A",
+      "sha256": "F3139CFAAAB19682C50F1F9444582174F3660342814CC1FFF5D3283F9C2420E5"
+    },
+    {
+      "relative_path": "A/side_effects/STEP-4.json",
+      "scenario_id": "A",
+      "sha256": "CF8B3FFE74D25FC2ABFEB8099DB63653D90A7B63166DC14FED91AFA86B0915FD"
+    },
+    {
+      "relative_path": "A/validations/STEP-1.json",
+      "scenario_id": "A",
+      "sha256": "E26652A5057CD5FD73DD0BEFC8A75F5E9D1F8208DA1BA98227340A44334F9189"
+    },
+    {
+      "relative_path": "A/validations/STEP-2.json",
+      "scenario_id": "A",
+      "sha256": "EADD8755FCD7F2033303E5C796EB3A01E6B5A4B452DB22A6FA2220598C87AF67"
+    },
+    {
+      "relative_path": "A/validations/STEP-3.json",
+      "scenario_id": "A",
+      "sha256": "1ECF3899A75711FA0EF6E5B1226F1EF65BA1881887F5387C73CAD00DB9618940"
+    },
+    {
+      "relative_path": "A/validations/STEP-4.json",
+      "scenario_id": "A",
+      "sha256": "136CD73A5B85E159A5E31C33B9B4153B04E43D7ECD29311C7B0CBA46DB296420"
+    },
+    {
+      "relative_path": "B/checkpoints/CP-6f88a796-46df-49cc-b4e2-19d2cbb46003.json",
+      "scenario_id": "B",
+      "sha256": "9B4107F70C4DE12B380B5394047E75BACFAA17D492E20C13902C31BCE9552DCE"
+    },
+    {
+      "relative_path": "B/checkpoints/CP-79e7ac2e-f0a3-4926-9002-39093859fa82.json",
+      "scenario_id": "B",
+      "sha256": "323B9B0A47227408A1D2025AE638F4BD3A324790DDA9DF605C99283DDD8B06C0"
+    },
+    {
+      "relative_path": "B/events.jsonl",
+      "scenario_id": "B",
+      "sha256": "56EB32299ABC6BC13083A3354FDF578A79318D6516BA5D01A289CCABC313BBAD"
+    },
+    {
+      "relative_path": "B/evidence/EVD-STEP-1.json",
+      "scenario_id": "B",
+      "sha256": "34E58FDCD39380BAA8CF4BD0B9D47CBE218CA052BD0BC2BFBFDE28324AD167A8"
+    },
+    {
+      "relative_path": "B/evidence/EVD-STEP-2.json",
+      "scenario_id": "B",
+      "sha256": "B9382EE6EA87A18CA0248EC03CD7155BB40A3AEB385F9DB2BF094F147B1874C0"
+    },
+    {
+      "relative_path": "B/side_effects/STEP-1.json",
+      "scenario_id": "B",
+      "sha256": "1F786FF0D8C01F8ED3CCF401DDCEA86956720A5448B1F06CC42C62DEF4A0F107"
+    },
+    {
+      "relative_path": "B/validations/STEP-1.json",
+      "scenario_id": "B",
+      "sha256": "138C239D718DBF11A12E8820A5936DEA6267281C58B8B1A6E2B03ADC4FB7B2DC"
+    },
+    {
+      "relative_path": "B/validations/STEP-2.json",
+      "scenario_id": "B",
+      "sha256": "C4692BD82AD073682D04F9BC83B3BB22C958D6685DE679234D9A10692B8CCD37"
+    },
+    {
+      "relative_path": "C/events.jsonl",
+      "scenario_id": "C",
+      "sha256": "29F9AB9946CA7B82B0BA8AE81F025EE5F5C5814617603B3A5DE9FA90C1E52C67"
+    },
+    {
+      "relative_path": "C/evidence/EVD-STEP-1.json",
+      "scenario_id": "C",
+      "sha256": "5509D7CBCC20CD26F8FB414DF8F30063E0C719F73806ED0DBBBD8C80DCDB5163"
+    },
+    {
+      "relative_path": "C/side_effects/STEP-1.json",
+      "scenario_id": "C",
+      "sha256": "B94981B1D18D472A8DE47048387E3EE977F959D37ADB44951052EBD9EF031540"
+    },
+    {
+      "relative_path": "C/user_output_chunk.json",
+      "scenario_id": "C",
+      "sha256": "011599DC84CD59EF4717D15DE0BA177C5A6C1290F03DA18E73854DB292D3CB9D"
+    },
+    {
+      "relative_path": "C/validations/STEP-1.json",
+      "scenario_id": "C",
+      "sha256": "4CA6F1A4F2B819A6DA58C4598018FD59FF0D06961DB3B4C1B246C03B84905DBF"
+    },
+    {
+      "relative_path": "D/checkpoints/CP-5905e562-f09c-4e71-9764-31d5afa6d27a.json",
+      "scenario_id": "D",
+      "sha256": "FE9BF88E2589793A8BC445B35CED60577BEAC64247D2BC6E72B959734CD9B054"
+    },
+    {
+      "relative_path": "D/checkpoints/CP-7206d322-1d53-4b68-aa81-7f8dd5c8403d.json",
+      "scenario_id": "D",
+      "sha256": "ED490E6FD7A1050168A1077B7493AA539675A31B1C0F85AE2D5798086C0F7737"
+    },
+    {
+      "relative_path": "D/events.jsonl",
+      "scenario_id": "D",
+      "sha256": "BB28D42CB613004EE4C65D152FF2DAC8BCFB45DDBA97201FC3BED14C08AE5553"
+    },
+    {
+      "relative_path": "D/evidence/EVD-STEP-1.json",
+      "scenario_id": "D",
+      "sha256": "D42630292FD12AE4A8BC10EFD9BFC1881791CBFF91B5D6F8841BDBAF8D386155"
+    },
+    {
+      "relative_path": "D/evidence/EVD-STEP-2.json",
+      "scenario_id": "D",
+      "sha256": "8257AECF7C76B8791E3F07D3FB041FC0A0EE0B5246F83BD6E6C58C00E294B878"
+    },
+    {
+      "relative_path": "D/side_effects/STEP-1.json",
+      "scenario_id": "D",
+      "sha256": "E632B16AE417F93D7E00E6B443524591CEFAC7AA995D5C495B297E0EBCE0E18F"
+    },
+    {
+      "relative_path": "D/side_effects/STEP-2.json",
+      "scenario_id": "D",
+      "sha256": "0C38190F0839BFC29B6E091331FF91E43D606835E7CE8272F21CAE63804B6FC8"
+    },
+    {
+      "relative_path": "D/validations/STEP-1.json",
+      "scenario_id": "D",
+      "sha256": "83B1F4943A741F8D4AABFBD92418D0175159207CC15B530075E88C74CC7AC6B0"
+    },
+    {
+      "relative_path": "D/validations/STEP-2.json",
+      "scenario_id": "D",
+      "sha256": "6EC95B6A7BAB5967331F87D1D7179897DC412174DFE21AD4A8D19918584FBD19"
+    },
+    {
+      "relative_path": "E/checkpoints/CP-6f8742d7-221b-4648-9a54-a47d040741ba.json",
+      "scenario_id": "E",
+      "sha256": "0E36695A34EE67E986ABB08C5623B2FE3DD4081BFE41E189866ABFABE5B30CD5"
+    },
+    {
+      "relative_path": "E/checkpoints/CP-a41287e6-5375-4c00-9461-a7508e387acd.json",
+      "scenario_id": "E",
+      "sha256": "C9E4B44548A45B14769E560D81AD0D81A07C5C3ED5437F3BAE0E187FC0D6B860"
+    },
+    {
+      "relative_path": "E/events.jsonl",
+      "scenario_id": "E",
+      "sha256": "D3826F681599DC5189DFAD91D60C15B7482C00427522CACEF6179953275C01B0"
+    },
+    {
+      "relative_path": "E/evidence/EVD-STEP-1.json",
+      "scenario_id": "E",
+      "sha256": "D1EFBD65FD9EE3CE54C0965888699FB99FCF6B20CA93BDD1FEA8477569508111"
+    },
+    {
+      "relative_path": "E/evidence/EVD-STEP-2.json",
+      "scenario_id": "E",
+      "sha256": "E0FACF0B9F40304ACAED393B6A0EBEF6EE655C5BA839C2B788F07E907CA6BCD7"
+    },
+    {
+      "relative_path": "E/side_effects/STEP-1.json",
+      "scenario_id": "E",
+      "sha256": "B3F6B1CA4809D4C78DE9E406A440C32E393D8BC4051767A81F1F5CE15875E84A"
+    },
+    {
+      "relative_path": "E/side_effects/STEP-2.json",
+      "scenario_id": "E",
+      "sha256": "5A4DB1DD1874EE79AE8B08DCD5D4F76493F11D0B648C2AF1C34CC6E8995D2C4B"
+    },
+    {
+      "relative_path": "E/validations/STEP-1.json",
+      "scenario_id": "E",
+      "sha256": "CD467E0DDF3B696A9C5528ECED3B97FC282D93D731B85D38E3598FA6500325D4"
+    },
+    {
+      "relative_path": "E/validations/STEP-2.json",
+      "scenario_id": "E",
+      "sha256": "6D29077E3A0A0C826052679B731699E8468A0096A65E27A39934A33CCD3D8A8F"
+    },
+    {
+      "relative_path": "F/checkpoints/CP-2e61e54f-af40-4b7b-9aa9-96b1774864ee.json",
+      "scenario_id": "F",
+      "sha256": "450A5B14973E4E7C048E3F6D00512FF8F1CB6B720410CE3471F70A0480CC95BD"
+    },
+    {
+      "relative_path": "F/checkpoints/CP-370fab39-61f5-4c1a-a1c0-bcde82ece6ab.json",
+      "scenario_id": "F",
+      "sha256": "9E8676D09D27F072CF6DCA87D3C2A46CC6D7CFBA9D48911E64BA93E6ED382119"
+    },
+    {
+      "relative_path": "F/checkpoints/CP-3874d0a7-e8a1-42e7-a2a5-560679362e0d.json",
+      "scenario_id": "F",
+      "sha256": "9D6710330BD871C6D5958DB553BCB020F6AF408CF6B9B1D66247ACC8A095492B"
+    },
+    {
+      "relative_path": "F/checkpoints/CP-7c37f2ef-72bf-4f6d-947b-ccbea9217d68.json",
+      "scenario_id": "F",
+      "sha256": "73111DA3511BA61F2CCE4E9AC380B025300A3AFB9B92262DB117ABB9DA1158F8"
+    },
+    {
+      "relative_path": "F/events.jsonl",
+      "scenario_id": "F",
+      "sha256": "2FC6CC5DE9AA9956FF25C7D440CC230ECAEE85AF63CA9C42401BFF517438F623"
+    },
+    {
+      "relative_path": "F/evidence/EVD-STEP-1.json",
+      "scenario_id": "F",
+      "sha256": "2A9AA8632DBA576EA995DF3B78A597DB5AC44D0B0AECDDB39333B3CED178F626"
+    },
+    {
+      "relative_path": "F/evidence/EVD-STEP-2.json",
+      "scenario_id": "F",
+      "sha256": "25AD36A9BD46B31E2AD75B89291150520AA5F9CEA69850F9121DF508CF44CB27"
+    },
+    {
+      "relative_path": "F/evidence/EVD-STEP-3.json",
+      "scenario_id": "F",
+      "sha256": "CD8C29EA7F8AFCBC281FE0031A40533020C08755A1FDFADC8753953F59446AAE"
+    },
+    {
+      "relative_path": "F/evidence/EVD-STEP-4.json",
+      "scenario_id": "F",
+      "sha256": "5D44081DFA68FFD6591ACBC3AB65EE7D0788331B0E9EDF2C0BDE471372F90173"
+    },
+    {
+      "relative_path": "F/side_effects/STEP-1.json",
+      "scenario_id": "F",
+      "sha256": "D0006E3600F9618A5E66769667A865DED0FEBC82A57B9C37C6B6C5BDEDE8EC28"
+    },
+    {
+      "relative_path": "F/side_effects/STEP-2.json",
+      "scenario_id": "F",
+      "sha256": "4D3FD4BDE38EE07B2DCE9367850D4E89A33AF927CF588EF08536F1E08438EF35"
+    },
+    {
+      "relative_path": "F/side_effects/STEP-3.json",
+      "scenario_id": "F",
+      "sha256": "51688E9403F9B884D46B4E0CFB512B74912E11B144FFDED34FFAE379F8DB6214"
+    },
+    {
+      "relative_path": "F/side_effects/STEP-4.json",
+      "scenario_id": "F",
+      "sha256": "5B48855BE84957EFBC17BB380AC1155C2CA46B6660A794BD9C7006A370E05B54"
+    },
+    {
+      "relative_path": "F/validations/STEP-1.json",
+      "scenario_id": "F",
+      "sha256": "AA28EF9AD410000A40E913D5446B918AF6B112AB9A40E1FCCB4E8ED25C8A6AE8"
+    },
+    {
+      "relative_path": "F/validations/STEP-2.json",
+      "scenario_id": "F",
+      "sha256": "003D18BD086C0FC7B2B1459D21F04AE6198A6285C9B10451BEA4EE378635A668"
+    },
+    {
+      "relative_path": "F/validations/STEP-3.json",
+      "scenario_id": "F",
+      "sha256": "1DD3ED7A238AD8203F81EEF4E8A95BDA7D3961B11BDFADFB092798D3AA5A2CF3"
+    },
+    {
+      "relative_path": "F/validations/STEP-4.json",
+      "scenario_id": "F",
+      "sha256": "3CB9B6CF13E42D19ACA57A23EF43E3C95A202EAF296AEB05ECDDE54237978F79"
+    },
+    {
+      "relative_path": "G/checkpoints/CP-0eb03680-f2b0-444e-9c79-8522231948b5.json",
+      "scenario_id": "G",
+      "sha256": "755FE8E26CEE077903ABE46C8D864672A4EC98CCCE5B7BC43A34F94F86403896"
+    },
+    {
+      "relative_path": "G/checkpoints/CP-1a939418-3747-4e11-b638-cdb19fc4e844.json",
+      "scenario_id": "G",
+      "sha256": "991699A3C62C642D7E9757317C5ED9D4C05D8F93D0BA22E4A3AD0C8E5B49C8F5"
+    },
+    {
+      "relative_path": "G/events.jsonl",
+      "scenario_id": "G",
+      "sha256": "B21107EBFBB233E0691AB1584D98EC694153ED280202728981DEB2C50BAD7BEE"
+    },
+    {
+      "relative_path": "G/evidence/EVD-STEP-1.json",
+      "scenario_id": "G",
+      "sha256": "3E625178FC4D85AC99F05154D29EE61AAD6142D25B977446E2FA2E75AEE9320D"
+    },
+    {
+      "relative_path": "G/evidence/EVD-STEP-2.json",
+      "scenario_id": "G",
+      "sha256": "82BF59D230B6D451CA06199A974DF88F4E7C8E6B7FA23B58212CEB40DFDF1F5C"
+    },
+    {
+      "relative_path": "G/side_effects/STEP-1.json",
+      "scenario_id": "G",
+      "sha256": "E2BD61F229FFD186492FAFA1DF7927F7E4A72FCCAD17AD5B51E7E10DB63F1175"
+    },
+    {
+      "relative_path": "G/side_effects/STEP-2.json",
+      "scenario_id": "G",
+      "sha256": "0474F3F0A089A574922B97BD5376EC5FFC2C6EC269622DAD0773CA3A46B1DD12"
+    },
+    {
+      "relative_path": "G/validations/STEP-1.json",
+      "scenario_id": "G",
+      "sha256": "AECD8EAA87E5276D16AAB7D4759798679FFB69C860FD17957E07A3D0969645EE"
+    },
+    {
+      "relative_path": "G/validations/STEP-2.json",
+      "scenario_id": "G",
+      "sha256": "EC70FC60539B5702AE14FBFCF64877CBFA27023FB9F717AAB28B5395823D6972"
+    }
+  ],
+  "scenario_root": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa",
+  "scenarios": {
+    "A": {
+      "decision": {
+        "decision": "RESUME_ALLOWED",
+        "next_step": "STEP-3",
+        "reason_code": "VERIFIED_CHECKPOINT"
+      },
+      "final_checkpoint": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\A\\checkpoints\\CP-d55925ac-ec3c-4f6b-857f-e32f38a4a23c.json",
+      "source_checkpoint": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\A\\checkpoints\\CP-e0c64aeb-27bd-4ebe-bf2d-2b538fb19471.json"
+    },
+    "B": {
+      "checkpoint": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\B\\checkpoints\\CP-79e7ac2e-f0a3-4926-9002-39093859fa82.json",
+      "decision": {
+        "decision": "HOLD",
+        "next_step": null,
+        "reason_code": "SIDE_EFFECT_DRIFT"
+      }
+    },
+    "C": {
+      "chunk": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\C\\user_output_chunk.json",
+      "chunk_decision": {
+        "decision": "HOLD",
+        "next_step": null,
+        "reason_code": "CHUNK_NOT_CHECKPOINT"
+      },
+      "decision": {
+        "decision": "HOLD",
+        "next_step": null,
+        "reason_code": "CHECKPOINT_MISSING"
+      }
+    },
+    "D": {
+      "checkpoint": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\D\\checkpoints\\CP-5905e562-f09c-4e71-9764-31d5afa6d27a.json",
+      "decision": {
+        "decision": "HOLD",
+        "next_step": null,
+        "reason_code": "PLAN_VERSION_MISMATCH"
+      }
+    },
+    "E": {
+      "checkpoint": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\E\\checkpoints\\CP-a41287e6-5375-4c00-9461-a7508e387acd.json",
+      "decision": {
+        "decision": "HOLD",
+        "next_step": null,
+        "reason_code": "LAST_STEP_NOT_PASS"
+      }
+    },
+    "F": {
+      "after_reentry": {
+        "checkpoint_count": 4,
+        "event_count": 23,
+        "file_snapshot": {
+          "checkpoints/CP-2e61e54f-af40-4b7b-9aa9-96b1774864ee.json": "450A5B14973E4E7C048E3F6D00512FF8F1CB6B720410CE3471F70A0480CC95BD",
+          "checkpoints/CP-370fab39-61f5-4c1a-a1c0-bcde82ece6ab.json": "9E8676D09D27F072CF6DCA87D3C2A46CC6D7CFBA9D48911E64BA93E6ED382119",
+          "checkpoints/CP-3874d0a7-e8a1-42e7-a2a5-560679362e0d.json": "9D6710330BD871C6D5958DB553BCB020F6AF408CF6B9B1D66247ACC8A095492B",
+          "checkpoints/CP-7c37f2ef-72bf-4f6d-947b-ccbea9217d68.json": "73111DA3511BA61F2CCE4E9AC380B025300A3AFB9B92262DB117ABB9DA1158F8",
+          "events.jsonl": "2FC6CC5DE9AA9956FF25C7D440CC230ECAEE85AF63CA9C42401BFF517438F623",
+          "evidence/EVD-STEP-1.json": "2A9AA8632DBA576EA995DF3B78A597DB5AC44D0B0AECDDB39333B3CED178F626",
+          "evidence/EVD-STEP-2.json": "25AD36A9BD46B31E2AD75B89291150520AA5F9CEA69850F9121DF508CF44CB27",
+          "evidence/EVD-STEP-3.json": "CD8C29EA7F8AFCBC281FE0031A40533020C08755A1FDFADC8753953F59446AAE",
+          "evidence/EVD-STEP-4.json": "5D44081DFA68FFD6591ACBC3AB65EE7D0788331B0E9EDF2C0BDE471372F90173",
+          "side_effects/STEP-1.json": "D0006E3600F9618A5E66769667A865DED0FEBC82A57B9C37C6B6C5BDEDE8EC28",
+          "side_effects/STEP-2.json": "4D3FD4BDE38EE07B2DCE9367850D4E89A33AF927CF588EF08536F1E08438EF35",
+          "side_effects/STEP-3.json": "51688E9403F9B884D46B4E0CFB512B74912E11B144FFDED34FFAE379F8DB6214",
+          "side_effects/STEP-4.json": "5B48855BE84957EFBC17BB380AC1155C2CA46B6660A794BD9C7006A370E05B54",
+          "validations/STEP-1.json": "AA28EF9AD410000A40E913D5446B918AF6B112AB9A40E1FCCB4E8ED25C8A6AE8",
+          "validations/STEP-2.json": "003D18BD086C0FC7B2B1459D21F04AE6198A6285C9B10451BEA4EE378635A668",
+          "validations/STEP-3.json": "1DD3ED7A238AD8203F81EEF4E8A95BDA7D3961B11BDFADFB092798D3AA5A2CF3",
+          "validations/STEP-4.json": "3CB9B6CF13E42D19ACA57A23EF43E3C95A202EAF296AEB05ECDDE54237978F79"
+        },
+        "managed_file_count": 17,
+        "run_directory_count": 0,
+        "runtime_evidence_count": 4
+      },
+      "before_reentry": {
+        "checkpoint_count": 4,
+        "event_count": 23,
+        "file_snapshot": {
+          "checkpoints/CP-2e61e54f-af40-4b7b-9aa9-96b1774864ee.json": "450A5B14973E4E7C048E3F6D00512FF8F1CB6B720410CE3471F70A0480CC95BD",
+          "checkpoints/CP-370fab39-61f5-4c1a-a1c0-bcde82ece6ab.json": "9E8676D09D27F072CF6DCA87D3C2A46CC6D7CFBA9D48911E64BA93E6ED382119",
+          "checkpoints/CP-3874d0a7-e8a1-42e7-a2a5-560679362e0d.json": "9D6710330BD871C6D5958DB553BCB020F6AF408CF6B9B1D66247ACC8A095492B",
+          "checkpoints/CP-7c37f2ef-72bf-4f6d-947b-ccbea9217d68.json": "73111DA3511BA61F2CCE4E9AC380B025300A3AFB9B92262DB117ABB9DA1158F8",
+          "events.jsonl": "2FC6CC5DE9AA9956FF25C7D440CC230ECAEE85AF63CA9C42401BFF517438F623",
+          "evidence/EVD-STEP-1.json": "2A9AA8632DBA576EA995DF3B78A597DB5AC44D0B0AECDDB39333B3CED178F626",
+          "evidence/EVD-STEP-2.json": "25AD36A9BD46B31E2AD75B89291150520AA5F9CEA69850F9121DF508CF44CB27",
+          "evidence/EVD-STEP-3.json": "CD8C29EA7F8AFCBC281FE0031A40533020C08755A1FDFADC8753953F59446AAE",
+          "evidence/EVD-STEP-4.json": "5D44081DFA68FFD6591ACBC3AB65EE7D0788331B0E9EDF2C0BDE471372F90173",
+          "side_effects/STEP-1.json": "D0006E3600F9618A5E66769667A865DED0FEBC82A57B9C37C6B6C5BDEDE8EC28",
+          "side_effects/STEP-2.json": "4D3FD4BDE38EE07B2DCE9367850D4E89A33AF927CF588EF08536F1E08438EF35",
+          "side_effects/STEP-3.json": "51688E9403F9B884D46B4E0CFB512B74912E11B144FFDED34FFAE379F8DB6214",
+          "side_effects/STEP-4.json": "5B48855BE84957EFBC17BB380AC1155C2CA46B6660A794BD9C7006A370E05B54",
+          "validations/STEP-1.json": "AA28EF9AD410000A40E913D5446B918AF6B112AB9A40E1FCCB4E8ED25C8A6AE8",
+          "validations/STEP-2.json": "003D18BD086C0FC7B2B1459D21F04AE6198A6285C9B10451BEA4EE378635A668",
+          "validations/STEP-3.json": "1DD3ED7A238AD8203F81EEF4E8A95BDA7D3961B11BDFADFB092798D3AA5A2CF3",
+          "validations/STEP-4.json": "3CB9B6CF13E42D19ACA57A23EF43E3C95A202EAF296AEB05ECDDE54237978F79"
+        },
+        "managed_file_count": 17,
+        "run_directory_count": 0,
+        "runtime_evidence_count": 4
+      },
+      "final_checkpoint": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\F\\checkpoints\\CP-7c37f2ef-72bf-4f6d-947b-ccbea9217d68.json",
+      "first_decision": {
+        "decision": "RESUME_ALLOWED",
+        "next_step": "STEP-3",
+        "reason_code": "VERIFIED_CHECKPOINT"
+      },
+      "second_decision": {
+        "decision": "NO_CHANGE",
+        "next_step": null,
+        "reason_code": "ALREADY_COMPLETE"
+      }
+    },
+    "G": {
+      "checkpoint": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-83fe028d-5f85-4bdf-a760-04cc32231cfa\\G\\checkpoints\\CP-0eb03680-f2b0-444e-9c79-8522231948b5.json",
+      "routing_decision": {
+        "decision": "HOLD",
+        "next_step": null,
+        "reason_code": "ROUTING_MISMATCH"
+      },
+      "scope_decision": {
+        "decision": "APPROVAL_REQUIRED",
+        "next_step": null,
+        "reason_code": "APPROVAL_SCOPE_REQUIRED"
+      }
+    }
+  }
+}

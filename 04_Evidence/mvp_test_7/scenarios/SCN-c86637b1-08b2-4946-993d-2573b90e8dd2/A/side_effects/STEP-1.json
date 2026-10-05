@@ -1,0 +1,7 @@
+{
+  "plan_version": "1.0",
+  "run_id": "RUN-INTERRUPTED-b73aa4f9-ab7f-4843-a9cb-e1ddab4fa8cf",
+  "step_id": "STEP-1",
+  "task_id": "MVP-TEST-7-RESUME",
+  "value": "result:STEP-1"
+}

@@ -1,0 +1,45 @@
+{
+  "task_id": "MVP-TEST-3-SAFE-PARALLEL",
+  "plan_version": "1.1",
+  "order_id": "Order-049",
+  "change_reason_ref": "Order-049",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/mvp_test_3"],
+  "shared_resources": [],
+  "depends_on": ["MVP-TEST-2-OWNERSHIP", "MVP-TEST-4-BOTTLENECK", "MVP-TEST-5-PREVENTION", "MVP-TEST-6-USER-GATE", "MVP-TEST-7-RESUME"],
+  "steps": [{"step_id": "MVP3-SAFE-PARALLEL-001", "action": "execute Safe Parallel scenarios A-H"}],
+  "executor": {
+    "path": "03_Tests/fixtures/parallel_scenario_executor.py",
+    "sha256": "EF9954A8AAEA92BAE90C2F5ED5D66FAAB63DD1CB3D4D398086C95C888268D4D0"
+  },
+  "required_validators": [{
+    "validator_id": "VAL-MVP-TEST-3-SAFE-PARALLEL",
+    "path": "03_Tests/fixtures/parallel_validator.py",
+    "sha256": "8C707D7DED0AA2BB9CD23BD1A0E48C4244BC0AC171F1053F12503D85420EF355",
+    "criteria": {
+      "mvp_test_id": "MVP-TEST-3",
+      "mvp_test_name": "Safe Parallel",
+      "test_plan_id": "MVP-TEST-3-SAFE-PARALLEL",
+      "test_plan_version": "1.1",
+      "routing_order_id": "Order-049"
+    }
+  }],
+  "completion_criteria": [
+    "only independently proven tasks receive PARALLEL_ALLOWED",
+    "Scenario A proves actual concurrent execution by cross-checking worker observations and runtime records",
+    "dependency, canonical and uncertain Windows path, owner, domain, shared resource, permission, routing, and unknown conflicts are independently detected",
+    "SEQUENTIAL_REQUIRED uses deterministic non-overlapping order and dependency cycles HOLD",
+    "Scenario H derives batch result and recovery candidates from independent per-task Validation",
+    "Task to Run to Output to Validation to Evidence linkage is independently verified",
+    "Scenario A-H relative-path and SHA-256 manifest is independently verified",
+    "Mutations M1-M13 fail under independent Validator recomputation",
+    "official Validation passes and Gate proceeds"
+  ],
+  "permissions": {
+    "subprocess": "approved fixture paths only",
+    "network": false,
+    "database": false,
+    "external_publish": false,
+    "git": false
+  }
+}

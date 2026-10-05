@@ -1,0 +1,33 @@
+{
+  "task_id": "MVP-TEST-2-OWNERSHIP",
+  "plan_version": "1.1",
+  "order_id": "Order-019",
+  "change_reason_ref": "Order-019",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/mvp_test_2"],
+  "shared_resources": [],
+  "depends_on": [],
+  "steps": [{"step_id": "MVP2-OWNERSHIP-001", "action": "execute Ownership scenarios A/B/C"}],
+  "executor": {
+    "path": "03_Tests/fixtures/ownership_scenario_executor.py",
+    "sha256": "02878DCC92299B089590449E47B74879142719E0E4503E503E961BDB21B95147"
+  },
+  "required_validators": [{
+    "validator_id": "VAL-MVP-TEST-2-OWNERSHIP",
+    "path": "03_Tests/fixtures/ownership_validator.py",
+    "sha256": "35BAB868A3A8A5C5762EAB165A06DBD00D6D492909E31E9C0CAA4FB888BCFA45",
+    "criteria": {
+      "mvp_test_id": "MVP-TEST-2",
+      "mvp_test_name": "Ownership",
+      "test_plan_id": "MVP-TEST-2-OWNERSHIP",
+      "test_plan_version": "1.1"
+    }
+  }],
+  "completion_criteria": [
+    "Ownership Scenario A/B/C records satisfy the independent Validator",
+    "official Validation is PASS",
+    "official Gate is PROCEED",
+    "official Evidence links Scenario Evidence"
+  ],
+  "permissions": {"subprocess": "approved fixture paths only", "network": false, "reference_write": false}
+}

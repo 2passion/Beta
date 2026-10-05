@@ -1,0 +1,29 @@
+{
+  "enforcement": {
+    "run_directory_delta": 1,
+    "run_started_delta": 1,
+    "run_task_call_count": 1,
+    "runtime_evidence_delta": 1
+  },
+  "fix_signature": "6FD42BEE93411AA5CDD91098A45FB4610416B845A0A1C0B8646A994CD221EF30",
+  "gate": "PROCEED",
+  "prevention_id": "PREV-65e6b179-04da-485f-93ca-48cb9ce7ad91",
+  "search": {
+    "eligibility_checked": true,
+    "eligibility_reasons": [],
+    "eligible": true,
+    "exact_fingerprint_match": true,
+    "fix_contract_valid": true,
+    "fix_preapplied": true,
+    "outcome": "MATCH",
+    "requested_fingerprint": "05BB7BEC2E7027AFA94B453B0A0A6537C2202D06D9D3D4F3791C5F4483A67AB5",
+    "search_scope": "verified Prevention candidates",
+    "selected_prevention_id": "PREV-65e6b179-04da-485f-93ca-48cb9ce7ad91",
+    "source_actual_fix_signature": "6FD42BEE93411AA5CDD91098A45FB4610416B845A0A1C0B8646A994CD221EF30",
+    "target_actual_fix_signature": "6FD42BEE93411AA5CDD91098A45FB4610416B845A0A1C0B8646A994CD221EF30"
+  },
+  "target_plan_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_5\\scenarios\\SCN-4ddfb5fe-b5f3-4521-bddc-f5dbb9869146\\b_exact_match_preapply\\target_plan.json",
+  "target_plan_sha256": "4BCE0F3CA0A4CFCBCD09759DA4412397B1CC23C6191DDF56249DB1AC85EB02B1",
+  "target_run_id": "RUN-be2284d5-5abc-421b-97cc-4cedebf208d4",
+  "validation": "PASS"
+}

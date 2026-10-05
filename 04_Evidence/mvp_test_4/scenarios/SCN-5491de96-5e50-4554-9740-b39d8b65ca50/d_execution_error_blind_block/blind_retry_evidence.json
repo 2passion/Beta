@@ -1,0 +1,48 @@
+{
+  "created_at": "2026-10-03T18:26:26.388564Z",
+  "decision": {
+    "below_limit": true,
+    "candidate_fix_signature": "6C9F4E786F2214F7BF9877DE159B934785F42C0B64B756018A2974B77FBB27FE",
+    "change_reason_ref": null,
+    "decision": "BLOCK_BLIND_RETRY",
+    "fingerprint": "D8C724C399872B861F30963F09AD2AC7309BDA2AC99B9764008A11CA8577EB7B",
+    "fix_changed": false,
+    "from_plan_version": "1.0",
+    "observed_new_version_run_count": 1,
+    "prior_fix_signature": "6C9F4E786F2214F7BF9877DE159B934785F42C0B64B756018A2974B77FBB27FE",
+    "prior_matching_run_ids": [
+      "RUN-4c9fbcc2-0419-4cb3-8aab-cfb6d02f1981"
+    ],
+    "reason": "same fingerprint with no relevant plan or fix change",
+    "run_limit": 3,
+    "to_plan_version": "1.0",
+    "version_changed": false
+  },
+  "failure": {
+    "failure_class": "EXECUTION_ERROR",
+    "fingerprint": "D8C724C399872B861F30963F09AD2AC7309BDA2AC99B9764008A11CA8577EB7B",
+    "fingerprint_inputs": {
+      "failing_component": "executor",
+      "failure_class": "EXECUTION_ERROR",
+      "identity": "CC27DCD3EDC6EC3353DCAD3F7772140E198B28AF4DB7AE19267B4FA22B3CC22A",
+      "normalized_reason": "executor exited with code 7",
+      "relevant": {
+        "criteria": null,
+        "plan_version": "1.0"
+      }
+    },
+    "normalized_reason": "executor exited with code 7",
+    "plan_version": "1.0",
+    "source_run_id": "RUN-4c9fbcc2-0419-4cb3-8aab-cfb6d02f1981"
+  },
+  "source_result": {
+    "evidence": null,
+    "execution": "ERROR",
+    "gate": "BLOCK",
+    "plan_version": "1.0",
+    "run_id": "RUN-4c9fbcc2-0419-4cb3-8aab-cfb6d02f1981",
+    "status": "ERROR",
+    "task_id": "TASK-MVP4-D",
+    "validation": "NOT_RUN"
+  }
+}

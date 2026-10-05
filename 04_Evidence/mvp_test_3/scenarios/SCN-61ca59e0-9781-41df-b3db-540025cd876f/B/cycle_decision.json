@@ -1,0 +1,4 @@
+{
+  "decision": "HOLD",
+  "reason_code": "DEPENDENCY_CYCLE"
+}

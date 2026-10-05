@@ -1,0 +1,7 @@
+{
+  "conflicts": [
+    "SHARED_MUTABLE_RESOURCE"
+  ],
+  "decision": "SEQUENTIAL_REQUIRED",
+  "reason_code": "SHARED_MUTABLE_RESOURCE"
+}

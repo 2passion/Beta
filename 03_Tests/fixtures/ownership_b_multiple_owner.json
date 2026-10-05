@@ -1,0 +1,23 @@
+{
+  "task_id": "TASK-MVP2-B",
+  "plan_version": "1.0",
+  "order_id": "Order-017",
+  "change_reason_ref": "Order-017 / Ownership Scenario B",
+  "write_owner": "Codex, Claude Code",
+  "write_scope": ["04_Evidence/mvp_test_2/scenarios"],
+  "shared_resources": [],
+  "depends_on": [],
+  "steps": [{"step_id": "OWN-B-STEP-001", "action": "attempt multiple-owner synthetic task"}],
+  "executor": {
+    "path": "03_Tests/fixtures/executor_success.py",
+    "sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A"
+  },
+  "required_validators": [{
+    "validator_id": "VAL-MVP2-B",
+    "path": "03_Tests/fixtures/validator_success.py",
+    "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+    "criteria": {"expected_value": "phase1-ok"}
+  }],
+  "completion_criteria": ["multiple owner is blocked before execution"],
+  "permissions": {"subprocess": "approved fixture paths only", "network": false, "reference_write": false}
+}

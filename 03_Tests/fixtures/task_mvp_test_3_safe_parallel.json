@@ -1,0 +1,46 @@
+{
+  "task_id": "MVP-TEST-3-SAFE-PARALLEL",
+  "plan_version": "1.2",
+  "order_id": "Order-051",
+  "change_reason_ref": "Order-051",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/mvp_test_3"],
+  "shared_resources": [],
+  "depends_on": ["MVP-TEST-2-OWNERSHIP", "MVP-TEST-4-BOTTLENECK", "MVP-TEST-5-PREVENTION", "MVP-TEST-6-USER-GATE", "MVP-TEST-7-RESUME"],
+  "steps": [{"step_id": "MVP3-SAFE-PARALLEL-001", "action": "execute Safe Parallel scenarios A-H"}],
+  "executor": {
+    "path": "03_Tests/fixtures/parallel_scenario_executor.py",
+    "sha256": "9D433EA94A96F801D488C05094110670C9C8BD388D2F19AEAC218476CDD045F6"
+  },
+  "required_validators": [{
+    "validator_id": "VAL-MVP-TEST-3-SAFE-PARALLEL",
+    "path": "03_Tests/fixtures/parallel_validator.py",
+    "sha256": "FDB0F03041CE923FC9EE62420A8C83EF88BEB91F81A826EBAB891443549494EC",
+    "criteria": {
+      "mvp_test_id": "MVP-TEST-3",
+      "mvp_test_name": "Safe Parallel",
+      "test_plan_id": "MVP-TEST-3-SAFE-PARALLEL",
+      "test_plan_version": "1.2",
+      "routing_order_id": "Order-051"
+    }
+  }],
+  "completion_criteria": [
+    "only independently proven tasks receive PARALLEL_ALLOWED",
+    "Scenario A proves actual concurrent execution by cross-checking runtime, worker observations, and filesystem stage metadata",
+    "HOLD conditions take precedence over sequential fallback conditions",
+    "dependency, canonical and unsafe Windows path, Core owner pattern, domain, shared resource, permission, routing, and unknown conflicts are independently detected",
+    "SEQUENTIAL_REQUIRED uses deterministic non-overlapping order and dependency cycles HOLD",
+    "Scenario H derives batch result and recovery candidates from independent per-task Validation",
+    "Task to Run to Output to Validation to Evidence linkage is independently verified",
+    "Scenario A-H relative-path and SHA-256 manifest is independently verified",
+    "Mutations M1-M17 enforce the approved concurrency, precedence, path, and owner contracts",
+    "official Validation passes and Gate proceeds"
+  ],
+  "permissions": {
+    "subprocess": "approved fixture paths only",
+    "network": false,
+    "database": false,
+    "external_publish": false,
+    "git": false
+  }
+}

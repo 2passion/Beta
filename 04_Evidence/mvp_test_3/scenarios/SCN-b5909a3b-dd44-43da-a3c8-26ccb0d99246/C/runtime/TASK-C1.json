@@ -1,0 +1,15 @@
+{
+  "barrier_token": null,
+  "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-b5909a3b-dd44-43da-a3c8-26ccb0d99246\\C\\evidence\\EVD-TASK-C1.json",
+  "evidence_sha256": "C7AA212CFCE3589A23175412A0DF165DAD41C8DA4A83C95A4B4D733550C09048",
+  "finished_ns": 47016932865500,
+  "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-b5909a3b-dd44-43da-a3c8-26ccb0d99246\\C\\outputs\\TASK-C1.json",
+  "output_sha256": "CA90A4D5238BE877150CDE5EFBE2C5755FEFC2E8BD64567E2078C72BB3F8D504",
+  "run_id": "RUN-3629078c-33b1-457f-bc4d-218ec50b9f7c",
+  "started_ns": 47016913949200,
+  "task_id": "TASK-C1",
+  "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-b5909a3b-dd44-43da-a3c8-26ccb0d99246\\C\\validations\\TASK-C1.json",
+  "validation_sha256": "78607755F1962687D2B21F3DE5EF5ABAE0130CB7AC86791DE33062BD5D06320E",
+  "validation_status": "PASS",
+  "worker_id": "SEQUENTIAL-MAIN"
+}

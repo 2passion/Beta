@@ -1,0 +1,16 @@
+[
+  {
+    "asset_id": "ASSET-EXECUTOR-SUCCESS",
+    "capability": "deterministic-success",
+    "path": "03_Tests/fixtures/executor_success.py",
+    "sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A",
+    "status": "approved"
+  },
+  {
+    "asset_id": "REFERENCE-HARNESS-VISUAL",
+    "capability": "visual-review",
+    "path": "Reference/harness-visual-review.html",
+    "sha256": "17490AA44F8FEAE35B55F1CF811D18AA1A6EB0716ABAB398B1A016B3600E14C0",
+    "status": "reference"
+  }
+]

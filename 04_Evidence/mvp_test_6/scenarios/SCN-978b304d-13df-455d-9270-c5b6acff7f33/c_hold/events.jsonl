@@ -1,0 +1,1 @@
+{"actor_role":"UserGate","event_id":"EVT-79e9738e-fda5-4f59-8576-f12b634bbc0b","payload":{"decision":"HOLD","phase":"PRE_EXECUTION","question_count":0,"reason_code":"SSOT_CONFLICT","side_effect_allowed":false},"plan_version":"1.0","run_id":"DECISION-55a1bcb5-c81b-4ac5-a2cf-f52bfc1d716c","task_id":"TASK-MVP6-C","time":"2026-10-04T05:34:34.911340Z","type":"USER_GATE_DECISION"}

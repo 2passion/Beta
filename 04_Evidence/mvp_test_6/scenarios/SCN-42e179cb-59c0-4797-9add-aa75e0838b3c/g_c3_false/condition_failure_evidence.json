@@ -1,0 +1,32 @@
+{
+  "decision": {
+    "conditions": {
+      "bounded_change_scope": true,
+      "existing_contract": true,
+      "fixture_runtime_pass": false,
+      "idempotent": true,
+      "io_clear": true,
+      "postflight_possible": true,
+      "reason_and_stop_defined": true,
+      "within_approved_scope": true
+    },
+    "decision": "HOLD",
+    "question_count": 0,
+    "reason_code": "AUTO_CONDITIONS_INCOMPLETE",
+    "side_effect_allowed": false
+  },
+  "enforcement": {
+    "after_snapshot": {},
+    "before_snapshot": {},
+    "decision": "HOLD",
+    "downstream_call_count": 0,
+    "execution_dir": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_6\\scenarios\\SCN-42e179cb-59c0-4797-9add-aa75e0838b3c\\g_c3_false\\execution",
+    "managed_write_delta": 0,
+    "routing_entry_call_count": 0,
+    "run_directory_delta": 0,
+    "run_started_delta": 0,
+    "run_task_call_count": 0,
+    "runtime_evidence_delta": 0,
+    "writer_call_count": 0
+  }
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "contract": {
+      "approved_scope": [
+        "fixture:CP-trailing-1",
+        "fixture:CP-trailing-2"
+      ],
+      "tasks": [
+        {
+          "actual_actor": "Codex",
+          "depends_on": [],
+          "functional_domain": "path-trailing-a",
+          "requested_scope": [
+            "fixture:CP-trailing-1"
+          ],
+          "routing_to": "Codex",
+          "shared_mutable_resources": [],
+          "task_id": "TASK-CP-trailing-1",
+          "validation_independent": true,
+          "write_owner": "Codex-A",
+          "write_set": [
+            "C:\\Beta\\parallel\\same.json. "
+          ]
+        },
+        {
+          "actual_actor": "Codex",
+          "depends_on": [],
+          "functional_domain": "path-trailing-b",
+          "requested_scope": [
+            "fixture:CP-trailing-2"
+          ],
+          "routing_to": "Codex",
+          "shared_mutable_resources": [],
+          "task_id": "TASK-CP-trailing-2",
+          "validation_independent": true,
+          "write_owner": "Codex-B",
+          "write_set": [
+            "c:\\beta\\parallel\\same.json"
+          ]
+        }
+      ]
+    },
+    "decision": {
+      "conflicts": [
+        "WRITE_SET_CONFLICT"
+      ],
+      "decision": "SEQUENTIAL_REQUIRED",
+      "reason_code": "WRITE_SET_CONFLICT"
+    },
+    "name": "trailing"
+  },
+  {
+    "contract": {
+      "approved_scope": [
+        "fixture:CP-extended-1",
+        "fixture:CP-extended-2"
+      ],
+      "tasks": [
+        {
+          "actual_actor": "Codex",
+          "depends_on": [],
+          "functional_domain": "path-extended-a",
+          "requested_scope": [
+            "fixture:CP-extended-1"
+          ],
+          "routing_to": "Codex",
+          "shared_mutable_resources": [],
+          "task_id": "TASK-CP-extended-1",
+          "validation_independent": true,
+          "write_owner": "Codex-A",
+          "write_set": [
+            "\\\\?\\C:\\Beta\\parallel\\same2.json"
+          ]
+        },
+        {
+          "actual_actor": "Codex",
+          "depends_on": [],
+          "functional_domain": "path-extended-b",
+          "requested_scope": [
+            "fixture:CP-extended-2"
+          ],
+          "routing_to": "Codex",
+          "shared_mutable_resources": [],
+          "task_id": "TASK-CP-extended-2",
+          "validation_independent": true,
+          "write_owner": "Codex-B",
+          "write_set": [
+            "C:\\Beta\\parallel\\same2.json"
+          ]
+        }
+      ]
+    },
+    "decision": {
+      "conflicts": [
+        "WRITE_SET_CONFLICT"
+      ],
+      "decision": "SEQUENTIAL_REQUIRED",
+      "reason_code": "WRITE_SET_CONFLICT"
+    },
+    "name": "extended"
+  },
+  {
+    "contract": {
+      "approved_scope": [
+        "fixture:CP-relative-1",
+        "fixture:CP-relative-2"
+      ],
+      "tasks": [
+        {
+          "actual_actor": "Codex",
+          "depends_on": [],
+          "functional_domain": "path-relative-a",
+          "requested_scope": [
+            "fixture:CP-relative-1"
+          ],
+          "routing_to": "Codex",
+          "shared_mutable_resources": [],
+          "task_id": "TASK-CP-relative-1",
+          "validation_independent": true,
+          "write_owner": "Codex-A",
+          "write_set": [
+            "relative\\target.json"
+          ]
+        },
+        {
+          "actual_actor": "Codex",
+          "depends_on": [],
+          "functional_domain": "path-relative-b",
+          "requested_scope": [
+            "fixture:CP-relative-2"
+          ],
+          "routing_to": "Codex",
+          "shared_mutable_resources": [],
+          "task_id": "TASK-CP-relative-2",
+          "validation_independent": true,
+          "write_owner": "Codex-B",
+          "write_set": [
+            "C:\\Beta\\parallel\\target.json"
+          ]
+        }
+      ]
+    },
+    "decision": {
+      "conflicts": [
+        "WRITE_PATH_UNKNOWN"
+      ],
+      "decision": "SEQUENTIAL_REQUIRED",
+      "reason_code": "WRITE_PATH_UNKNOWN"
+    },
+    "name": "relative"
+  },
+  {
+    "contract": {
+      "approved_scope": [
+        "fixture:CP-unc-1",
+        "fixture:CP-unc-2"
+      ],
+      "tasks": [
+        {
+          "actual_actor": "Codex",
+          "depends_on": [],
+          "functional_domain": "path-unc-a",
+          "requested_scope": [
+            "fixture:CP-unc-1"
+          ],
+          "routing_to": "Codex",
+          "shared_mutable_resources": [],
+          "task_id": "TASK-CP-unc-1",
+          "validation_independent": true,
+          "write_owner": "Codex-A",
+          "write_set": [
+            "\\\\server\\share\\target.json"
+          ]
+        },
+        {
+          "actual_actor": "Codex",
+          "depends_on": [],
+          "functional_domain": "path-unc-b",
+          "requested_scope": [
+            "fixture:CP-unc-2"
+          ],
+          "routing_to": "Codex",
+          "shared_mutable_resources": [],
+          "task_id": "TASK-CP-unc-2",
+          "validation_independent": true,
+          "write_owner": "Codex-B",
+          "write_set": [
+            "C:\\Beta\\parallel\\target.json"
+          ]
+        }
+      ]
+    },
+    "decision": {
+      "conflicts": [
+        "WRITE_PATH_UNKNOWN"
+      ],
+      "decision": "SEQUENTIAL_REQUIRED",
+      "reason_code": "WRITE_PATH_UNKNOWN"
+    },
+    "name": "unc"
+  },
+  {
+    "contract": {
+      "approved_scope": [
+        "fixture:CP-ads-1",
+        "fixture:CP-ads-2"
+      ],
+      "tasks": [
+        {
+          "actual_actor": "Codex",
+          "depends_on": [],
+          "functional_domain": "path-ads-a",
+          "requested_scope": [
+            "fixture:CP-ads-1"
+          ],
+          "routing_to": "Codex",
+          "shared_mutable_resources": [],
+          "task_id": "TASK-CP-ads-1",
+          "validation_independent": true,
+          "write_owner": "Codex-A",
+          "write_set": [
+            "C:\\Beta\\parallel\\target.json:stream"
+          ]
+        },
+        {
+          "actual_actor": "Codex",
+          "depends_on": [],
+          "functional_domain": "path-ads-b",
+          "requested_scope": [
+            "fixture:CP-ads-2"
+          ],
+          "routing_to": "Codex",
+          "shared_mutable_resources": [],
+          "task_id": "TASK-CP-ads-2",
+          "validation_independent": true,
+          "write_owner": "Codex-B",
+          "write_set": [
+            "C:\\Beta\\parallel\\target.json"
+          ]
+        }
+      ]
+    },
+    "decision": {
+      "conflicts": [
+        "WRITE_PATH_UNKNOWN"
+      ],
+      "decision": "SEQUENTIAL_REQUIRED",
+      "reason_code": "WRITE_PATH_UNKNOWN"
+    },
+    "name": "ads"
+  },
+  {
+    "contract": {
+      "approved_scope": [
+        "fixture:CP-short83-1",
+        "fixture:CP-short83-2"
+      ],
+      "tasks": [
+        {
+          "actual_actor": "Codex",
+          "depends_on": [],
+          "functional_domain": "path-short83-a",
+          "requested_scope": [
+            "fixture:CP-short83-1"
+          ],
+          "routing_to": "Codex",
+          "shared_mutable_resources": [],
+          "task_id": "TASK-CP-short83-1",
+          "validation_independent": true,
+          "write_owner": "Codex-A",
+          "write_set": [
+            "C:\\BETA~1\\target.json"
+          ]
+        },
+        {
+          "actual_actor": "Codex",
+          "depends_on": [],
+          "functional_domain": "path-short83-b",
+          "requested_scope": [
+            "fixture:CP-short83-2"
+          ],
+          "routing_to": "Codex",
+          "shared_mutable_resources": [],
+          "task_id": "TASK-CP-short83-2",
+          "validation_independent": true,
+          "write_owner": "Codex-B",
+          "write_set": [
+            "C:\\Beta\\parallel\\target.json"
+          ]
+        }
+      ]
+    },
+    "decision": {
+      "conflicts": [
+        "WRITE_PATH_UNKNOWN"
+      ],
+      "decision": "SEQUENTIAL_REQUIRED",
+      "reason_code": "WRITE_PATH_UNKNOWN"
+    },
+    "name": "short83"
+  }
+]

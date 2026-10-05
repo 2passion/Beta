@@ -1,0 +1,39 @@
+{
+  "approved_scope": [
+    "fixture:F1"
+  ],
+  "tasks": [
+    {
+      "actual_actor": "Codex",
+      "depends_on": [],
+      "functional_domain": "domain-f1",
+      "requested_scope": [
+        "fixture:F1"
+      ],
+      "routing_to": "Codex",
+      "shared_mutable_resources": [],
+      "task_id": "TASK-F1",
+      "validation_independent": true,
+      "write_owner": "Codex-A",
+      "write_set": [
+        "C:\\Beta\\parallel\\f1.json"
+      ]
+    },
+    {
+      "actual_actor": "Claude Code",
+      "depends_on": [],
+      "functional_domain": "domain-f2",
+      "requested_scope": [
+        "fixture:outside"
+      ],
+      "routing_to": "Codex",
+      "shared_mutable_resources": [],
+      "task_id": "TASK-F2",
+      "validation_independent": true,
+      "write_owner": "Codex-B",
+      "write_set": [
+        "C:\\Beta\\parallel\\f2.json"
+      ]
+    }
+  ]
+}

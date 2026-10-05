@@ -1,0 +1,9 @@
+{
+  "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\B\\outputs\\TASK-B1.json",
+  "output_sha256": "E04807177C99B3EABADF497520F8108E8FB377EDB2B0B68FAD1621C78AF576C5",
+  "run_id": "RUN-da8df62f-7b7d-4116-8c14-235145a53e5b",
+  "task_id": "TASK-B1",
+  "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\B\\validations\\TASK-B1.json",
+  "validation_sha256": "C3DACE8827BF19D5FC4F623CD1E297D9FCE211B408278A0834381E25024251A0",
+  "validation_status": "PASS"
+}

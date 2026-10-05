@@ -1,0 +1,53 @@
+{
+  "batch_result": "PARTIAL_FAILURE",
+  "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\contract.json",
+  "decision": {
+    "conflicts": [],
+    "decision": "PARALLEL_ALLOWED",
+    "reason_code": "INDEPENDENCE_PROVEN"
+  },
+  "execution_count": 2,
+  "recovery_candidates": [
+    "TASK-H2"
+  ],
+  "runtime": {
+    "TASK-H1": {
+      "barrier_arrived_ns": 41798093582900,
+      "barrier_passed_ns": 41798096766400,
+      "barrier_token": "BARRIER-b57f3514-77c7-40f6-b565-385ba69c0160",
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\evidence\\EVD-TASK-H1.json",
+      "evidence_sha256": "F1B8FA909BCF0AB82A4F2EB610DD06031EF76751E4FBB271E58DEB60BD5C1B4C",
+      "finished_ns": 41798116957800,
+      "observation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\observations\\TASK-H1.jsonl",
+      "observation_sha256": "8E46D10D73320295C01A400CF441A804EB7FA493A0672162A4D543C6DB7797AF",
+      "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\outputs\\TASK-H1.json",
+      "output_sha256": "C8B34E8C93460A269FB09FBF37A5E4019AE7865E80B06E7E71A8D435A04F9ADE",
+      "run_id": "RUN-b39d45d8-467c-4fda-ba0e-0a8c9b4e0576",
+      "started_ns": 41798090216900,
+      "task_id": "TASK-H1",
+      "thread_id": 23520,
+      "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\validations\\TASK-H1.json",
+      "validation_sha256": "EB865C9BE5AA95E9D92B955C27116C00F01655CA4BB95872046E25CA37A8294C",
+      "validation_status": "PASS"
+    },
+    "TASK-H2": {
+      "barrier_arrived_ns": 41798094116500,
+      "barrier_passed_ns": 41798096697800,
+      "barrier_token": "BARRIER-b57f3514-77c7-40f6-b565-385ba69c0160",
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\evidence\\EVD-TASK-H2.json",
+      "evidence_sha256": "EE19345FFF82C5E2A1AD0A5A222A69A3CDCAC39EE4336CC7E9CDACBCC028C8CF",
+      "finished_ns": 41798116874200,
+      "observation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\observations\\TASK-H2.jsonl",
+      "observation_sha256": "F3D339B49B47E689E110A8865E2C3CF45930419CC9787BC302332F9AB7CAC18C",
+      "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\outputs\\TASK-H2.json",
+      "output_sha256": "6123DD1738555564D89EBBEB8A4C35C0EA793F77C73721403CFDE618460529FA",
+      "run_id": "RUN-918c7407-828f-4ae3-b400-e38860deb538",
+      "started_ns": 41798090602500,
+      "task_id": "TASK-H2",
+      "thread_id": 16896,
+      "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-af3e3f74-ad03-4a02-8d53-6c9f63dfdf38\\H\\validations\\TASK-H2.json",
+      "validation_sha256": "65990212D11ADADAB3F138C822A7EB14AFE41711967428A65A4306EF872F99ED",
+      "validation_status": "FAIL"
+    }
+  }
+}

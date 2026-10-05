@@ -1,0 +1,34 @@
+{
+  "change_reason_ref": "Order-019",
+  "created_at": "2026-10-03T09:05:16.447502Z",
+  "evidence_id": "EVD-07a63c7a-154e-4039-bf29-1053ae2cf2a4",
+  "execution": {
+    "exit_code": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": ""
+  },
+  "executor_sha256": "02878DCC92299B089590449E47B74879142719E0E4503E503E961BDB21B95147",
+  "gate": "PROCEED",
+  "order_id": "Order-019",
+  "plan_version": "1.1",
+  "run_id": "RUN-a446d89d-fe0c-491b-bc42-750f83275f4d",
+  "task_id": "MVP-TEST-2-OWNERSHIP",
+  "task_plan_sha256": "C4E0616832D7DB0DB48164CD6B7853B67421CCB225CE12CCE1B36AB0E172DF10",
+  "validation_result": "PASS",
+  "validations": [
+    {
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "{\"failures\": [], \"mvp_test_id\": \"MVP-TEST-2\", \"mvp_test_name\": \"Ownership\", \"scenario_evidence\": [{\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_2\\\\scenarios\\\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\\\a_single_owner\\\\EVD-83bac5ed-0669-495e-9bda-da6bb49ef858.json\", \"scenario\": \"A\", \"sha256\": \"93803B79A8E09942E7C81E63CEC1330BB8BFC81CAFA30949449719F778C09DBD\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_2\\\\scenarios\\\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\\\a_single_owner\\\\events.jsonl\", \"scenario\": \"A\", \"sha256\": \"2978281FC7C4A02B051C58319CB8A80F0B94D3B08FFD0CD6EE46B2DB063A6D6B\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_2\\\\scenarios\\\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\\\a_single_owner\\\\evidence_index.jsonl\", \"scenario\": \"A\", \"sha256\": \"567B3FF3AEE925A638468B8B5FA90BB37EE935FB943BD5EDD6CE87977CE940CC\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_2\\\\scenarios\\\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\\\b_multiple_owner\\\\events.jsonl\", \"scenario\": \"B\", \"sha256\": \"805053E4FF1BD24E28D02F49C86FFDB1288B83FD7C8677B6802B5EE24B348ECF\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_2\\\\scenarios\\\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\\\c_owner_change\\\\EVD-229d5703-2d31-4e94-b40d-738627ebc83a.json\", \"scenario\": \"C\", \"sha256\": \"A614DBD95C91A2F79127DD6B89534594BAAEE1ECF139139F1BDC79BA00A12C88\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_2\\\\scenarios\\\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\\\c_owner_change\\\\EVD-80cd0379-af99-4edb-a9a7-3990a70ca9d5.json\", \"scenario\": \"C\", \"sha256\": \"E3AA6584C4EA896660A39E49F175870488D64D71463F922EB9FD8B0CF516F4B0\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_2\\\\scenarios\\\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\\\c_owner_change\\\\events.jsonl\", \"scenario\": \"C\", \"sha256\": \"050E5B0D49F569EC1E27EF0966034D82CACA1B5A626ABE5B21B3419150BE88E5\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_2\\\\scenarios\\\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\\\c_owner_change\\\\evidence_index.jsonl\", \"scenario\": \"C\", \"sha256\": \"82901AB897F8410DA894D804D5349204D460232257098329281E53DE17DDE369\"}], \"scenario_internal_runs\": {\"A\": [\"RUN-588062cf-8f89-430d-bdcb-0f07f7c3e750\"], \"B_BLOCKED\": [\"RUN-dbe81dd4-e000-4ed3-a025-cc720e2a2f6c\"], \"C_BASE\": [\"RUN-b1f72fe3-2d3e-48a3-80e9-6e3422d7ea0c\"], \"C_NEW_VERSION\": [\"RUN-a475cac7-f85f-4779-983a-a4ba349c6e1a\"], \"C_SAME_VERSION_BLOCKED\": [\"RUN-acb9d90e-02ab-4789-9dca-f85980442806\"]}, \"scenario_root\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_2\\\\scenarios\", \"test_plan_id\": \"MVP-TEST-2-OWNERSHIP\", \"test_plan_version\": \"1.1\", \"validation_status\": \"PASS\"}\n",
+      "validator_id": "VAL-MVP-TEST-2-OWNERSHIP"
+    }
+  ],
+  "validator_sha256": [
+    {
+      "sha256": "35BAB868A3A8A5C5762EAB165A06DBD00D6D492909E31E9C0CAA4FB888BCFA45",
+      "validator_id": "VAL-MVP-TEST-2-OWNERSHIP"
+    }
+  ]
+}

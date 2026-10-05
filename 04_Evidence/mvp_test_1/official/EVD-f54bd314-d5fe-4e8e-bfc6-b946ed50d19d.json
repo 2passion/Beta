@@ -1,0 +1,34 @@
+{
+  "change_reason_ref": "Order-021",
+  "created_at": "2026-10-03T11:21:56.466686Z",
+  "evidence_id": "EVD-f54bd314-d5fe-4e8e-bfc6-b946ed50d19d",
+  "execution": {
+    "exit_code": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": ""
+  },
+  "executor_sha256": "DA2E6D36202BC031874295298C72607719D5C924F50059FE36BE6FB0E6D00BFF",
+  "gate": "PROCEED",
+  "order_id": "Order-021",
+  "plan_version": "1.0",
+  "run_id": "RUN-d02e6e9b-b9c4-4a8f-8556-c224af7ef48d",
+  "task_id": "MVP-TEST-1-REUSE",
+  "task_plan_sha256": "E4482F0156292D043FDE943FE525FCB9B214F0A08B35CBB26593C62DC5A4FCB1",
+  "validation_result": "PASS",
+  "validations": [
+    {
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "{\"asset_list_sha256\": \"E9A0C7DD03C20AF299F8C2AF1D0CD92C089FFB71E8D5D22DD9E3E5440C609ECB\", \"failures\": [], \"mvp_test_id\": \"MVP-TEST-1\", \"mvp_test_name\": \"Reuse\", \"reference_executed\": false, \"reference_sha256\": \"17490AA44F8FEAE35B55F1CF811D18AA1A6EB0716ABAB398B1A016B3600E14C0\", \"reuse_search_sha256\": \"15B1356B8742B984D98E503E108FD2094D8E6931517A0E29CB9573CE60BA6A5B\", \"scenario_decisions\": {\"A\": {\"decision\": \"REUSE\", \"matched_asset_ids\": [\"ASSET-EXECUTOR-SUCCESS\"], \"reason\": \"approved exact-match Asset selected\", \"requested_capability\": \"deterministic-success\", \"selected_asset_id\": \"ASSET-EXECUTOR-SUCCESS\", \"selected_path\": \"03_Tests/fixtures/executor_success.py\", \"selected_sha256\": \"AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A\"}, \"B\": {\"decision\": \"CREATE\", \"matched_asset_ids\": [], \"reason\": \"no approved Asset matches requested capability\", \"requested_capability\": \"missing-capability\", \"selected_asset_id\": null, \"selected_path\": null, \"selected_sha256\": null}, \"C\": {\"decision\": \"CREATE\", \"matched_asset_ids\": [\"REFERENCE-HARNESS-VISUAL\"], \"reason\": \"matching entries are Reference-only; Reference cannot be executed\", \"requested_capability\": \"visual-review\", \"selected_asset_id\": null, \"selected_path\": null, \"selected_sha256\": null}}, \"scenario_evidence\": [{\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\a_approved_reuse\\\\EVD-cb00840f-622f-488a-904e-032035348a38.json\", \"scenario\": \"A\", \"sha256\": \"97F5CEA99632B8DDA0FE8A7CDA98C8C926CF65617DF48E7B1AEADDCD3D433AD9\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\a_approved_reuse\\\\events.jsonl\", \"scenario\": \"A\", \"sha256\": \"B999DB06F1AA8AD109731C366964AADCAE6B40196EAC7CD95911EB07762F9053\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\a_approved_reuse\\\\evidence_index.jsonl\", \"scenario\": \"A\", \"sha256\": \"FD4F0E81B953F27B7A8DB13E23F060CF34F2DF4E9F4B9E0245934E9B37422000\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\a_approved_reuse\\\\scenario_task_plan.json\", \"scenario\": \"A\", \"sha256\": \"7141297C067C05B4EC5622C4DEAE74C50AB5B665D7C119CC2394161D669F56EB\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\b_no_match_create\\\\EVD-838c26cc-943a-4a45-85c1-ded307409845.json\", \"scenario\": \"B\", \"sha256\": \"3D254922E6375063240B8C857A659B449442C1E292E8E8CFC8CE916403DBAFC1\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\b_no_match_create\\\\events.jsonl\", \"scenario\": \"B\", \"sha256\": \"BD55C92BCCED616E1A0D7A63592719C3F690917497B121DF989FD82F755FF547\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\b_no_match_create\\\\evidence_index.jsonl\", \"scenario\": \"B\", \"sha256\": \"7F07AF482735C0D02F154E33365215D2D043DAF90F866769A29A34F5C5E3A463\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\b_no_match_create\\\\scenario_task_plan.json\", \"scenario\": \"B\", \"sha256\": \"AC261AAAF8580EA65B62018C9570D7EA3DB8E9C49429A3260E12B9A3933384FE\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\b_no_match_create\\\\synthetic_project\\\\03_Tests\\\\fixtures\\\\executor_created.py\", \"scenario\": \"B\", \"sha256\": \"7F9F18F143FCE25651C6EC805A33065F70D7DBDF1E0B0D01B6421F3F83C4BC75\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\c_reference_only_create\\\\EVD-e27621dd-1c55-4b68-aa9e-9227b476ec0a.json\", \"scenario\": \"C\", \"sha256\": \"DD3E6F8513798DA3C581EAE6F75121047C7BC1741893EEB0EB2BAD7F80A33F38\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\c_reference_only_create\\\\events.jsonl\", \"scenario\": \"C\", \"sha256\": \"04C3BF24DBEED81B948642A63206C457D1B20C046A33C650D3DE58777AA2E587\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\c_reference_only_create\\\\evidence_index.jsonl\", \"scenario\": \"C\", \"sha256\": \"214F645B9B245F3D7328433E3E1AE33F71C4DE2A8BB5F8D23B99EA5DF3C9F558\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\c_reference_only_create\\\\scenario_task_plan.json\", \"scenario\": \"C\", \"sha256\": \"7A1887F4700F74C8BDEE3956E4BC15DCBD695A7AAA5984B6D56998CF57F3C6C9\"}, {\"path\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\\\\SCN-3e6d5606-acb5-4136-8cb9-0f39c6ae1339\\\\c_reference_only_create\\\\synthetic_project\\\\03_Tests\\\\fixtures\\\\executor_created.py\", \"scenario\": \"C\", \"sha256\": \"7F9F18F143FCE25651C6EC805A33065F70D7DBDF1E0B0D01B6421F3F83C4BC75\"}], \"scenario_internal_runs\": {\"A\": [\"RUN-d0bbd790-6952-4350-8bd6-09194eb8277f\"], \"B\": [\"RUN-3572a4f3-7097-48dc-ae86-b40d21a3d13b\"], \"C\": [\"RUN-1d1bf078-e328-4156-8fae-772b0ca03a07\"]}, \"scenario_root\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_1\\\\scenarios\", \"selected_asset_id\": \"ASSET-EXECUTOR-SUCCESS\", \"selected_asset_sha256\": \"AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A\", \"test_plan_id\": \"MVP-TEST-1-REUSE\", \"test_plan_version\": \"1.0\", \"validation_status\": \"PASS\"}\n",
+      "validator_id": "VAL-MVP-TEST-1-REUSE"
+    }
+  ],
+  "validator_sha256": [
+    {
+      "sha256": "5F1FE15D103C77CA512961A8BCEF8A65B9F8080A5E599A49D80892D96B8666CF",
+      "validator_id": "VAL-MVP-TEST-1-REUSE"
+    }
+  ]
+}

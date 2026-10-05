@@ -1,0 +1,48 @@
+{
+  "task_id": "MVP-TEST-4-BOTTLENECK",
+  "plan_version": "1.0",
+  "order_id": "Order-025",
+  "change_reason_ref": "Order-025",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/mvp_test_4"],
+  "shared_resources": [],
+  "depends_on": [],
+  "steps": [
+    {
+      "step_id": "MVP4-BOTTLENECK-001",
+      "action": "execute Bottleneck scenarios A-E and fixture Retry Limits"
+    }
+  ],
+  "executor": {
+    "path": "03_Tests/fixtures/bottleneck_scenario_executor.py",
+    "sha256": "64CAFCF03858052929D011014E7C75088DB4EEBF676A8D559D6D42E731A01F81"
+  },
+  "required_validators": [
+    {
+      "validator_id": "VAL-MVP-TEST-4-BOTTLENECK",
+      "path": "03_Tests/fixtures/bottleneck_validator.py",
+      "sha256": "67AD8F980357563770A0D41BE0CF597E60158483FE7ECA3EA1B3BC3E181070AE",
+      "criteria": {
+        "mvp_test_id": "MVP-TEST-4",
+        "mvp_test_name": "Bottleneck",
+        "test_plan_id": "MVP-TEST-4-BOTTLENECK",
+        "test_plan_version": "1.0",
+        "retry_limit_fixture_path": "03_Tests/fixtures/bottleneck_retry_limits.json",
+        "retry_limit_fixture_sha256": "BC410994AC360BA5A298E6507DCA2512AF0284A623541761198E1219833E402B"
+      }
+    }
+  ],
+  "completion_criteria": [
+    "same failure without a relevant change is blocked before retry execution",
+    "actual plan and fix change with change_reason_ref allows a new-version Run",
+    "Validation FAIL, Validator ERROR, and Execution ERROR remain distinct",
+    "fixture Retry Limits block excess without starting USER-GATE workflow",
+    "official Validation passes and Gate proceeds"
+  ],
+  "permissions": {
+    "subprocess": "approved fixture paths only",
+    "network": false,
+    "database": false,
+    "user_gate_workflow": false
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "checkpoint_id": "CP-21dd8f15-c8a2-4c0e-aa5f-65052c5b12d6",
+  "completed_step_ids": [
+    "STEP-1",
+    "STEP-2"
+  ],
+  "created_at": "2026-10-04T14:42:08.237222Z",
+  "evidence_refs": [
+    {
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\A\\evidence\\EVD-STEP-1.json",
+      "evidence_sha256": "D7A4CC3096967D4AA7FD02C4F51D72624C4A7C004E772C4D32E1B4C2FA7ED8B4",
+      "side_effect_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\A\\side_effects\\STEP-1.json",
+      "side_effect_sha256": "FDA01986522C0EEFE9332CF47E6DD78A0AF542A07CC77613C8EF66B60AB3A0DD",
+      "step_id": "STEP-1"
+    },
+    {
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\A\\evidence\\EVD-STEP-2.json",
+      "evidence_sha256": "8B61660CE9AA5B063DE930B6A7AA400F14600BF16F8763D7B6AD916028A67511",
+      "side_effect_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\A\\side_effects\\STEP-2.json",
+      "side_effect_sha256": "42D9A37B3284D417E5F34B1FA7AF87F4841E9B087335487BA0063996630F0F43",
+      "step_id": "STEP-2"
+    }
+  ],
+  "expected_next_step": "STEP-3",
+  "last_verified_step": "STEP-2",
+  "plan_version": "1.0",
+  "record_type": "CHECKPOINT",
+  "run_id": "RUN-INTERRUPTED-b73aa4f9-ab7f-4843-a9cb-e1ddab4fa8cf",
+  "sequence": 2,
+  "side_effect_snapshot": {
+    "STEP-1": {
+      "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\A\\side_effects\\STEP-1.json",
+      "sha256": "FDA01986522C0EEFE9332CF47E6DD78A0AF542A07CC77613C8EF66B60AB3A0DD"
+    },
+    "STEP-2": {
+      "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_7\\scenarios\\SCN-c86637b1-08b2-4946-993d-2573b90e8dd2\\A\\side_effects\\STEP-2.json",
+      "sha256": "42D9A37B3284D417E5F34B1FA7AF87F4841E9B087335487BA0063996630F0F43"
+    }
+  },
+  "task_id": "MVP-TEST-7-RESUME",
+  "validation_status": "PASS"
+}

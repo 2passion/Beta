@@ -1,0 +1,42 @@
+{
+  "approved_scope": [
+    "fixture:B1",
+    "fixture:B2"
+  ],
+  "tasks": [
+    {
+      "actual_actor": "Codex",
+      "depends_on": [],
+      "functional_domain": "domain-b1",
+      "requested_scope": [
+        "fixture:B1"
+      ],
+      "routing_to": "Codex",
+      "shared_mutable_resources": [],
+      "task_id": "TASK-B1",
+      "validation_independent": true,
+      "write_owner": "Codex-A",
+      "write_set": [
+        "C:\\Beta\\parallel\\b1.json"
+      ]
+    },
+    {
+      "actual_actor": "Codex",
+      "depends_on": [
+        "TASK-B1"
+      ],
+      "functional_domain": "domain-b2",
+      "requested_scope": [
+        "fixture:B2"
+      ],
+      "routing_to": "Codex",
+      "shared_mutable_resources": [],
+      "task_id": "TASK-B2",
+      "validation_independent": true,
+      "write_owner": "Codex-B",
+      "write_set": [
+        "C:\\Beta\\parallel\\b2.json"
+      ]
+    }
+  ]
+}

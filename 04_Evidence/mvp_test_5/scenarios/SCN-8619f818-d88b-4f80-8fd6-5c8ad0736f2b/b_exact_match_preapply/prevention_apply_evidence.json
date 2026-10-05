@@ -1,0 +1,16 @@
+{
+  "fix_signature": "84EB231C7F640BA0554C1BB3D95B0D458B0A9FE06E243B06CD32E914342C56D6",
+  "gate": "PROCEED",
+  "prevention_id": "PREV-d8e17854-c599-4c5d-afe8-c5702a9bb8b6",
+  "search": {
+    "eligibility_checked": true,
+    "exact_fingerprint_match": true,
+    "fix_preapplied": true,
+    "outcome": "MATCH",
+    "requested_fingerprint": "05BB7BEC2E7027AFA94B453B0A0A6537C2202D06D9D3D4F3791C5F4483A67AB5",
+    "search_scope": "verified Prevention candidates",
+    "selected_prevention_id": "PREV-d8e17854-c599-4c5d-afe8-c5702a9bb8b6"
+  },
+  "target_run_id": "RUN-5e2bbaf8-d414-4054-96b4-1dfd7fb548d4",
+  "validation": "PASS"
+}

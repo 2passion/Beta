@@ -1,0 +1,43 @@
+{
+  "contract_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-61ca59e0-9781-41df-b3db-540025cd876f\\A\\contract.json",
+  "decision": {
+    "conflicts": [],
+    "decision": "PARALLEL_ALLOWED",
+    "reason_code": "INDEPENDENCE_PROVEN"
+  },
+  "execution_count": 2,
+  "runtime": {
+    "TASK-A1": {
+      "barrier_passed_ns": 2053463018637200,
+      "barrier_token": "BARRIER-3e4c6c41-a150-4afb-9272-b1f466f36e41",
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-61ca59e0-9781-41df-b3db-540025cd876f\\A\\evidence\\EVD-TASK-A1.json",
+      "evidence_sha256": "3C34477CDA162AFCA937399818B9F77D85BA813B372425E86E8D3D99B1DB7035",
+      "finished_ns": 2053463043020600,
+      "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-61ca59e0-9781-41df-b3db-540025cd876f\\A\\outputs\\TASK-A1.json",
+      "output_sha256": "CDBF44FC61A3A2388A1ED1E333FF0F60FAF58BB32FE795A21CD099234E3C9F2B",
+      "run_id": "RUN-4219eef2-82c6-4502-8347-3a974433dc06",
+      "started_ns": 2053463018214400,
+      "task_id": "TASK-A1",
+      "thread_id": 25236,
+      "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-61ca59e0-9781-41df-b3db-540025cd876f\\A\\validations\\TASK-A1.json",
+      "validation_sha256": "FF2589800C8DF7BE07C3FA0E86D22E236C088A489741B7B9164E3162C4AE4CA1",
+      "validation_status": "PASS"
+    },
+    "TASK-A2": {
+      "barrier_passed_ns": 2053463018760200,
+      "barrier_token": "BARRIER-3e4c6c41-a150-4afb-9272-b1f466f36e41",
+      "evidence_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-61ca59e0-9781-41df-b3db-540025cd876f\\A\\evidence\\EVD-TASK-A2.json",
+      "evidence_sha256": "87AA378DF508D87D6A3B43A9BF78F4F56634F910C503A45140A1BAA11988C907",
+      "finished_ns": 2053463043287200,
+      "output_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-61ca59e0-9781-41df-b3db-540025cd876f\\A\\outputs\\TASK-A2.json",
+      "output_sha256": "FB5B5C2E90DEF6376887A7ED28638E08A4163663A1B383DAA0290C7038DF5D41",
+      "run_id": "RUN-fc9c101c-8c9b-4123-a4fb-a19f2673ff08",
+      "started_ns": 2053463018571600,
+      "task_id": "TASK-A2",
+      "thread_id": 4644,
+      "validation_path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_3\\scenarios\\SCN-61ca59e0-9781-41df-b3db-540025cd876f\\A\\validations\\TASK-A2.json",
+      "validation_sha256": "DBB8F877B1028A640D484F6B947AE1E33D2F6745B5209D9CFB20378F93ED009E",
+      "validation_status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "task_id": "MVP-TEST-7-RESUME",
+  "plan_version": "1.0",
+  "order_id": "Order-042",
+  "change_reason_ref": "Order-042",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/mvp_test_7"],
+  "shared_resources": [],
+  "depends_on": ["MVP-TEST-6-USER-GATE", "MVP-TEST-5-PREVENTION", "MVP-TEST-4-BOTTLENECK"],
+  "steps": [{"step_id": "MVP7-RESUME-001", "action": "execute Resume scenarios A-G and validate Checkpoint enforcement"}],
+  "executor": {
+    "path": "03_Tests/fixtures/resume_scenario_executor.py",
+    "sha256": "5AFADC084754AD9223C469EEE13F06D3AB3487F53A19B342E4BC1A5C8C6498CC"
+  },
+  "required_validators": [{
+    "validator_id": "VAL-MVP-TEST-7-RESUME",
+    "path": "03_Tests/fixtures/resume_validator.py",
+    "sha256": "74B1B8295CF18AB8BA45C25A7A902902018612F6A7A9B072F2F28CE9954418C8",
+    "criteria": {
+      "mvp_test_id": "MVP-TEST-7",
+      "mvp_test_name": "Resume",
+      "test_plan_id": "MVP-TEST-7-RESUME",
+      "test_plan_version": "1.0",
+      "routing_order_id": "Order-042"
+    }
+  }],
+  "completion_criteria": [
+    "last verified Checkpoint is validated against Validation, Evidence, and actual side effects",
+    "completed steps are not rerun and execution resumes at the exact next incomplete step",
+    "Checkpoint is never inferred from a user output Chunk",
+    "missing results, missing Checkpoint, version mismatch, and non-PASS last step HOLD before execution",
+    "repeat Resume is filesystem-idempotent",
+    "Routing and User Gate boundaries block execution when unmet",
+    "Mutations M1-M6 fail under independent Validator recomputation",
+    "official Validation passes and Gate proceeds"
+  ],
+  "permissions": {
+    "subprocess": "approved fixture paths only",
+    "network": false,
+    "database": false,
+    "external_publish": false,
+    "git": false
+  }
+}

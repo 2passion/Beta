@@ -1,0 +1,34 @@
+{
+  "change_reason_ref": "Order-017 / Ownership Scenario A",
+  "created_at": "2026-10-03T09:05:15.746935Z",
+  "evidence_id": "EVD-83bac5ed-0669-495e-9bda-da6bb49ef858",
+  "execution": {
+    "exit_code": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": ""
+  },
+  "executor_sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A",
+  "gate": "PROCEED",
+  "order_id": "Order-017",
+  "plan_version": "1.0",
+  "run_id": "RUN-588062cf-8f89-430d-bdcb-0f07f7c3e750",
+  "task_id": "TASK-MVP2-A",
+  "task_plan_sha256": "79187226E4425AC306467FD9AE4AE6D42DBE370EEC6D88373F459CBC12EC1A8B",
+  "validation_result": "PASS",
+  "validations": [
+    {
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "{\"checked\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\mvp_test_2\\\\scenarios\\\\SCN-db1f4083-9e57-4ad4-8329-0de2119c6d30\\\\a_single_owner\\\\runs\\\\RUN-588062cf-8f89-430d-bdcb-0f07f7c3e750\\\\executor_result.json\", \"passed\": true}\n",
+      "validator_id": "VAL-MVP2-A"
+    }
+  ],
+  "validator_sha256": [
+    {
+      "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+      "validator_id": "VAL-MVP2-A"
+    }
+  ]
+}

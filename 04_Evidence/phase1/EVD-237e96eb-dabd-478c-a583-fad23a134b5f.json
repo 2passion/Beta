@@ -1,0 +1,34 @@
+{
+  "change_reason_ref": "Order-014",
+  "created_at": "2026-10-03T01:51:54.720992Z",
+  "evidence_id": "EVD-237e96eb-dabd-478c-a583-fad23a134b5f",
+  "execution": {
+    "exit_code": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": ""
+  },
+  "executor_sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A",
+  "gate": "PROCEED",
+  "order_id": "Order-014",
+  "plan_version": "1.3",
+  "run_id": "RUN-be4dc547-28fd-4a33-a2b3-db4e9907fa2e",
+  "task_id": "TASK-PHASE1-SYNTHETIC-001",
+  "task_plan_sha256": "E60A9B179CB84B89C977769A4A9AD6EB4F17EA5BCD1EBBB6628F476C788DC07F",
+  "validation_result": "PASS",
+  "validations": [
+    {
+      "exit_code": 0,
+      "status": "PASS",
+      "stderr": "",
+      "stdout": "{\"checked\": \"C:\\\\Obsidian\\\\Beta\\\\04_Evidence\\\\phase1\\\\runs\\\\RUN-be4dc547-28fd-4a33-a2b3-db4e9907fa2e\\\\executor_result.json\", \"passed\": true}\n",
+      "validator_id": "VAL-PHASE1-001"
+    }
+  ],
+  "validator_sha256": [
+    {
+      "sha256": "5D5BEEC6A591324FA3E35FECD28181BA21CB59E0B55B12D717FFAFD149474BD4",
+      "validator_id": "VAL-PHASE1-001"
+    }
+  ]
+}

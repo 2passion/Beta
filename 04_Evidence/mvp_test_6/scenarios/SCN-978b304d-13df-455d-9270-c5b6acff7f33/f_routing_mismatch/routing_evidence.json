@@ -1,0 +1,13 @@
+{
+  "action": "WRITE",
+  "actual_executor": "Codex",
+  "beta_write_count": 0,
+  "expected_to": "Claude Code",
+  "mismatch_reason": "ROUTING_MISMATCH",
+  "next_step_count": 0,
+  "order_id": "Order-035",
+  "project": "Beta",
+  "routing_result": "HOLD",
+  "write_allowed": false,
+  "writer_call_count": 0
+}

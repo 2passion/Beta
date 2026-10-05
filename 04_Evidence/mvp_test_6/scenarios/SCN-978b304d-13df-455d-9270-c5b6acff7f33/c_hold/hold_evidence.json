@@ -1,0 +1,15 @@
+{
+  "arbitrary_fix_count": 0,
+  "decision": {
+    "decision": "HOLD",
+    "question_count": 0,
+    "reason_code": "SSOT_CONFLICT",
+    "side_effect_allowed": false
+  },
+  "side_effects": {
+    "run_directories": 0,
+    "run_started": 0,
+    "runtime_evidence": 0,
+    "writes": 0
+  }
+}

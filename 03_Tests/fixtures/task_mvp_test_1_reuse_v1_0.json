@@ -1,0 +1,39 @@
+{
+  "task_id": "MVP-TEST-1-REUSE",
+  "plan_version": "1.0",
+  "order_id": "Order-021",
+  "change_reason_ref": "Order-021",
+  "write_owner": "Codex",
+  "write_scope": ["04_Evidence/mvp_test_1"],
+  "shared_resources": [],
+  "depends_on": [],
+  "steps": [{"step_id": "MVP1-REUSE-001", "action": "execute Reuse scenarios A/B/C"}],
+  "executor": {
+    "path": "03_Tests/fixtures/reuse_scenario_executor.py",
+    "sha256": "DA2E6D36202BC031874295298C72607719D5C924F50059FE36BE6FB0E6D00BFF"
+  },
+  "required_validators": [{
+    "validator_id": "VAL-MVP-TEST-1-REUSE",
+    "path": "03_Tests/fixtures/reuse_validator.py",
+    "sha256": "5F1FE15D103C77CA512961A8BCEF8A65B9F8080A5E599A49D80892D96B8666CF",
+    "criteria": {
+      "mvp_test_id": "MVP-TEST-1",
+      "mvp_test_name": "Reuse",
+      "test_plan_id": "MVP-TEST-1-REUSE",
+      "test_plan_version": "1.0",
+      "asset_list_path": "03_Tests/fixtures/reuse_assets.json",
+      "asset_list_sha256": "E9A0C7DD03C20AF299F8C2AF1D0CD92C089FFB71E8D5D22DD9E3E5440C609ECB",
+      "reuse_search_path": "03_Tests/fixtures/reuse_search.py",
+      "reuse_search_sha256": "15B1356B8742B984D98E503E108FD2094D8E6931517A0E29CB9573CE60BA6A5B",
+      "reference_path": "Reference/harness-visual-review.html",
+      "reference_sha256": "17490AA44F8FEAE35B55F1CF811D18AA1A6EB0716ABAB398B1A016B3600E14C0"
+    }
+  }],
+  "completion_criteria": [
+    "approved exact-match Asset is reused without duplication",
+    "missing capability creates only after a recorded reason",
+    "Reference is never selected as an executable Asset",
+    "official Validation is PASS and Gate is PROCEED"
+  ],
+  "permissions": {"subprocess": "approved fixture paths only", "network": false, "reference_write": false}
+}

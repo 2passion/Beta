@@ -1,0 +1,1 @@
+{"actor_role":"Gate","event_id":"EVT-e9b58720-a686-4a15-a590-cf3b49121dc6","payload":{"reasons":["write_owner must be one identifier matching ^[A-Za-z0-9][A-Za-z0-9_-]*$"]},"plan_version":"1.0","run_id":"RUN-10120b3d-0c7a-48d2-a0bf-9430497daf46","task_id":"TASK-MVP2-B","time":"2026-10-03T04:30:47.429005Z","type":"BLOCKED"}

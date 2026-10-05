@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-10-03T18:26:26.283045Z",
+  "decision": {
+    "below_limit": true,
+    "candidate_fix_signature": "25A52430AD53DE3C65AE0E83E1F7A2630A8D450A4C13BD048D55A9A290A235FE",
+    "change_reason_ref": null,
+    "decision": "BLOCK_BLIND_RETRY",
+    "fingerprint": "1BC2C0FFF393DF0480DAB44128F6D4267F23B8C72CF7A1E74CDDA05548C6F257",
+    "fix_changed": false,
+    "from_plan_version": "1.0",
+    "observed_new_version_run_count": 1,
+    "prior_fix_signature": "25A52430AD53DE3C65AE0E83E1F7A2630A8D450A4C13BD048D55A9A290A235FE",
+    "prior_matching_run_ids": [
+      "RUN-2a078385-6fd4-47ac-8bc3-e4d50402e8c5"
+    ],
+    "reason": "same fingerprint with no relevant plan or fix change",
+    "run_limit": 3,
+    "to_plan_version": "1.0",
+    "version_changed": false
+  },
+  "failure": {
+    "failure_class": "VALIDATION_ERROR",
+    "fingerprint": "1BC2C0FFF393DF0480DAB44128F6D4267F23B8C72CF7A1E74CDDA05548C6F257",
+    "fingerprint_inputs": {
+      "failing_component": "validator",
+      "failure_class": "VALIDATION_ERROR",
+      "identity": "VAL-BOTTLENECK-CHECK",
+      "normalized_reason": "synthetic validator error",
+      "relevant": {
+        "criteria": {
+          "mode": "error"
+        },
+        "plan_version": "1.0"
+      }
+    },
+    "normalized_reason": "synthetic validator error",
+    "plan_version": "1.0",
+    "source_run_id": "RUN-2a078385-6fd4-47ac-8bc3-e4d50402e8c5"
+  },
+  "source_result": {
+    "evidence": {
+      "change_reason_ref": "Order-025-Scenario-C-Baseline",
+      "created_at": "2026-10-03T18:26:26.209832Z",
+      "evidence_id": "EVD-e19f5b23-4845-4a07-858b-d41e20d2f0c9",
+      "executor_sha256": "AACB26E6790FB5C4BDA8DDB700B2C0BACB84C45B084DE2D8A240C87AEEFA0B4A",
+      "filename": "EVD-e19f5b23-4845-4a07-858b-d41e20d2f0c9.json",
+      "gate": "BLOCK",
+      "path": "C:\\Obsidian\\Beta\\04_Evidence\\mvp_test_4\\scenarios\\SCN-5491de96-5e50-4554-9740-b39d8b65ca50\\c_validator_error_blind_block\\EVD-e19f5b23-4845-4a07-858b-d41e20d2f0c9.json",
+      "plan_version": "1.0",
+      "run_id": "RUN-2a078385-6fd4-47ac-8bc3-e4d50402e8c5",
+      "sha256": "2368E18C1E005A571BA417CE309B8AADF9FDF4F5FB857CF65979C8A29B15B835",
+      "task_id": "TASK-MVP4-C",
+      "task_plan_sha256": "AC75E8E511067FC83E2F58F01B674B84902B9F7AC3D2EE331F7CEB74FFA01978",
+      "validation_result": "ERROR",
+      "validator_sha256": [
+        {
+          "sha256": "F5135DA82918B33CA289BC49F6053ABD8E5905E0A8879221C78BDDC89BB00DA1",
+          "validator_id": "VAL-BOTTLENECK-CHECK"
+        }
+      ]
+    },
+    "execution": "PASS",
+    "gate": "BLOCK",
+    "plan_version": "1.0",
+    "run_id": "RUN-2a078385-6fd4-47ac-8bc3-e4d50402e8c5",
+    "status": "ERROR",
+    "task_id": "TASK-MVP4-C",
+    "validation": "ERROR"
+  }
+}
