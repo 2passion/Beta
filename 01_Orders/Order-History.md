@@ -82,6 +82,10 @@ Pre-Order Task 1 — PASS
 → Order-053 — SYNCED / MVP Test 3 Official Closure Sync
 → Order-054 — PASS FOR USER GATE / MVP 7 Gates Overall Evidence Review / Blocker 0 / Important 0
 → Order-055 — HOLD / Local Git Repository 및 Remote 부재
+→ Order-056 — PASS / GitHub Initial Connection + Pre-Freeze Snapshot Recovery
+→ Final User Gate — APPROVED
+→ Beta Local Core MVP — OVERALL PASS / MVP Status FROZEN
+→ Known Limitations — 3 OPEN / ACCEPTED FOR MVP
 
 현재 Done / Now / Next의 원본은 `Beta-Index.md`를 따른다.
 
@@ -257,6 +261,13 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
     local HEAD = origin/main = remote main --- `2026-10-06T03:47:03+09:00`
     --- GitHub는 Backup / Version History이며 Local SSOT는
     `C:\Obsidian\Beta` --- MVP Overall PASS NOT YET / MVP Freeze NOT YET
+-   Final User Gate --- APPROVED --- KL-1 / KL-2 / KL-3을 OPEN Known
+    Limitations로 수용 --- MVP 7 Gates Overall Evidence Review 수용 ---
+    Beta Local Core MVP Overall PASS 및 현재 MVP 범위 FROZEN 승인
+-   Beta Local Core MVP --- OVERALL PASS
+-   MVP Status --- FROZEN
+-   Architecture Delta --- NONE
+-   Phase2 --- NOT STARTED
 
 ## 5. 정식 Order 목록
 
@@ -323,20 +334,39 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
 
 -   KL-1 Concurrency trust boundary --- M14-D 단일 thread의 file-order/runtime/observation
     일관 위조와 M14-E 순차 실행 후 filesystem mtime 조작은 OS/별도 process
-    수준 독립 관측 없이는 완전 증명에 한계가 있음
+    수준 독립 관측 없이는 완전 증명에 한계가 있음 --- OPEN / ACCEPTED FOR MVP
 -   KL-2 Windows path edge --- `NUL .txt`, `CONIN$`, `CONOUT$`가 현재 안전
-    판정될 수 있음
+    판정될 수 있음 --- OPEN / ACCEPTED FOR MVP
 -   KL-3 External dependency Evidence completion --- `completed_dependencies` 선언을 실제 Run/Evidence
-    완료와 독립 대조하지 않음
--   상태 --- OPEN / 해결됨으로 표시하지 않음 / Active Rule 또는 Prevention
-    자동 승격 없음 / Final User Gate에서 수용 여부 결정
+    완료와 독립 대조하지 않음 --- OPEN / ACCEPTED FOR MVP
+-   상태 --- 3 OPEN / ACCEPTED FOR MVP / 해결됨으로 표시하지 않음 /
+    Active Rule 또는 Prevention 자동 승격 없음
 
-## 7. 추적 원칙
+## 7. MVP Freeze Baseline
+
+-   Architecture SSOT --- `00_Architecture/Harness-A-Architecture-v1.0.md`
+    --- v1.0 / FROZEN
+-   Terminology SSOT --- `00_Architecture/Terminology.md` --- FROZEN
+-   Official Gate Versions --- Test 1 v1.1 / Test 2 v1.1 / Test 3 v1.2 /
+    Test 4 v1.2 / Test 5 v1.1 / Test 6 v1.2 / Test 7 v1.1
+-   Overall Evidence Review --- Order-054 / PASS FOR USER GATE
+-   Pre-Freeze Snapshot --- Order-056 / PASS
+-   Final User Gate --- APPROVED
+-   Known Limitations --- 3 OPEN / ACCEPTED FOR MVP
+-   Freeze Commit --- push 후 SHA 기록 예정
+-   Branch --- `main`
+-   Remote --- `origin` / `https://github.com/2passion/Beta.git`
+-   GitHub Role --- Freeze Snapshot / Backup / Version History
+-   Local SSOT --- `C:\Obsidian\Beta`
+-   Architecture Delta --- NONE
+-   Phase2 --- NOT STARTED
+
+## 8. 추적 원칙
 
 Intent → ADR → Order → Task → Run → Validation → Evidence → Result
 
 `Order-History.md`는 Timeline View이며 실행 Evidence를 대체하지 않는다.
 
-## 8. 문서 종료
+## 9. 문서 종료
 
 === DOCUMENT END ===

@@ -6,6 +6,8 @@
 2. 현재 Architecture
 3. Done
 3.1 Known Limitations
+3.2 GitHub Pre-Freeze Snapshot
+3.3 MVP Freeze Baseline
 4. Now
 5. Next
 6. 주요 위치
@@ -170,6 +172,9 @@ FROZEN
 - Order-054 MVP 7 Gates Overall Evidence Review — PASS FOR USER GATE / Blocker 0 / Important 0 / Minor 3
 - Order-055 Pre-Freeze Snapshot — HOLD / Local Git Repository 및 Remote 부재
 - Order-056 GitHub Initial Connection + Pre-Freeze Snapshot Recovery — PASS
+- Final User Gate — APPROVED
+- Beta Local Core MVP — OVERALL PASS
+- MVP Status — FROZEN
 - ChatGPT Project Beta와 Obsidian의 역할 분리
 - A와 B의 관계 정의
 - Local Core 우선 방향 결정
@@ -184,11 +189,11 @@ FROZEN
 
 ## 3.1 Known Limitations
 
-- KL-1 Concurrency trust boundary — M14-D 단일 thread의 file-order/runtime/observation 일관 위조 및 M14-E 순차 실행 후 filesystem mtime 조작은 OS/별도 process 수준 관측 없이는 완전 증명에 한계가 있음
-- KL-2 Windows path edge — `NUL .txt`, `CONIN$`, `CONOUT$`가 현재 안전 판정될 수 있음
-- KL-3 External dependency Evidence completion — `completed_dependencies` 선언을 실제 Run/Evidence 완료와 독립 대조하지 않음
-- 상태: OPEN / 해결됨으로 표시하지 않음 / Active Rule 또는 Prevention으로 승격하지 않음
-- 수용 판단 Gate: Final User Gate
+- KL-1 Concurrency trust boundary — M14-D 단일 thread의 file-order/runtime/observation 일관 위조 및 M14-E 순차 실행 후 filesystem mtime 조작은 OS/별도 process 수준 관측 없이는 완전 증명에 한계가 있음 — OPEN / ACCEPTED FOR MVP
+- KL-2 Windows path edge — `NUL .txt`, `CONIN$`, `CONOUT$`가 현재 안전 판정될 수 있음 — OPEN / ACCEPTED FOR MVP
+- KL-3 External dependency Evidence completion — `completed_dependencies` 선언을 실제 Run/Evidence 완료와 독립 대조하지 않음 — OPEN / ACCEPTED FOR MVP
+- 상태: 3 OPEN / ACCEPTED FOR MVP / 해결됨으로 표시하지 않음 / Active Rule 또는 Prevention으로 승격하지 않음
+- 수용 판단 Gate: Final User Gate — APPROVED
 
 
 ## 3.2 GitHub Pre-Freeze Snapshot
@@ -204,6 +209,24 @@ FROZEN
 - Local SSOT: `C:\Obsidian\Beta`
 - MVP Overall PASS: NOT YET
 - MVP Freeze: NOT YET
+
+
+## 3.3 MVP Freeze Baseline
+
+- Architecture SSOT: `00_Architecture/Harness-A-Architecture-v1.0.md` / v1.0 / FROZEN
+- Terminology SSOT: `00_Architecture/Terminology.md` / FROZEN
+- Official Gate Versions: Test 1 v1.1 / Test 2 v1.1 / Test 3 v1.2 / Test 4 v1.2 / Test 5 v1.1 / Test 6 v1.2 / Test 7 v1.1
+- Overall Evidence Review: Order-054 / PASS FOR USER GATE
+- Pre-Freeze Snapshot: Order-056 / PASS
+- Final User Gate: APPROVED
+- Known Limitations: 3 OPEN / ACCEPTED FOR MVP
+- Freeze Commit: push 후 SHA 기록 예정
+- Branch: `main`
+- Remote: `origin` → `https://github.com/2passion/Beta.git`
+- GitHub 역할: Freeze Snapshot / Backup / Version History
+- Local SSOT: `C:\Obsidian\Beta`
+- Architecture Delta: NONE
+- Phase2: NOT STARTED
 
 
 ## 4. Now
@@ -225,16 +248,19 @@ Resume Review/Fix Loop CLOSED
 MVP 7 Gates 7/7 OFFICIAL PASS
 Overall Evidence Review PASS FOR USER GATE
 BLOCKER 0 / IMPORTANT 0
-Known Limitations 3 OPEN
-MVP Overall PASS NOT YET
-MVP Freeze NOT YET
+Known Limitations 3 OPEN / ACCEPTED FOR MVP
+Final User Gate APPROVED
+MVP Overall PASS PASS
+MVP Status FROZEN
+Architecture Delta NONE
+Phase2 NOT STARTED
 
 
 ## 5. Next
 
-Final User Gate
-→ Known Limitations 3건 수용 여부 결정
-→ MVP Overall PASS / Freeze는 별도 Gate 전까지 NOT YET
+Runtime Operation / Evidence Collection
+→ 범위 확장 전 운영 Evidence 축적
+→ 모든 확장은 Evidence → Proposal → Review → User Approval 필요
 
 
 ## 6. 주요 위치
