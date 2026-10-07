@@ -305,6 +305,24 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
     ISSUED --- Production Evidence --- 0
 -   Next --- FIRST RUNTIME USER GATE
 
+### 2026-10-08
+
+-   Order-074 --- First Production Runtime READ_ONLY_INTEGRITY Execution ---
+    Owner/Executor: Codex --- PASS CANDIDATE --- Request
+    `BETA-FIRST-RUNTIME-001` --- Run
+    `RUN-e367a795-4922-4b50-8fff-0630502cf387` --- Evidence
+    `EVD-a400e86b-b082-4f4c-8a6b-47a8f25cb619` / SHA-256
+    `9DAC2856BCA0C0B2B40178FD2F6AE88D06F2DF127C18BBD54B44329CC8CA561A`
+    --- Validator PASS / Gate PROCEED / Side Effect 0 / Retry 0 / Blind Retry 0
+-   First Production Runtime --- PASS CANDIDATE --- Actual Run Count 1
+-   Production Evidence --- CREATED / PENDING INDEPENDENT REVIEW
+-   Independent Runtime Evidence Review --- NOT RUN
+-   Runtime Closure --- NOT CLOSED
+-   Order-075 --- First Runtime Evidence CP3 Snapshot + Checkpoint Policy
+    Candidate --- Owner: Codex --- CP3 snapshot preparation
+-   Checkpoint Policy --- CANDIDATE / NOT ACTIVE
+-   Next --- Claude READ-ONLY Independent Runtime Evidence Review
+
 ## 5. 정식 Order 목록
 
 | Order | 목적 | Write Owner | Reviewer | Result |
@@ -382,6 +400,8 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
 | Order-071 | Snapshot/Baseline Independent Delta Recheck | - | Claude Code | PASS |
 | Order-072 | Production Runtime Boundary Implementation Closure & State Sync | Codex | Claude Code | CLOSED / VERIFIED |
 | Order-073 | KL-4 User Acceptance State Sync + First Runtime Gate Preparation | Codex | Claude Code | PASS / READY FOR FIRST RUNTIME USER GATE |
+| Order-074 | First Production Runtime READ_ONLY_INTEGRITY Execution | Codex | Claude Code | PASS CANDIDATE / PENDING INDEPENDENT REVIEW |
+| Order-075 | First Runtime Evidence CP3 Snapshot + Checkpoint Policy Candidate | Codex | Claude Code | CP3 SNAPSHOT PREPARATION |
 
 ## 6. Known Limitations
 

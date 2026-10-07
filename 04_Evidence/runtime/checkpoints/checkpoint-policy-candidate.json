@@ -1,0 +1,42 @@
+{
+  "policy_id": "BETA-CHECKPOINT-POLICY-CANDIDATE-001",
+  "order_id": "Order-075",
+  "status": "CANDIDATE",
+  "active": false,
+  "created_at": "2026-10-08T00:32:56.1241617+09:00",
+  "checkpoint_types": {
+    "CP1": "Baseline — last verified remote-aligned state before a large change",
+    "CP2": "Verified Implementation — implementation plus required Validation PASS",
+    "CP3": "Evidence Snapshot — preserve original Runtime or important side-effect Evidence before Independent Review",
+    "CP4": "Closure — Independent Review plus State Sync PASS"
+  },
+  "automatic_checkpoint_eligibility": [
+    "approved Order scope",
+    "required Validators PASS",
+    "no FAIL or ERROR overwrite",
+    "no unexpected side effect",
+    "no Architecture change unless separately approved",
+    "no unrelated file",
+    "git diff --check PASS",
+    "no remote divergence",
+    "Evidence can link checkpoint and commit",
+    "fast-forward push is possible"
+  ],
+  "eligibility_failure_action": "HOLD",
+  "automatic_rollback_prohibited_when": [
+    "actual Runtime Evidence exists",
+    "external side effect occurred",
+    "delete, move, or publish occurred",
+    "User approval state changed",
+    "SSOT conflict or meaning ambiguity exists"
+  ],
+  "failure_sequence": [
+    "HOLD",
+    "preserve facts and Evidence",
+    "Root Cause",
+    "Recovery Plan"
+  ],
+  "automatic_recovery_candidate_scope": "Only temporary artifact or cache recovery whose cause and successful recovery method are already verified.",
+  "no_change": "If CP2, CP3, or CP4 has materially identical content, state, Evidence, and checkpoint meaning already on the remote, do not create a duplicate commit or push.",
+  "promotion": "Requires separate Review and Promotion; this record does not activate the policy."
+}

@@ -10,6 +10,7 @@
 3.3 MVP Freeze Baseline
 3.4 Production Runtime Boundary Implementation Closure
 3.5 KL-4 Acceptance / First Runtime Gate Preparation
+3.6 First Production Runtime / CP3 Evidence Snapshot
 4. Now
 5. Next
 6. 주요 위치
@@ -188,6 +189,9 @@ FROZEN
 - Order-073 KL-4 User Acceptance State Sync + First Runtime Gate Preparation — PASS
 - KL-4 Local Writer Trust Boundary — OPEN / ACCEPTED FOR MVP
 - First Runtime Gate Payload — READY / authorization source 아님
+- Order-074 First Production Runtime READ_ONLY_INTEGRITY — PASS CANDIDATE / Run 1 / Side Effect 0
+- Production Evidence — CREATED / PENDING INDEPENDENT REVIEW
+- Order-075 CP3 Evidence Snapshot — snapshot preparation and checkpoint policy candidate
 - ChatGPT Project Beta와 Obsidian의 역할 분리
 - A와 B의 관계 정의
 - Local Core 우선 방향 결정
@@ -290,6 +294,27 @@ FROZEN
 - Next: FIRST RUNTIME USER GATE
 
 
+## 3.6 First Production Runtime / CP3 Evidence Snapshot
+
+- Source Order: Order-074
+- Snapshot Order: Order-075
+- First Production Runtime: PASS CANDIDATE
+- Request ID: `BETA-FIRST-RUNTIME-001`
+- Run ID: `RUN-e367a795-4922-4b50-8fff-0630502cf387`
+- Evidence ID: `EVD-a400e86b-b082-4f4c-8a6b-47a8f25cb619`
+- Evidence SHA-256: `9DAC2856BCA0C0B2B40178FD2F6AE88D06F2DF127C18BBD54B44329CC8CA561A`
+- Production Run Count: 1
+- Target Side Effect: 0
+- Retry / Blind Retry: 0 / 0
+- Production Evidence: CREATED / PENDING INDEPENDENT REVIEW
+- Independent Runtime Evidence Review: NOT RUN
+- Runtime Closure: NOT CLOSED
+- CP3 Checkpoint Type: `CP3_EVIDENCE_SNAPSHOT`
+- Checkpoint Policy: CANDIDATE / NOT ACTIVE
+- Phase2: NOT STARTED
+- Next: Claude READ-ONLY Independent Runtime Evidence Review
+
+
 ## 4. Now
 
 Architecture v1.0 FROZEN
@@ -316,19 +341,24 @@ MVP Overall PASS PASS
 MVP Status FROZEN
 Production Runtime Boundary Implementation CLOSED / VERIFIED
 Production Runtime Boundary Independent Review PASS
-Actual Production Runtime NOT RUN
-Production Authorization NOT ISSUED
-Production Evidence 0
-First Runtime Gate Payload READY / NON_AUTHORIZING
+First Production Runtime PASS CANDIDATE
+Actual Production Run Count 1
+Production Authorization ISSUED / ONE-SHOT CONSUMED
+Production Evidence CREATED / PENDING INDEPENDENT REVIEW
+Independent Runtime Evidence Review NOT RUN
+Runtime Closure NOT CLOSED
+Target Side Effect 0
+CP3 Evidence Snapshot PREPARED FOR GIT CHECKPOINT
+Checkpoint Policy CANDIDATE / NOT ACTIVE
 Architecture Delta NONE
 Phase2 NOT STARTED
 
 
 ## 5. Next
 
-FIRST RUNTIME USER GATE
-→ 사용자가 Runtime Request Hash + Runtime Code Baseline Hash + Approved Git Commit을 직접 확인
-→ 승인 후에도 별도 Runtime Order에서만 authorization 연결 및 실제 실행 가능
+Claude READ-ONLY Independent Runtime Evidence Review
+→ CP3 Git SHA 기준으로 원본 Evidence와 연결을 독립 검산
+→ PASS 후에만 CP4 Runtime Closure 후보 검토
 
 
 ## 6. 주요 위치

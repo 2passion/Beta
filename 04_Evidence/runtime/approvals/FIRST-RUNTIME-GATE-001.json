@@ -1,0 +1,16 @@
+{
+  "approval_ref": "FIRST-RUNTIME-GATE-001",
+  "approved_git_commit": "790841d4506fb0590dbeeac3f3764841a97c6a28",
+  "target_path": "C:\\Obsidian\\Beta\\Beta-Index.md",
+  "approved_root": "C:\\Obsidian\\Beta",
+  "operation": "READ_ONLY_INTEGRITY",
+  "policy_path": "02_Core/beta_core/runtime_policy.json",
+  "policy_sha256": "A0238C91DFCA023E600EB339E29364AC803B62FE62763B62B27A5610CAC1C12B",
+  "executor_path": "02_Core/beta_core/file_integrity_executor.py",
+  "executor_sha256": "205BF818FD3F8434031EB668FB316EF1EF10766423ACA393F604648DEE63232D",
+  "validator_path": "02_Core/beta_core/file_integrity_validator.py",
+  "validator_sha256": "9ED0457AF985DB6AD08AB3FEB15B9864AF36935B65541435E3F47F48EBF39DBE",
+  "parallel_allowed": false,
+  "dependencies": [],
+  "approved_at": "2026-10-07T23:59:11.5717856+09:00"
+}
