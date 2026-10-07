@@ -8,6 +8,7 @@
 3.1 Known Limitations
 3.2 GitHub Pre-Freeze Snapshot
 3.3 MVP Freeze Baseline
+3.4 Production Runtime Boundary Implementation Closure
 4. Now
 5. Next
 6. 주요 위치
@@ -176,6 +177,13 @@ FROZEN
 - Beta Local Core MVP — OVERALL PASS
 - MVP Status — FROZEN
 - Order-057 MVP Overall PASS & Freeze Closure + GitHub Freeze Snapshot — PASS
+- Order-058~071 Production Runtime Boundary proposal, implementation, enforcement fix, independent delta recheck lineage 완료
+- Order-071 Independent Delta Recheck — PASS / Blocker 0 / Important 0 / Regression 178/178 ×2 / Beta Reviewer Delta 0
+- Production Runtime Boundary Implementation — CLOSED / VERIFIED
+- Production Runtime Boundary Independent Review — PASS
+- Actual Production Runtime — NOT RUN
+- Production Authorization — NOT ISSUED
+- Production Evidence — 0
 - ChatGPT Project Beta와 Obsidian의 역할 분리
 - A와 B의 관계 정의
 - Local Core 우선 방향 결정
@@ -193,7 +201,8 @@ FROZEN
 - KL-1 Concurrency trust boundary — M14-D 단일 thread의 file-order/runtime/observation 일관 위조 및 M14-E 순차 실행 후 filesystem mtime 조작은 OS/별도 process 수준 관측 없이는 완전 증명에 한계가 있음 — OPEN / ACCEPTED FOR MVP
 - KL-2 Windows path edge — `NUL .txt`, `CONIN$`, `CONOUT$`가 현재 안전 판정될 수 있음 — OPEN / ACCEPTED FOR MVP
 - KL-3 External dependency Evidence completion — `completed_dependencies` 선언을 실제 Run/Evidence 완료와 독립 대조하지 않음 — OPEN / ACCEPTED FOR MVP
-- 상태: 3 OPEN / ACCEPTED FOR MVP / 해결됨으로 표시하지 않음 / Active Rule 또는 Prevention으로 승격하지 않음
+- KL-4 Local Writer Trust Boundary — 동일 Local Writer가 승인·검증 Core 자체를 악의적으로 재작성해 사용자 승인을 위조하는 공격은 현재 MVP Threat Model 밖임 — OPEN / CANDIDATE FOR ACCEPTANCE
+- 상태: KL-1~KL-3 = 3 OPEN / ACCEPTED FOR MVP, KL-4 = OPEN / CANDIDATE FOR ACCEPTANCE / 해결됨으로 표시하지 않음 / Active Rule 또는 Prevention으로 승격하지 않음
 - 수용 판단 Gate: Final User Gate — APPROVED
 
 
@@ -233,6 +242,26 @@ FROZEN
 - Phase2: NOT STARTED
 
 
+## 3.4 Production Runtime Boundary Implementation Closure
+
+- Closure Order: Order-072
+- Implementation Lineage: Order-058~071
+- Implementation Status: CLOSED / VERIFIED
+- Independent Review: PASS
+- Final Review Basis: Order-071 / Blocker 0 / Important 0 / Regression 178/178 ×2 / Beta Reviewer Delta 0
+- Closure Evidence: `04_Evidence/runtime_boundary_closure/order-072-closure.json`
+- Runtime Code Baseline Hash: `609945133F147CE49179FFFD587CAADE4E6FC2E218EAA340AC787A78EB7C3737`
+- Architecture Reference: `00_Architecture/Harness-A-Architecture-v1.0.md` / SHA-256 `9953AD17FD382E39BBAE58C30937DB070FEFD34A38CC31776BA86FDBFC8411DA` / Delta NONE
+- Actual Production Runtime: NOT RUN
+- Production Authorization: NOT ISSUED
+- Production Evidence: 0
+- KL-1~KL-3: OPEN / ACCEPTED FOR MVP
+- KL-4: OPEN / CANDIDATE FOR ACCEPTANCE
+- Phase2: NOT STARTED
+- Next Gate: KL-4 USER ACCEPTANCE
+- 의미 경계: CLOSED는 구현 및 독립 검증 Closure이며 실제 Production Runtime 성공을 의미하지 않음
+
+
 ## 4. Now
 
 Architecture v1.0 FROZEN
@@ -253,18 +282,24 @@ MVP 7 Gates 7/7 OFFICIAL PASS
 Overall Evidence Review PASS FOR USER GATE
 BLOCKER 0 / IMPORTANT 0
 Known Limitations 3 OPEN / ACCEPTED FOR MVP
+KL-4 Local Writer Trust Boundary OPEN / CANDIDATE FOR ACCEPTANCE
 Final User Gate APPROVED
 MVP Overall PASS PASS
 MVP Status FROZEN
+Production Runtime Boundary Implementation CLOSED / VERIFIED
+Production Runtime Boundary Independent Review PASS
+Actual Production Runtime NOT RUN
+Production Authorization NOT ISSUED
+Production Evidence 0
 Architecture Delta NONE
 Phase2 NOT STARTED
 
 
 ## 5. Next
 
-Runtime Operation / Evidence Collection
-→ 범위 확장 전 운영 Evidence 축적
-→ 모든 확장은 Evidence → Proposal → Review → User Approval 필요
+KL-4 USER ACCEPTANCE GATE
+→ KL-4 상태는 OPEN / CANDIDATE FOR ACCEPTANCE 유지
+→ 승인 이후에만 First Runtime User Gate 검토
 
 
 ## 6. 주요 위치

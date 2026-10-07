@@ -277,6 +277,24 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
     --- GitHub Freeze Snapshot / Backup / Version History --- Local SSOT는
     `C:\Obsidian\Beta`
 
+### 2026-10-07
+
+-   Order-058~071 --- Production Runtime Boundary Proposal / Implementation /
+    Enforcement Fix / Independent Delta Recheck lineage 완료
+-   Order-071 --- Snapshot/Baseline Independent Delta Recheck --- Reviewer:
+    Claude Code --- PASS --- Blocker 0 / Important 0 --- Regression 178/178 ×2
+    --- Beta Reviewer Delta 0 --- Architecture Delta NONE --- Production
+    Authorization/Run/Evidence 0 --- Phase2 NOT STARTED
+-   Order-072 --- Production Runtime Boundary Implementation Closure & State Sync
+    --- Owner: Codex --- CLOSED / VERIFIED --- Independent Review PASS
+-   Actual Production Runtime --- NOT RUN
+-   Production Authorization --- NOT ISSUED
+-   Production Evidence --- 0
+-   KL-1~KL-3 --- OPEN / ACCEPTED FOR MVP
+-   KL-4 --- OPEN / CANDIDATE FOR ACCEPTANCE
+-   Next Gate --- KL-4 USER ACCEPTANCE
+-   Closure 의미 경계 --- 구현/검증 Closure이며 실제 Production Runtime 성공이 아님
+
 ## 5. 정식 Order 목록
 
 | Order | 목적 | Write Owner | Reviewer | Result |
@@ -338,6 +356,21 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
 | Order-055 | MVP Overall Review State Sync + GitHub Pre-Freeze Snapshot | Codex | Claude Code | HOLD |
 | Order-056 | Beta GitHub Initial Connection + Pre-Freeze Snapshot Recovery | Codex | Claude Code | PASS |
 | Order-057 | MVP Overall PASS & Freeze Closure + GitHub Freeze Snapshot | Codex | Claude Code | PASS |
+| Order-058 | Frozen MVP Runtime Operation Entry Plan | - | Claude Code | RUNTIME_ENTRY_GAP |
+| Order-059 | Minimal Production Runtime Boundary Proposal | - | Claude Code | READY FOR IMPLEMENTATION USER GATE |
+| Order-060 | Minimal Production Runtime Boundary Implementation | Codex | Claude Code | PASS candidate |
+| Order-061 | Minimal Production Runtime Boundary Independent Review | - | Claude Code | REVISION REQUIRED |
+| Order-062 | Minimal Production Runtime Boundary Enforcement Fix | Codex | Claude Code | PASS candidate |
+| Order-063 | Runtime Boundary Enforcement Independent Delta Recheck | - | Claude Code | REVISION REQUIRED |
+| Order-064 | Runtime Trust Anchor + Evidence Reverification Fix | Codex | Claude Code | PASS candidate |
+| Order-065 | Runtime Trust Anchor Independent Delta Recheck | - | Claude Code | REVISION REQUIRED |
+| Order-066 | Runtime Final User-Gate Trust Anchor Fix | Codex | Claude Code | PASS candidate |
+| Order-067 | Runtime Final User-Gate Independent Delta Recheck | - | Claude Code | REVISION REQUIRED |
+| Order-068 | Runtime TOCTOU + Atomic Authorization Fix & KL-4 Boundary | Codex | Claude Code | PASS candidate |
+| Order-069 | Runtime TOCTOU/Atomic Independent Delta Recheck | - | Claude Code | REVISION REQUIRED |
+| Order-070 | Snapshot Execution Hardening + Baseline Completeness Recovery | Codex | Claude Code | PASS candidate |
+| Order-071 | Snapshot/Baseline Independent Delta Recheck | - | Claude Code | PASS |
+| Order-072 | Production Runtime Boundary Implementation Closure & State Sync | Codex | Claude Code | CLOSED / VERIFIED |
 
 ## 6. Known Limitations
 
@@ -348,7 +381,11 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
     판정될 수 있음 --- OPEN / ACCEPTED FOR MVP
 -   KL-3 External dependency Evidence completion --- `completed_dependencies` 선언을 실제 Run/Evidence
     완료와 독립 대조하지 않음 --- OPEN / ACCEPTED FOR MVP
--   상태 --- 3 OPEN / ACCEPTED FOR MVP / 해결됨으로 표시하지 않음 /
+-   KL-4 Local Writer Trust Boundary --- 동일 Local Writer가 승인·검증 Core 자체를
+    악의적으로 재작성해 사용자 승인을 위조하는 공격은 현재 MVP Threat Model 밖임
+    --- OPEN / CANDIDATE FOR ACCEPTANCE
+-   상태 --- KL-1~KL-3 OPEN / ACCEPTED FOR MVP, KL-4 OPEN / CANDIDATE FOR
+    ACCEPTANCE / 해결됨으로 표시하지 않음 /
     Active Rule 또는 Prevention 자동 승격 없음
 
 ## 7. MVP Freeze Baseline

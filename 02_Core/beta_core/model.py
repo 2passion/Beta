@@ -6,6 +6,7 @@ import hashlib
 import json
 import re
 import uuid
+from collections.abc import Collection
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -87,7 +88,28 @@ def resolve_fixture_path(project_root: Path, relative_path: str) -> Path:
     return candidate
 
 
-def validate_pinned_programs(plan: dict[str, Any], project_root: Path) -> tuple[dict[str, Path], list[str]]:
+def resolve_approved_program_path(
+    project_root: Path,
+    relative_path: str,
+    approved_program_paths: Collection[Path],
+) -> Path:
+    """Resolve one program against an exact, caller-approved path allowlist."""
+    if not isinstance(relative_path, str) or not relative_path:
+        raise ValueError("program path must be a non-empty string")
+    candidate = (project_root / relative_path).resolve()
+    approved = {Path(path).resolve() for path in approved_program_paths}
+    if candidate not in approved:
+        raise ValueError(f"program path is outside the exact approved allowlist: {relative_path}")
+    if not candidate.is_file():
+        raise ValueError(f"approved program does not exist: {relative_path}")
+    return candidate
+
+
+def validate_pinned_programs(
+    plan: dict[str, Any],
+    project_root: Path,
+    approved_program_paths: Collection[Path] | None = None,
+) -> tuple[dict[str, Path], list[str]]:
     resolved: dict[str, Path] = {}
     errors: list[str] = []
     programs: list[tuple[str, Any]] = [("executor", plan.get("executor"))]
@@ -99,7 +121,10 @@ def validate_pinned_programs(plan: dict[str, Any], project_root: Path) -> tuple[
             errors.append(f"{label} specification is invalid")
             continue
         try:
-            path = resolve_fixture_path(project_root, spec.get("path"))
+            if approved_program_paths is None:
+                path = resolve_fixture_path(project_root, spec.get("path"))
+            else:
+                path = resolve_approved_program_path(project_root, spec.get("path"), approved_program_paths)
         except (TypeError, ValueError) as exc:
             errors.append(str(exc))
             continue

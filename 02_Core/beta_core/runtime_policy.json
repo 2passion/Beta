@@ -1,0 +1,21 @@
+{
+  "policy_version": "1.0",
+  "production": {
+    "approved_root": "C:/Obsidian/Beta",
+    "target_path": "C:/Obsidian/Beta/Beta-Index.md",
+    "operation": "READ_ONLY_INTEGRITY"
+  },
+  "test_fixture": {
+    "approval_ref": "ORDER-062-ISOLATED-FIXTURE",
+    "approved_root": "03_Tests/.tmp"
+  },
+  "executor": {
+    "path": "02_Core/beta_core/file_integrity_executor.py",
+    "sha256": "205BF818FD3F8434031EB668FB316EF1EF10766423ACA393F604648DEE63232D"
+  },
+  "validator": {
+    "path": "02_Core/beta_core/file_integrity_validator.py",
+    "sha256": "9ED0457AF985DB6AD08AB3FEB15B9864AF36935B65541435E3F47F48EBF39DBE",
+    "validator_id": "FILE-INTEGRITY-INDEPENDENT"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "closure_id": "ORDER-072-RUNTIME-BOUNDARY-CLOSURE",
+  "order": "Order-072",
+  "created_at": "2026-10-07T16:33:29.0658338+09:00",
+  "status": "CLOSED / VERIFIED",
+  "meaning": "Production Runtime Boundary implementation and independent-verification closure only; this is not Production Runtime Evidence and does not assert an actual Production Runtime run.",
+  "lineage": [
+    {"order": "Order-058", "sha256": "792FA04AD48C31B225402DE7FCF13C138F257DFE0B8321F727A7FB77D60643DB"},
+    {"order": "Order-059", "sha256": "8688F3DE927D751F28DFDBC055819DDE1087EE36D7157497D13A1F134A9093D7"},
+    {"order": "Order-060", "sha256": "3E04791D724E1CFBD74291959E463E9525297E2112C20CC3D4B638699FD5FCF9"},
+    {"order": "Order-061", "sha256": "5A0B51DAB37557524F0D2E1F8E8C9EADF441D22A37EF4C7689D0ACA25699FDF1"},
+    {"order": "Order-062", "sha256": "BF16C3AE45F33BAEE4D1C7970A479DA067EB2F6E22097CDE2E5DDB7E40B12DE0"},
+    {"order": "Order-063", "sha256": "5F06B97287BDBFD2C2641A2181390E39FCCE16DC95CCC6A0A306C361A8C73109"},
+    {"order": "Order-064", "sha256": "821DA6E7BE1B541402DFE75291E0C3EE90BBAEDEFBF740B6B1B0D91ED4D24537"},
+    {"order": "Order-065", "sha256": "D5CBC8AA80E1423B7260270DB91F1D0006AFD9273D8ECF2BC0D78C225D96222C"},
+    {"order": "Order-066", "sha256": "DC6B777D1EEAE14E548A5B2DFFB852A698F034627BAA3CF8EC2FD468B336B69D"},
+    {"order": "Order-067", "sha256": "F373FE7A46D4BEA446B3F8F2B2F5E05CE7933598AF37509041431F85950A1C2C"},
+    {"order": "Order-068", "sha256": "684D4D5266F64D79430D103BE1F7C1E9460B1614DE5622120430C64ACD52D826"},
+    {"order": "Order-069", "sha256": "31B528A147FD3F9488DB533CE8FD4A020F3E3DA437FEFDE4D79FD126CC0845A0"},
+    {"order": "Order-070", "sha256": "F53730AF4E2FCE74A8496ED46989F9081C99681CA7593796A39A26B740655E6D"},
+    {"order": "Order-071", "sha256": "527C8481D446AE67AEFDA4EA8CDA279CFC772C0DD27DEFE5C4A39CB929699F5E"}
+  ],
+  "independent_review": {
+    "order": "Order-071",
+    "result": "PASS",
+    "blocker": 0,
+    "important": 0,
+    "regression": "178/178 x2",
+    "beta_reviewer_delta": 0,
+    "architecture_delta": "NONE",
+    "production_authorization_run_evidence": 0,
+    "phase2": "NOT STARTED"
+  },
+  "final_implementation_files": [
+    {"path": "02_Core/beta_core/cli.py", "sha256": "2A2ED179C879BE48B881A3DFD52193BB00C95053767032BB1E74CE095709F0CA"},
+    {"path": "02_Core/beta_core/executor.py", "sha256": "5C96928AA644037B8DB316C6AE2C4A709233967FD6E551037F8B3774C86A47D5"},
+    {"path": "02_Core/beta_core/model.py", "sha256": "36FAA24A843D56B6AD0E0F4214FA724B3A7BBBA6082F24F663302D2EE6A17D94"},
+    {"path": "02_Core/beta_core/validator_runner.py", "sha256": "2F3C6043C924DFD20C70E3E8594A704364C7CA6C778BD7BF5F00F87861CCA70A"},
+    {"path": "02_Core/beta_core/file_integrity_executor.py", "sha256": "205BF818FD3F8434031EB668FB316EF1EF10766423ACA393F604648DEE63232D"},
+    {"path": "02_Core/beta_core/file_integrity_validator.py", "sha256": "9ED0457AF985DB6AD08AB3FEB15B9864AF36935B65541435E3F47F48EBF39DBE"},
+    {"path": "02_Core/beta_core/runtime_boundary.py", "sha256": "7660DA2A62C0DFD11F909F0F3C48AC4FAC04BACDE7764F1A043D348D89D3B986"},
+    {"path": "02_Core/beta_core/runtime_policy.py", "sha256": "9C74DAB1ADDE552E755DFCE1389AC38378A94F7AF128494648DFE161D682ECD2"},
+    {"path": "02_Core/beta_core/runtime_policy.json", "sha256": "A0238C91DFCA023E600EB339E29364AC803B62FE62763B62B27A5610CAC1C12B"},
+    {"path": "02_Core/beta_core/user_gate.py", "sha256": "55276B2837B4F5005C0BC6A468D7BF075DE85C660C0FC65867265C4B7E5A214A"}
+  ],
+  "final_test_files": [
+    {"path": "03_Tests/test_runtime_boundary.py", "sha256": "37E72DC9BB03791277612A2C2A33352A75C77F76B337B36C21BFA76C8350862A"},
+    {"path": "03_Tests/test_runtime_boundary_enforcement.py", "sha256": "00860090B35B70AD0F3E2E2B0F32BB6775BDA826DD5AE3B6FCD17ADDDF485FCB"},
+    {"path": "03_Tests/test_runtime_trust_anchor.py", "sha256": "9CADCF843B0BA290D1751B476BA6CB9D738156D448F67A5AAD79A2C1B203F2CF"}
+  ],
+  "runtime_code_baseline_manifest": [
+    {"relative_path": "02_Core/beta_core/__init__.py", "sha256": "9053D820E0F6CF9C9F62413F72A01367373C5FAB1D49BE9B62710E62B13523AB"},
+    {"relative_path": "02_Core/beta_core/cli.py", "sha256": "2A2ED179C879BE48B881A3DFD52193BB00C95053767032BB1E74CE095709F0CA"},
+    {"relative_path": "02_Core/beta_core/event_store.py", "sha256": "00660D15EACE53BB998A43BC0F1944D65D9C7B7EBFDB5A943F20A7EB2747073B"},
+    {"relative_path": "02_Core/beta_core/executor.py", "sha256": "5C96928AA644037B8DB316C6AE2C4A709233967FD6E551037F8B3774C86A47D5"},
+    {"relative_path": "02_Core/beta_core/file_integrity_executor.py", "sha256": "205BF818FD3F8434031EB668FB316EF1EF10766423ACA393F604648DEE63232D"},
+    {"relative_path": "02_Core/beta_core/file_integrity_validator.py", "sha256": "9ED0457AF985DB6AD08AB3FEB15B9864AF36935B65541435E3F47F48EBF39DBE"},
+    {"relative_path": "02_Core/beta_core/gate.py", "sha256": "16541C16BFCFADCED7D2DE689F53C5E313A07CDB0C05883D846698CE30AA2C81"},
+    {"relative_path": "02_Core/beta_core/model.py", "sha256": "36FAA24A843D56B6AD0E0F4214FA724B3A7BBBA6082F24F663302D2EE6A17D94"},
+    {"relative_path": "02_Core/beta_core/runtime_boundary.py", "sha256": "7660DA2A62C0DFD11F909F0F3C48AC4FAC04BACDE7764F1A043D348D89D3B986"},
+    {"relative_path": "02_Core/beta_core/runtime_policy.py", "sha256": "9C74DAB1ADDE552E755DFCE1389AC38378A94F7AF128494648DFE161D682ECD2"},
+    {"relative_path": "02_Core/beta_core/user_gate.py", "sha256": "55276B2837B4F5005C0BC6A468D7BF075DE85C660C0FC65867265C4B7E5A214A"},
+    {"relative_path": "02_Core/beta_core/validator_runner.py", "sha256": "2F3C6043C924DFD20C70E3E8594A704364C7CA6C778BD7BF5F00F87861CCA70A"}
+  ],
+  "runtime_code_baseline_hash": "609945133F147CE49179FFFD587CAADE4E6FC2E218EAA340AC787A78EB7C3737",
+  "architecture": {
+    "path": "00_Architecture/Harness-A-Architecture-v1.0.md",
+    "sha256": "9953AD17FD382E39BBAE58C30937DB070FEFD34A38CC31776BA86FDBFC8411DA",
+    "version": "v1.0",
+    "status": "FROZEN",
+    "delta": "NONE"
+  },
+  "terminology": {
+    "path": "00_Architecture/Terminology.md",
+    "sha256": "EDEB994201C20A52D8E76F89FAE3566BEE0E1D6798A2EA646833DE13AEC9C46D",
+    "status": "FROZEN",
+    "delta": "NONE"
+  },
+  "known_limitations": {
+    "KL-1": "OPEN / ACCEPTED FOR MVP",
+    "KL-2": "OPEN / ACCEPTED FOR MVP",
+    "KL-3": "OPEN / ACCEPTED FOR MVP",
+    "KL-4": "OPEN / CANDIDATE FOR ACCEPTANCE"
+  },
+  "production": {
+    "actual_runtime": "NOT RUN",
+    "authorization": "NOT ISSUED",
+    "evidence_count": 0
+  },
+  "phase2": "NOT STARTED",
+  "next_gate": "KL-4 USER ACCEPTANCE",
+  "closure_regression": {
+    "required_runs": 1,
+    "status": "PASS",
+    "tests_run": 178,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 394.735
+  },
+  "git": {
+    "pre_closure_head": "d47d5247ed00f8359f9bb9b6ca53bb49e41b2e7a",
+    "branch": "main",
+    "remote": "https://github.com/2passion/Beta.git",
+    "closure_commit": "SELF: resolve as the commit containing this evidence path",
+    "push_status": "TO_BE_VERIFIED_POST_COMMIT"
+  }
+}
