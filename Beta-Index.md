@@ -191,7 +191,7 @@ FROZEN
 - First Runtime Gate Payload — READY / authorization source 아님
 - Order-074 First Production Runtime READ_ONLY_INTEGRITY — PASS CANDIDATE / Run 1 / Side Effect 0
 - Production Evidence — CREATED / PENDING INDEPENDENT REVIEW
-- Order-075 CP3 Evidence Snapshot — snapshot preparation and checkpoint policy candidate
+- Order-075 CP3 Evidence Snapshot — PASS / CP3 CREATED
 - ChatGPT Project Beta와 Obsidian의 역할 분리
 - A와 B의 관계 정의
 - Local Core 우선 방향 결정
@@ -310,6 +310,8 @@ FROZEN
 - Independent Runtime Evidence Review: NOT RUN
 - Runtime Closure: NOT CLOSED
 - CP3 Checkpoint Type: `CP3_EVIDENCE_SNAPSHOT`
+- CP3 Snapshot Git Commit: `ba8d4b0380e0d51aadf0922fbf242155100700cb`
+- CP3 Record: `04_Evidence/runtime/checkpoints/CP3-BETA-FIRST-RUNTIME-001.json`
 - Checkpoint Policy: CANDIDATE / NOT ACTIVE
 - Phase2: NOT STARTED
 - Next: Claude READ-ONLY Independent Runtime Evidence Review
@@ -348,7 +350,7 @@ Production Evidence CREATED / PENDING INDEPENDENT REVIEW
 Independent Runtime Evidence Review NOT RUN
 Runtime Closure NOT CLOSED
 Target Side Effect 0
-CP3 Evidence Snapshot PREPARED FOR GIT CHECKPOINT
+CP3 Evidence Snapshot CREATED / PENDING INDEPENDENT REVIEW
 Checkpoint Policy CANDIDATE / NOT ACTIVE
 Architecture Delta NONE
 Phase2 NOT STARTED

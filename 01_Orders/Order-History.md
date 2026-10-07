@@ -319,7 +319,8 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
 -   Independent Runtime Evidence Review --- NOT RUN
 -   Runtime Closure --- NOT CLOSED
 -   Order-075 --- First Runtime Evidence CP3 Snapshot + Checkpoint Policy
-    Candidate --- Owner: Codex --- CP3 snapshot preparation
+    Candidate --- Owner: Codex --- PASS / CP3 CREATED --- Snapshot commit
+    `ba8d4b0380e0d51aadf0922fbf242155100700cb`
 -   Checkpoint Policy --- CANDIDATE / NOT ACTIVE
 -   Next --- Claude READ-ONLY Independent Runtime Evidence Review
 
@@ -401,7 +402,7 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
 | Order-072 | Production Runtime Boundary Implementation Closure & State Sync | Codex | Claude Code | CLOSED / VERIFIED |
 | Order-073 | KL-4 User Acceptance State Sync + First Runtime Gate Preparation | Codex | Claude Code | PASS / READY FOR FIRST RUNTIME USER GATE |
 | Order-074 | First Production Runtime READ_ONLY_INTEGRITY Execution | Codex | Claude Code | PASS CANDIDATE / PENDING INDEPENDENT REVIEW |
-| Order-075 | First Runtime Evidence CP3 Snapshot + Checkpoint Policy Candidate | Codex | Claude Code | CP3 SNAPSHOT PREPARATION |
+| Order-075 | First Runtime Evidence CP3 Snapshot + Checkpoint Policy Candidate | Codex | Claude Code | PASS / CP3 CREATED |
 
 ## 6. Known Limitations
 

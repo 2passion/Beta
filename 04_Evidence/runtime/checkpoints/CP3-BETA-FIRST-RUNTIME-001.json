@@ -1,0 +1,59 @@
+{
+  "checkpoint_id": "CP3-BETA-FIRST-RUNTIME-001",
+  "checkpoint_type": "CP3_EVIDENCE_SNAPSHOT",
+  "order_id": "Order-075",
+  "source_order": "Order-074",
+  "git_commit": "ba8d4b0380e0d51aadf0922fbf242155100700cb",
+  "validation_status": "PASS_CANDIDATE_EVIDENCE_INTEGRITY_VERIFIED_FOR_SNAPSHOT",
+  "review_status": "PENDING_INDEPENDENT_REVIEW",
+  "runtime_request_id": "BETA-FIRST-RUNTIME-001",
+  "run_id": "RUN-e367a795-4922-4b50-8fff-0630502cf387",
+  "evidence_ref": {
+    "evidence_id": "EVD-a400e86b-b082-4f4c-8a6b-47a8f25cb619",
+    "path": "04_Evidence/runtime/read_only_integrity/BETA-FIRST-RUNTIME-001/EVD-a400e86b-b082-4f4c-8a6b-47a8f25cb619.json",
+    "sha256": "9DAC2856BCA0C0B2B40178FD2F6AE88D06F2DF127C18BBD54B44329CC8CA561A"
+  },
+  "approval_packet": {
+    "path": "04_Evidence/runtime/approvals/FIRST-RUNTIME-GATE-001.json",
+    "sha256": "ED19925F30EF14E1D6D13F9823412A232B56D24472AF3C2027FEC2E89BE17203"
+  },
+  "events": {
+    "path": "04_Evidence/runtime/read_only_integrity/BETA-FIRST-RUNTIME-001/events.jsonl",
+    "sha256": "570EAD9D8381E849AFD8DF1E9577C215355D0D247E916600FA37AB700D7D6FE3"
+  },
+  "task_plan": {
+    "path": "04_Evidence/runtime/read_only_integrity/BETA-FIRST-RUNTIME-001/task_plan.json",
+    "sha256": "DC2EA7F752AA5E848F1E4836BEF52D8B27BB3E72B95FC415EE23AF199608E0BD"
+  },
+  "target_observation": {
+    "path": "C:\\Obsidian\\Beta\\Beta-Index.md",
+    "size": 16971,
+    "sha256": "90BC842FAE62DECD9F738B5E06D35472D52FA200D74E01A6C824FAD088614AF3",
+    "runtime_side_effect_count": 0
+  },
+  "runtime_code_baseline_hash": "609945133F147CE49179FFFD587CAADE4E6FC2E218EAA340AC787A78EB7C3737",
+  "approved_runtime_git_baseline": "790841d4506fb0590dbeeac3f3764841a97c6a28",
+  "architecture": {
+    "version": "v1.0",
+    "status": "FROZEN",
+    "path": "00_Architecture/Harness-A-Architecture-v1.0.md",
+    "sha256": "9953AD17FD382E39BBAE58C30937DB070FEFD34A38CC31776BA86FDBFC8411DA",
+    "delta": "NONE"
+  },
+  "checkpoint_policy": {
+    "path": "04_Evidence/runtime/checkpoints/checkpoint-policy-candidate.json",
+    "sha256": "DC30A5180837A23D73CE60D2BC601D270F40A617F107ED2205E9BD385F0B9AF1",
+    "status": "CANDIDATE",
+    "active": false
+  },
+  "production_run_count": 1,
+  "new_runtime_count_in_order_075": 0,
+  "retry_count": 0,
+  "blind_retry_count": 0,
+  "rollback_eligible": {
+    "evidence_and_state_restore_reference": true,
+    "erase_or_reverse_actual_runtime_fact": false,
+    "meaning": "This checkpoint restores or compares original Evidence and state; it never makes the completed Production Runtime disappear."
+  },
+  "created_at": "2026-10-08T00:39:20.4554520+09:00"
+}
