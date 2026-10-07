@@ -11,6 +11,7 @@
 3.4 Production Runtime Boundary Implementation Closure
 3.5 KL-4 Acceptance / First Runtime Gate Preparation
 3.6 First Production Runtime / CP3 Evidence Snapshot
+3.7 First Production Runtime / CP4 Closure
 4. Now
 5. Next
 6. 주요 위치
@@ -192,6 +193,8 @@ FROZEN
 - Order-074 First Production Runtime READ_ONLY_INTEGRITY — PASS CANDIDATE / Run 1 / Side Effect 0
 - Production Evidence — CREATED / PENDING INDEPENDENT REVIEW
 - Order-075 CP3 Evidence Snapshot — PASS / CP3 CREATED
+- Order-076 First Production Runtime Evidence Independent Review — PASS / 79 of 79 / Blocker 0 / Important 0
+- Order-077 First Production Runtime CP4 Closure — CLOSED / PASS / CP4 CREATED
 - ChatGPT Project Beta와 Obsidian의 역할 분리
 - A와 B의 관계 정의
 - Local Core 우선 방향 결정
@@ -261,9 +264,9 @@ FROZEN
 - Closure Evidence: `04_Evidence/runtime_boundary_closure/order-072-closure.json`
 - Runtime Code Baseline Hash: `609945133F147CE49179FFFD587CAADE4E6FC2E218EAA340AC787A78EB7C3737`
 - Architecture Reference: `00_Architecture/Harness-A-Architecture-v1.0.md` / SHA-256 `9953AD17FD382E39BBAE58C30937DB070FEFD34A38CC31776BA86FDBFC8411DA` / Delta NONE
-- Actual Production Runtime: NOT RUN
-- Production Authorization: NOT ISSUED
-- Production Evidence: 0
+- Actual Production Runtime: NOT RUN (historical as of Order-072)
+- Production Authorization: NOT ISSUED (historical as of Order-072)
+- Production Evidence: 0 (historical as of Order-072)
 - KL-1~KL-3: OPEN / ACCEPTED FOR MVP
 - KL-4: OPEN / CANDIDATE FOR ACCEPTANCE
 - Phase2: NOT STARTED
@@ -288,9 +291,9 @@ FROZEN
 - Runtime Request Hash: `4667C14ED7EF0024476227793A8F4BFA6F0A6AF9430C365C7C540D8B2AE99513`
 - Runtime Code Baseline Hash: `609945133F147CE49179FFFD587CAADE4E6FC2E218EAA340AC787A78EB7C3737`
 - Gate Payload: READY / NON_AUTHORIZING
-- Production Authorization: NOT ISSUED
-- Actual Production Runtime: NOT RUN
-- Production Evidence: 0
+- Production Authorization: NOT ISSUED (historical as of Order-073)
+- Actual Production Runtime: NOT RUN (historical as of Order-073)
+- Production Evidence: 0 (historical as of Order-073)
 - Next: FIRST RUNTIME USER GATE
 
 
@@ -315,6 +318,33 @@ FROZEN
 - Checkpoint Policy: CANDIDATE / NOT ACTIVE
 - Phase2: NOT STARTED
 - Next: Claude READ-ONLY Independent Runtime Evidence Review
+
+
+## 3.7 First Production Runtime / CP4 Closure
+
+- Review Order: Order-076
+- Closure Order: Order-077
+- First Production Runtime: PASS / INDEPENDENTLY VERIFIED
+- Independent Runtime Evidence Review: PASS / 79 of 79 / Blocker 0 / Important 0
+- Request ID: `BETA-FIRST-RUNTIME-001`
+- Run ID: `RUN-e367a795-4922-4b50-8fff-0630502cf387`
+- Evidence ID: `EVD-a400e86b-b082-4f4c-8a6b-47a8f25cb619`
+- Evidence SHA-256: `9DAC2856BCA0C0B2B40178FD2F6AE88D06F2DF127C18BBD54B44329CC8CA561A`
+- Production Evidence: INDEPENDENTLY VERIFIED / HISTORICAL ORIGINAL IMMUTABLE
+- Runtime Closure: CLOSED / VERIFIED
+- Production Run Count: 1
+- New Runtime Count in Order-077: 0
+- Target Side Effect: 0
+- CP3: PRESERVED / `ba8d4b0380e0d51aadf0922fbf242155100700cb`
+- CP4 Checkpoint Type: `CP4_CLOSURE`
+- CP4 Record: `04_Evidence/runtime/checkpoints/CP4-BETA-FIRST-RUNTIME-001.json`
+- Closure Evidence: `04_Evidence/runtime/closures/order-077-first-runtime-cp4-closure-evidence.json`
+- Checkpoint Policy Review: `04_Evidence/runtime/checkpoints/checkpoint-policy-review-order-077.json`
+- Checkpoint Policy: CANDIDATE / REVIEWED / NOT ACTIVE
+- KL-1~KL-4: OPEN / ACCEPTED FOR MVP
+- Architecture Delta: NONE
+- Phase2: NOT STARTED
+- Next: Checkpoint Policy promotion decision only after separate review and User approval
 
 
 ## 4. Now
@@ -343,24 +373,25 @@ MVP Overall PASS PASS
 MVP Status FROZEN
 Production Runtime Boundary Implementation CLOSED / VERIFIED
 Production Runtime Boundary Independent Review PASS
-First Production Runtime PASS CANDIDATE
+First Production Runtime PASS / INDEPENDENTLY VERIFIED
 Actual Production Run Count 1
 Production Authorization ISSUED / ONE-SHOT CONSUMED
-Production Evidence CREATED / PENDING INDEPENDENT REVIEW
-Independent Runtime Evidence Review NOT RUN
-Runtime Closure NOT CLOSED
+Production Evidence INDEPENDENTLY VERIFIED / HISTORICAL ORIGINAL IMMUTABLE
+Independent Runtime Evidence Review Order-076 PASS / 79 of 79
+Runtime Closure CLOSED / VERIFIED
 Target Side Effect 0
-CP3 Evidence Snapshot CREATED / PENDING INDEPENDENT REVIEW
-Checkpoint Policy CANDIDATE / NOT ACTIVE
+CP3 Evidence Snapshot PRESERVED
+CP4 Closure Checkpoint CREATED
+Checkpoint Policy CANDIDATE / REVIEWED / NOT ACTIVE
 Architecture Delta NONE
 Phase2 NOT STARTED
 
 
 ## 5. Next
 
-Claude READ-ONLY Independent Runtime Evidence Review
-→ CP3 Git SHA 기준으로 원본 Evidence와 연결을 독립 검산
-→ PASS 후에만 CP4 Runtime Closure 후보 검토
+Checkpoint Policy promotion decision
+→ 별도 Review와 User approval 이후에만 Promotion 검토
+→ 자동 활성화, 새 Runtime, Phase2 시작 없음
 
 
 ## 6. 주요 위치

@@ -1,0 +1,32 @@
+{
+  "review_id": "BETA-CHECKPOINT-POLICY-REVIEW-ORDER-077",
+  "order_id": "Order-077",
+  "policy_id": "BETA-CHECKPOINT-POLICY-CANDIDATE-001",
+  "policy_path": "04_Evidence/runtime/checkpoints/checkpoint-policy-candidate.json",
+  "policy_sha256": "DC30A5180837A23D73CE60D2BC601D270F40A617F107ED2205E9BD385F0B9AF1",
+  "reviewed_at": "2026-10-08T08:41:43.6511362+09:00",
+  "status": "CANDIDATE / REVIEWED",
+  "active": false,
+  "assessment": {
+    "checkpoint_sequence": "CP1 Baseline -> CP2 Verified Implementation -> CP3 Evidence Snapshot -> CP4 Closure is coherent.",
+    "trigger_clarity": "Candidate lists required eligibility and HOLD behavior; promotion needs a separate normative proposal.",
+    "scope": "Scope-limited checkpoint files and approved state/evidence are required; unrelated files are excluded.",
+    "validation_before_promotion": "Required validators and evidence linkage must PASS before checkpoint creation.",
+    "git_delivery": "Fast-forward only; remote divergence causes HOLD.",
+    "duplicate_no_change": "Materially identical CP2/CP3/CP4 must not create duplicate commits.",
+    "recovery_vs_rollback": "Recovery preserves facts; rollback must not erase Runtime Evidence, external side effects, approval changes, or SSOT conflicts.",
+    "side_effect_preservation": "Actual Runtime and side-effect history remain immutable reference facts.",
+    "approval_requirements": "Activation and any global Rule promotion require a separate review and explicit User approval gate.",
+    "cost_storage": "JSON records and Git snapshots are small, but repeated Evidence snapshots can accumulate and require an explicit retention decision before activation."
+  },
+  "actual_evidence_compared": {
+    "cp3_record": "04_Evidence/runtime/checkpoints/CP3-BETA-FIRST-RUNTIME-001.json",
+    "cp3_snapshot_commit": "ba8d4b0380e0d51aadf0922fbf242155100700cb",
+    "proposed_cp4_record": "04_Evidence/runtime/checkpoints/CP4-BETA-FIRST-RUNTIME-001.json"
+  },
+  "promotion": {
+    "recommended_next_step": "Separate Checkpoint Policy Rule Promotion Proposal and User approval decision.",
+    "automatic_activation": false,
+    "global_rule_created": false
+  }
+}

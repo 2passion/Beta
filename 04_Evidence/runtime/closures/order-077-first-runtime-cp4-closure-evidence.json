@@ -1,0 +1,126 @@
+{
+  "evidence_type": "FIRST_PRODUCTION_RUNTIME_CP4_CLOSURE",
+  "closure_order": "Order-077",
+  "source_review_order": "Order-076",
+  "created_at": "2026-10-08T08:41:43.6511362+09:00",
+  "basis": {
+    "authority": "Order-077 approved execution contract and user routing",
+    "review_order_path": "01_Orders/Order-076-First-Production-Runtime-Evidence-Independent-Review.md",
+    "independent_review": "PASS",
+    "checks_passed": 79,
+    "checks_total": 79,
+    "blocker_count": 0,
+    "important_count": 0,
+    "separate_review_result_artifact_claimed": false
+  },
+  "runtime_identity": {
+    "request_id": "BETA-FIRST-RUNTIME-001",
+    "run_id": "RUN-e367a795-4922-4b50-8fff-0630502cf387",
+    "evidence_id": "EVD-a400e86b-b082-4f4c-8a6b-47a8f25cb619",
+    "evidence_path": "04_Evidence/runtime/read_only_integrity/BETA-FIRST-RUNTIME-001/EVD-a400e86b-b082-4f4c-8a6b-47a8f25cb619.json",
+    "evidence_sha256": "9DAC2856BCA0C0B2B40178FD2F6AE88D06F2DF127C18BBD54B44329CC8CA561A",
+    "approved_runtime_git_commit": "790841d4506fb0590dbeeac3f3764841a97c6a28",
+    "runtime_request_hash": "4667C14ED7EF0024476227793A8F4BFA6F0A6AF9430C365C7C540D8B2AE99513",
+    "runtime_code_baseline_hash": "609945133F147CE49179FFFD587CAADE4E6FC2E218EAA340AC787A78EB7C3737",
+    "target_at_runtime": {
+      "path": "C:\\Obsidian\\Beta\\Beta-Index.md",
+      "size": 16971,
+      "sha256": "90BC842FAE62DECD9F738B5E06D35472D52FA200D74E01A6C824FAD088614AF3",
+      "side_effect_count": 0
+    }
+  },
+  "preserved_links": {
+    "cp3_snapshot_commit": "ba8d4b0380e0d51aadf0922fbf242155100700cb",
+    "cp3_identity_commit": "d5a022f676b88128f11b8cb913f3722b1c6c9012",
+    "cp3_record": "04_Evidence/runtime/checkpoints/CP3-BETA-FIRST-RUNTIME-001.json",
+    "approval_packet_sha256": "ED19925F30EF14E1D6D13F9823412A232B56D24472AF3C2027FEC2E89BE17203",
+    "events_sha256": "570EAD9D8381E849AFD8DF1E9577C215355D0D247E916600FA37AB700D7D6FE3",
+    "task_plan_sha256": "DC2EA7F752AA5E848F1E4836BEF52D8B27BB3E72B95FC415EE23AF199608E0BD",
+    "executor_snapshot_sha256": "205BF818FD3F8434031EB668FB316EF1EF10766423ACA393F604648DEE63232D",
+    "validator_snapshot_sha256": "9ED0457AF985DB6AD08AB3FEB15B9864AF36935B65541435E3F47F48EBF39DBE"
+  },
+  "state_transition": {
+    "first_production_runtime": "PASS / INDEPENDENTLY VERIFIED",
+    "production_evidence": "INDEPENDENTLY VERIFIED / HISTORICAL ORIGINAL IMMUTABLE",
+    "runtime_closure": "CLOSED / VERIFIED",
+    "production_run_count": 1,
+    "new_runtime_count_in_order_077": 0,
+    "target_side_effect_count": 0,
+    "phase2": "NOT STARTED"
+  },
+  "architecture": {
+    "path": "00_Architecture/Harness-A-Architecture-v1.0.md",
+    "version": "v1.0",
+    "status": "FROZEN",
+    "sha256": "9953AD17FD382E39BBAE58C30937DB070FEFD34A38CC31776BA86FDBFC8411DA",
+    "delta": "NONE"
+  },
+  "known_limitations": {
+    "KL-1": "OPEN / ACCEPTED FOR MVP",
+    "KL-2": "OPEN / ACCEPTED FOR MVP",
+    "KL-3": "OPEN / ACCEPTED FOR MVP",
+    "KL-4": "OPEN / ACCEPTED FOR MVP"
+  },
+  "minor_disposition": [
+    {
+      "id": "MINOR-1",
+      "state": "OPEN / ACCEPTED LIMITATION",
+      "finding": "Authorization issuance mechanism is not directly recorded in the historical Evidence.",
+      "evidence": "Approval packet and Evidence preserve the approved values but do not independently reconstruct issuance.",
+      "owner": "Future Runtime Hardening Proposal",
+      "action": "Preserve the historical gap; do not fabricate reconstruction."
+    },
+    {
+      "id": "MINOR-2",
+      "state": "OPEN / ACCEPTED LIMITATION",
+      "finding": "User approval provenance relies on Writer-created artifacts.",
+      "evidence": "KL-4 remains OPEN / ACCEPTED FOR MVP.",
+      "owner": "Runtime Governance / User Gate",
+      "action": "Do not claim independently proven issuer provenance."
+    },
+    {
+      "id": "MINOR-3",
+      "state": "DOCUMENTATION CORRECTION APPLIED",
+      "finding": "Historical NOT RUN / NOT ISSUED wording lacked time context.",
+      "evidence": "Beta-Index.md and Order-History.md label Order-072/073 statements as historical as-of status.",
+      "owner": "State / History Views",
+      "action": "Presentation labels only; historical facts unchanged."
+    },
+    {
+      "id": "MINOR-4",
+      "state": "VERIFIED REMOTELY IN ORDER-077",
+      "finding": "Order-076 relied on local tracking refs for remote backup verification.",
+      "evidence": "Read-only git ls-remote origin refs/heads/main returned d5a022f676b88128f11b8cb913f3722b1c6c9012 before closure write, matching local HEAD and origin/main.",
+      "owner": "Git Checkpoint Validation",
+      "action": "Record the authoritative direct read; no Runtime publish occurred."
+    },
+    {
+      "id": "MINOR-5",
+      "state": "OPEN / HARDENING CANDIDATE",
+      "finding": "Historical events do not have a hash chain.",
+      "evidence": "events.jsonl is preserved with SHA-256 570EAD9D8381E849AFD8DF1E9577C215355D0D247E916600FA37AB700D7D6FE3; no chain is claimed.",
+      "owner": "Future Runtime Hardening Proposal",
+      "action": "Do not fabricate a chain or activate a Rule."
+    }
+  ],
+  "checkpoint": {
+    "checkpoint_type": "CP4_CLOSURE",
+    "record_path": "04_Evidence/runtime/checkpoints/CP4-BETA-FIRST-RUNTIME-001.json",
+    "identity_strategy": "non-self-referential follow-up record",
+    "rollback_semantics": "Recovery and comparison reference only; never erase the actual Runtime, Evidence, or side effects."
+  },
+  "checkpoint_policy": {
+    "policy_path": "04_Evidence/runtime/checkpoints/checkpoint-policy-candidate.json",
+    "review_path": "04_Evidence/runtime/checkpoints/checkpoint-policy-review-order-077.json",
+    "status": "CANDIDATE / REVIEWED",
+    "active": false
+  },
+  "validation": {
+    "status": "PASS",
+    "cp3_originals_unchanged": true,
+    "one_historical_runtime": true,
+    "new_runtime_count": 0,
+    "architecture_terminology_core_tests_unchanged": true,
+    "git_diff_check": "PASS"
+  }
+}

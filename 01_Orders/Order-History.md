@@ -287,9 +287,9 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
     Authorization/Run/Evidence 0 --- Phase2 NOT STARTED
 -   Order-072 --- Production Runtime Boundary Implementation Closure & State Sync
     --- Owner: Codex --- CLOSED / VERIFIED --- Independent Review PASS
--   Actual Production Runtime --- NOT RUN
--   Production Authorization --- NOT ISSUED
--   Production Evidence --- 0
+-   Actual Production Runtime --- NOT RUN (historical as of Order-072)
+-   Production Authorization --- NOT ISSUED (historical as of Order-072)
+-   Production Evidence --- 0 (historical as of Order-072)
 -   KL-1~KL-3 --- OPEN / ACCEPTED FOR MVP
 -   KL-4 --- OPEN / CANDIDATE FOR ACCEPTANCE
 -   Next Gate --- KL-4 USER ACCEPTANCE
@@ -301,8 +301,8 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
 -   First Runtime Gate Payload --- READY / NON_AUTHORIZING --- Approved Git
     Baseline `790841d4506fb0590dbeeac3f3764841a97c6a28` --- Runtime Request
     Hash `4667C14ED7EF0024476227793A8F4BFA6F0A6AF9430C365C7C540D8B2AE99513`
--   Actual Production Runtime --- NOT RUN --- Production Authorization --- NOT
-    ISSUED --- Production Evidence --- 0
+-   Actual Production Runtime --- NOT RUN (historical as of Order-073) --- Production Authorization --- NOT
+    ISSUED (historical as of Order-073) --- Production Evidence --- 0 (historical as of Order-073)
 -   Next --- FIRST RUNTIME USER GATE
 
 ### 2026-10-08
@@ -323,6 +323,21 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
     `ba8d4b0380e0d51aadf0922fbf242155100700cb`
 -   Checkpoint Policy --- CANDIDATE / NOT ACTIVE
 -   Next --- Claude READ-ONLY Independent Runtime Evidence Review
+-   Order-076 --- First Production Runtime Evidence Independent Review ---
+    Reviewer: Claude Code --- PASS / 79 of 79 --- Blocker 0 / Important 0
+-   Order-077 --- First Production Runtime CP4 Closure & Checkpoint Policy Review
+    --- Owner: Codex --- CLOSED / PASS / CP4 CREATED
+-   First Production Runtime --- PASS / INDEPENDENTLY VERIFIED --- Production
+    Run Count 1 --- New Runtime Count 0 --- Target Side Effect 0
+-   Production Evidence --- INDEPENDENTLY VERIFIED / HISTORICAL ORIGINAL IMMUTABLE
+-   Runtime Closure --- CLOSED / VERIFIED
+-   CP3 --- PRESERVED --- Snapshot commit
+    `ba8d4b0380e0d51aadf0922fbf242155100700cb`
+-   CP4 --- `CP4_CLOSURE` --- Record
+    `04_Evidence/runtime/checkpoints/CP4-BETA-FIRST-RUNTIME-001.json`
+-   Checkpoint Policy --- CANDIDATE / REVIEWED / NOT ACTIVE
+-   KL-1~KL-4 --- OPEN / ACCEPTED FOR MVP --- Phase2 NOT STARTED
+-   Next --- Checkpoint Policy promotion decision only after separate review and User approval
 
 ## 5. 정식 Order 목록
 
@@ -403,6 +418,8 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
 | Order-073 | KL-4 User Acceptance State Sync + First Runtime Gate Preparation | Codex | Claude Code | PASS / READY FOR FIRST RUNTIME USER GATE |
 | Order-074 | First Production Runtime READ_ONLY_INTEGRITY Execution | Codex | Claude Code | PASS CANDIDATE / PENDING INDEPENDENT REVIEW |
 | Order-075 | First Runtime Evidence CP3 Snapshot + Checkpoint Policy Candidate | Codex | Claude Code | PASS / CP3 CREATED |
+| Order-076 | First Production Runtime Evidence Independent Review | - | Claude Code | PASS / 79 of 79 |
+| Order-077 | First Production Runtime CP4 Closure + Checkpoint Policy Review | Codex | Claude Code | CLOSED / PASS / CP4 CREATED |
 
 ## 6. Known Limitations
 
