@@ -1,0 +1,91 @@
+{
+  "evidence_id": "ORDER-073-KL4-ACCEPTANCE-FIRST-RUNTIME-GATE-PREPARATION",
+  "order": "Order-073",
+  "artifact_kind": "DECISION_AND_NON_AUTHORIZING_GATE_PREPARATION",
+  "decision": {
+    "limitation_id": "KL-4",
+    "name": "Local Writer Trust Boundary",
+    "previous_state": "OPEN / CANDIDATE FOR ACCEPTANCE",
+    "new_state": "OPEN / ACCEPTED FOR MVP",
+    "accepted_by": "User",
+    "scope": "MVP only",
+    "resolved": false,
+    "closed": false,
+    "decision_reference": "Order-073 user instruction",
+    "hardening_trigger": "Consider a separate Hardening Proposal only if actual Runtime Evidence demonstrates the need.",
+    "known_examples": [
+      "same-process _ISSUER",
+      "malicious Core rewrite",
+      "malicious __pycache__ or .pyc"
+    ],
+    "operational_mitigation": "At Final User Gate, verify Runtime Request Hash, Runtime Code Baseline Hash, and Approved Git Commit."
+  },
+  "basis": {
+    "independent_review": "Order-071 PASS",
+    "implementation_closure": "Order-072 CLOSED / PASS",
+    "closure_commit": "790841d4506fb0590dbeeac3f3764841a97c6a28",
+    "architecture_path": "00_Architecture/Harness-A-Architecture-v1.0.md",
+    "architecture_sha256": "9953AD17FD382E39BBAE58C30937DB070FEFD34A38CC31776BA86FDBFC8411DA",
+    "terminology_path": "00_Architecture/Terminology.md",
+    "terminology_sha256": "EDEB994201C20A52D8E76F89FAE3566BEE0E1D6798A2EA646833DE13AEC9C46D",
+    "architecture_delta": "NONE"
+  },
+  "approved_git_commit_decision": {
+    "selected": "790841d4506fb0590dbeeac3f3764841a97c6a28",
+    "selected_baseline": "Order-072 Closure commit",
+    "decision_commit_required": false,
+    "contract_basis": "The Runtime contract accepts an existing full commit and independently compares approved policy, executor, and validator Git blobs with current files. The Closure commit is the reviewed implementation baseline; Order-073 changes no Runtime Core files.",
+    "closure_policy_executor_validator_blob_match": true
+  },
+  "first_runtime_gate": {
+    "status": "READY",
+    "authorization_effect": "NONE",
+    "approval_packet_status": "NOT ISSUED",
+    "execution_authorization_status": "NOT ISSUED",
+    "request_id": "BETA-FIRST-RUNTIME-001",
+    "approval_ref_proposal": "FIRST-RUNTIME-GATE-001",
+    "canonical_payload": {
+      "request_id": "BETA-FIRST-RUNTIME-001",
+      "target_path": "c:/obsidian/beta/beta-index.md",
+      "approved_root": "c:/obsidian/beta",
+      "operation": "READ_ONLY_INTEGRITY",
+      "target_side_effect": "NONE",
+      "parallel": false,
+      "dependencies": [],
+      "approved_git_commit": "790841d4506fb0590dbeeac3f3764841a97c6a28",
+      "policy_path": "02_Core/beta_core/runtime_policy.json",
+      "policy_sha256": "A0238C91DFCA023E600EB339E29364AC803B62FE62763B62B27A5610CAC1C12B",
+      "executor_path": "02_Core/beta_core/file_integrity_executor.py",
+      "executor_sha256": "205BF818FD3F8434031EB668FB316EF1EF10766423ACA393F604648DEE63232D",
+      "validator_path": "02_Core/beta_core/file_integrity_validator.py",
+      "validator_sha256": "9ED0457AF985DB6AD08AB3FEB15B9864AF36935B65541435E3F47F48EBF39DBE",
+      "network": false,
+      "external_publish": false
+    },
+    "runtime_request_hash": "4667C14ED7EF0024476227793A8F4BFA6F0A6AF9430C365C7C540D8B2AE99513",
+    "runtime_code_baseline_hash": "609945133F147CE49179FFFD587CAADE4E6FC2E218EAA340AC787A78EB7C3737",
+    "gate_display": {
+      "target": "C:\\Obsidian\\Beta\\Beta-Index.md",
+      "operation": "READ_ONLY_INTEGRITY",
+      "approved_root": "C:\\Obsidian\\Beta",
+      "target_write": "NONE",
+      "network": false,
+      "external_publish": false,
+      "approved_git_commit": "790841d4506fb0590dbeeac3f3764841a97c6a28",
+      "runtime_request_hash": "4667C14ED7EF0024476227793A8F4BFA6F0A6AF9430C365C7C540D8B2AE99513",
+      "runtime_code_baseline_hash": "609945133F147CE49179FFFD587CAADE4E6FC2E218EAA340AC787A78EB7C3737",
+      "executor_sha256": "205BF818FD3F8434031EB668FB316EF1EF10766423ACA393F604648DEE63232D",
+      "validator_sha256": "9ED0457AF985DB6AD08AB3FEB15B9864AF36935B65541435E3F47F48EBF39DBE",
+      "kl4": "OPEN / ACCEPTED FOR MVP"
+    }
+  },
+  "production_status": {
+    "actual_runtime": "NOT RUN",
+    "run_count": 0,
+    "authorization": "NOT ISSUED",
+    "authorization_count": 0,
+    "production_evidence_count": 0
+  },
+  "phase2": "NOT STARTED",
+  "next": "FIRST RUNTIME USER GATE"
+}

@@ -294,6 +294,16 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
 -   KL-4 --- OPEN / CANDIDATE FOR ACCEPTANCE
 -   Next Gate --- KL-4 USER ACCEPTANCE
 -   Closure 의미 경계 --- 구현/검증 Closure이며 실제 Production Runtime 성공이 아님
+-   Order-073 --- KL-4 User Acceptance State Sync + First Runtime Gate
+    Preparation --- Owner: Codex --- PASS / READY FOR FIRST RUNTIME USER GATE
+-   User KL-4 Acceptance --- OPEN / ACCEPTED FOR MVP --- MVP scope only ---
+    resolved=false / closed=false
+-   First Runtime Gate Payload --- READY / NON_AUTHORIZING --- Approved Git
+    Baseline `790841d4506fb0590dbeeac3f3764841a97c6a28` --- Runtime Request
+    Hash `4667C14ED7EF0024476227793A8F4BFA6F0A6AF9430C365C7C540D8B2AE99513`
+-   Actual Production Runtime --- NOT RUN --- Production Authorization --- NOT
+    ISSUED --- Production Evidence --- 0
+-   Next --- FIRST RUNTIME USER GATE
 
 ## 5. 정식 Order 목록
 
@@ -371,6 +381,7 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
 | Order-070 | Snapshot Execution Hardening + Baseline Completeness Recovery | Codex | Claude Code | PASS candidate |
 | Order-071 | Snapshot/Baseline Independent Delta Recheck | - | Claude Code | PASS |
 | Order-072 | Production Runtime Boundary Implementation Closure & State Sync | Codex | Claude Code | CLOSED / VERIFIED |
+| Order-073 | KL-4 User Acceptance State Sync + First Runtime Gate Preparation | Codex | Claude Code | PASS / READY FOR FIRST RUNTIME USER GATE |
 
 ## 6. Known Limitations
 
@@ -383,10 +394,12 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
     완료와 독립 대조하지 않음 --- OPEN / ACCEPTED FOR MVP
 -   KL-4 Local Writer Trust Boundary --- 동일 Local Writer가 승인·검증 Core 자체를
     악의적으로 재작성해 사용자 승인을 위조하는 공격은 현재 MVP Threat Model 밖임
-    --- OPEN / CANDIDATE FOR ACCEPTANCE
--   상태 --- KL-1~KL-3 OPEN / ACCEPTED FOR MVP, KL-4 OPEN / CANDIDATE FOR
-    ACCEPTANCE / 해결됨으로 표시하지 않음 /
+    --- OPEN / ACCEPTED FOR MVP --- User acceptance / MVP scope only ---
+    resolved=false / closed=false
+-   상태 --- KL-1~KL-4 OPEN / ACCEPTED FOR MVP / 해결됨·종료됨으로 표시하지 않음 /
     Active Rule 또는 Prevention 자동 승격 없음
+-   KL-4 Hardening Trigger --- 실제 Runtime Evidence에서 필요성이 확인될 경우
+    별도 Proposal로 검토
 
 ## 7. MVP Freeze Baseline
 
