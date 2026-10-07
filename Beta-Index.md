@@ -338,6 +338,9 @@ FROZEN
 - CP3: PRESERVED / `ba8d4b0380e0d51aadf0922fbf242155100700cb`
 - CP4 Checkpoint Type: `CP4_CLOSURE`
 - CP4 Record: `04_Evidence/runtime/checkpoints/CP4-BETA-FIRST-RUNTIME-001.json`
+- CP4 Record SHA-256: `B8C999900BBDE1013647C1B252D4D61347531DECFEDA36B586A5C9C91192EAFF`
+- CP4 Closure Commit: `9b8c421dc4a9ee4fdbd670cf1bdd1a223b3a2acd`
+- CP4 Identity Strategy: closure commit + follow-up identity record commit (non-self-referential)
 - Closure Evidence: `04_Evidence/runtime/closures/order-077-first-runtime-cp4-closure-evidence.json`
 - Checkpoint Policy Review: `04_Evidence/runtime/checkpoints/checkpoint-policy-review-order-077.json`
 - Checkpoint Policy: CANDIDATE / REVIEWED / NOT ACTIVE

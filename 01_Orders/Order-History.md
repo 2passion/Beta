@@ -335,6 +335,9 @@ Order-005부터 시작하면 001\~004가 삭제된 것으로 오해할 수 있�
     `ba8d4b0380e0d51aadf0922fbf242155100700cb`
 -   CP4 --- `CP4_CLOSURE` --- Record
     `04_Evidence/runtime/checkpoints/CP4-BETA-FIRST-RUNTIME-001.json`
+-   CP4 Record SHA-256 --- `B8C999900BBDE1013647C1B252D4D61347531DECFEDA36B586A5C9C91192EAFF`
+-   CP4 Closure Commit --- `9b8c421dc4a9ee4fdbd670cf1bdd1a223b3a2acd` ---
+    follow-up identity record commit으로 non-self-reference 보존
 -   Checkpoint Policy --- CANDIDATE / REVIEWED / NOT ACTIVE
 -   KL-1~KL-4 --- OPEN / ACCEPTED FOR MVP --- Phase2 NOT STARTED
 -   Next --- Checkpoint Policy promotion decision only after separate review and User approval

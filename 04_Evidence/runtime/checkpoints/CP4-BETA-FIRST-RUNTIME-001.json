@@ -1,0 +1,64 @@
+{
+  "checkpoint_id": "CP4-BETA-FIRST-RUNTIME-001",
+  "checkpoint_type": "CP4_CLOSURE",
+  "closure_order": "Order-077",
+  "source_review_order": "Order-076",
+  "git_commit": "9b8c421dc4a9ee4fdbd670cf1bdd1a223b3a2acd",
+  "identity_strategy": "The closure commit contains the closure Evidence and state. This record is added by a follow-up identity commit to avoid self-reference.",
+  "created_at": "2026-10-08T08:43:02.5046169+09:00",
+  "validation_status": "PASS",
+  "review_status": "INDEPENDENT_REVIEW_PASS_79_OF_79",
+  "independent_review": {
+    "status": "PASS",
+    "checks_passed": 79,
+    "checks_total": 79,
+    "blocker_count": 0,
+    "important_count": 0
+  },
+  "runtime_request_id": "BETA-FIRST-RUNTIME-001",
+  "run_id": "RUN-e367a795-4922-4b50-8fff-0630502cf387",
+  "evidence_ref": {
+    "evidence_id": "EVD-a400e86b-b082-4f4c-8a6b-47a8f25cb619",
+    "path": "04_Evidence/runtime/read_only_integrity/BETA-FIRST-RUNTIME-001/EVD-a400e86b-b082-4f4c-8a6b-47a8f25cb619.json",
+    "sha256": "9DAC2856BCA0C0B2B40178FD2F6AE88D06F2DF127C18BBD54B44329CC8CA561A"
+  },
+  "closure_evidence": {
+    "path": "04_Evidence/runtime/closures/order-077-first-runtime-cp4-closure-evidence.json",
+    "sha256": "6A52519360DC01150A9ABD890E0E86F848FE75F4EE1670053925F4173A2BDF03"
+  },
+  "policy_review": {
+    "path": "04_Evidence/runtime/checkpoints/checkpoint-policy-review-order-077.json",
+    "sha256": "08BC3393C4616DD18C412D77D630B6512EC69AA1BAC333A5BE7FB53073566564",
+    "status": "CANDIDATE / REVIEWED",
+    "active": false
+  },
+  "cp3": {
+    "record": "04_Evidence/runtime/checkpoints/CP3-BETA-FIRST-RUNTIME-001.json",
+    "snapshot_commit": "ba8d4b0380e0d51aadf0922fbf242155100700cb",
+    "preserved": true
+  },
+  "runtime_code_baseline_hash": "609945133F147CE49179FFFD587CAADE4E6FC2E218EAA340AC787A78EB7C3737",
+  "approved_runtime_git_baseline": "790841d4506fb0590dbeeac3f3764841a97c6a28",
+  "architecture": {
+    "path": "00_Architecture/Harness-A-Architecture-v1.0.md",
+    "version": "v1.0",
+    "status": "FROZEN",
+    "sha256": "9953AD17FD382E39BBAE58C30937DB070FEFD34A38CC31776BA86FDBFC8411DA",
+    "delta": "NONE"
+  },
+  "known_limitations": {
+    "KL-1": "OPEN / ACCEPTED FOR MVP",
+    "KL-2": "OPEN / ACCEPTED FOR MVP",
+    "KL-3": "OPEN / ACCEPTED FOR MVP",
+    "KL-4": "OPEN / ACCEPTED FOR MVP"
+  },
+  "production_run_count": 1,
+  "new_runtime_count_in_order_077": 0,
+  "target_side_effect_count": 0,
+  "phase2": "NOT STARTED",
+  "rollback_semantics": {
+    "recovery_and_comparison_reference": true,
+    "erase_actual_runtime_or_evidence": false,
+    "meaning": "CP4 closes the reviewed Evidence state; it never reverses or erases the actual Production Runtime or its historical Evidence."
+  }
+}
